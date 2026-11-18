@@ -1,0 +1,28 @@
+{
+  "id": "BY_scb_seg_n005",
+  "dataset": "BY",
+  "method": "scb_seg",
+  "display_method": "SCB-SAM",
+  "labeled_cases": 5,
+  "fold": 2,
+  "seed": 2027,
+  "budget": {
+    "kind": "ssl_primary_inputs_per_stream",
+    "cycles": 36,
+    "labeled_inputs": 3420,
+    "unlabeled_inputs": 3420,
+    "successful_updates": 684,
+    "supervised_initialization": {
+      "epochs": 60,
+      "successful_updates": 300,
+      "separate_from_ssl_budget": true
+    }
+  },
+  "selection": "native_student_epoch35_fixed_final",
+  "metric_precision": "full_precision_from_recorded_result_or_completion_receipt",
+  "notes": [
+    "BY5 and BY10 now use distinct supervised initializers and 3420 main pairs; BY10 comparators used 3240 per stream.",
+    "Current records preserve GT-localized ROI development evaluation; not independent-test evidence."
+  ],
+  "runtime_status": "record_not_train_command"
+}

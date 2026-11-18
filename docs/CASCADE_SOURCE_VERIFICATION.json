@@ -1,0 +1,78 @@
+{
+  "status": "ALL_THREE_CASCADE_SOURCE_MODULES_BYTECODE_VERIFIED",
+  "at": "2026-11-10T13:18:47.355106+00:00",
+  "compiler": "CPython 3.10.11",
+  "training_runtime": "CPython 3.10.18",
+  "bytecode_magic": "6f0d0d0a",
+  "normalization": "Only co_filename recursively replaced by <source>; all line tables, constants, instructions and flags retained",
+  "scope": "Three previously source-missing cascade modules; not complete environment/training reproduction",
+  "training_started": false,
+  "entry_sha256_unchanged": "759458bb761558e82e3f0eeae4fe814ad423ab11ce76e5787bfccd037808b4d1",
+  "modules": [
+    {
+      "module_relative_path": "auto_sam_seg.py",
+      "provenance": "HISTORICAL_SOURCE_CANDIDATE_VERIFIED",
+      "input_source_sha256": "c347844a1713e68040d2490dcf6e4fe75e8f0b145d9ca2633d2d48641a835e25",
+      "input_source_bytes": 5637,
+      "release_sha256": "485e42b5cce476a699a237262798084fa363a8c0c228718ac35afa557bcbf36d",
+      "release_bytes": 5637,
+      "training_pyc_sha256": "fbb8bbeab975cf7cadfd609ed9f0c57a673d12a1d4d014c729cd90852a9a068e",
+      "training_header_source_bytes": 5637,
+      "filename_normalized_complete_code_sha256": "c20342f1aed30b7431f34b64374e2bb69812a880f295a6f4183223619d23e01c",
+      "complete_marshal_equal_except_filename": true,
+      "line_metadata_preserved": true,
+      "docstrings_preserved": true,
+      "comments_removed": 1,
+      "release_paths": [
+        "ours/research_snapshot/segment_anything/auto_sam_seg.py",
+        "baselines/source_snapshots/segment_anything/auto_sam_seg.py"
+      ]
+    },
+    {
+      "module_relative_path": "modeling/sam3D_cascade.py",
+      "provenance": "HISTORICAL_SOURCE_CANDIDATE_VERIFIED",
+      "input_source_sha256": "7ed58c280585376c9ae7b88fa61ad440ead1185c3a469df7e3761867fa5740ce",
+      "input_source_bytes": 4526,
+      "release_sha256": "7ed58c280585376c9ae7b88fa61ad440ead1185c3a469df7e3761867fa5740ce",
+      "release_bytes": 4526,
+      "training_pyc_sha256": "dd80ad61a3c6a6217184ee6e967d6daefac187eaae5d126476ce22a5ae7629e2",
+      "training_header_source_bytes": 4526,
+      "filename_normalized_complete_code_sha256": "c772a19bcdef3531ac7dee266c068392ffdcce8c699f2b70f523279de1d9df8d",
+      "complete_marshal_equal_except_filename": true,
+      "line_metadata_preserved": true,
+      "docstrings_preserved": true,
+      "comments_removed": 0,
+      "release_paths": [
+        "ours/research_snapshot/segment_anything/modeling/sam3D_cascade.py",
+        "baselines/source_snapshots/segment_anything/modeling/sam3D_cascade.py"
+      ]
+    },
+    {
+      "module_relative_path": "build_sam3D_cascade.py",
+      "provenance": "RECONSTRUCTED_FROM_TRAINING_BYTECODE_NOT_HISTORICAL_FILE",
+      "input_source_sha256": "d9888da470a4a7993c494c934f6df4876fbb35d1c6f5bfcb088d3b19da778696",
+      "input_source_bytes": 2662,
+      "release_sha256": "d9888da470a4a7993c494c934f6df4876fbb35d1c6f5bfcb088d3b19da778696",
+      "release_bytes": 2662,
+      "training_pyc_sha256": "5a74f2fa34c6c686367da536cc91cc6802f167dc40010846de30f6932c7df2ae",
+      "training_header_source_bytes": 2761,
+      "filename_normalized_complete_code_sha256": "af304f61f39a5894101bdb6c174f9ee08738f29942e61fa65f15fe1cbbb7d437",
+      "complete_marshal_equal_except_filename": true,
+      "line_metadata_preserved": true,
+      "docstrings_preserved": true,
+      "comments_removed": 0,
+      "release_paths": [
+        "ours/research_snapshot/segment_anything/build_sam3D_cascade.py",
+        "baselines/source_snapshots/segment_anything/build_sam3D_cascade.py"
+      ]
+    }
+  ],
+  "marshal_serialization_version": 2,
+  "serialization_note": "Version 2 avoids reference-sharing encodings that can vary with process object identity/refcounts. Complete code-object fields and line metadata remain serialized and compared.",
+  "independent_builder_review": {
+    "status": "PASS",
+    "code_object_count": 6,
+    "original_and_recovered_stub_checks_each": 46,
+    "real_model_or_training_executed": false
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETE_FIXED_FINAL_NO_TARGET",
+  "group": "HQ",
+  "completed_epochs": 36,
+  "successful_updates": 684,
+  "attempted_updates": 684,
+  "metrics": {
+    "dice": 0.6690289753904912,
+    "jaccard": 0.5170638339104268,
+    "hd95": 10.300836260073766,
+    "asd": 2.62506461732859
+  },
+  "initializer_sha256": "b113d1731a8e535ff482bebe7c2ca0d821760d44e5ea02e59b33cae58557c4be",
+  "checkpoint_sha256": null,
+  "selection": "native_student_epoch35_fixed_final",
+  "ccbs_coefficient": 0.25,
+  "source_result_sha256": "a5b88d8e891f8e34656d5f76020ee365d70e4ff8d2ef76f8fbf532a2462df879",
+  "source_result_record": "HP_HQ_FINAL_20261106/results/HQ/result.json",
+  "historical_checkpoint_saved": false,
+  "independent_test": false,
+  "note": "CCBS=0.25 was development-tuned and accepted after full training; historical weight was not saved. This is not a matched removal of CCL."
+}

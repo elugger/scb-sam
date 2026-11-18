@@ -1,0 +1,30 @@
+{
+  "id": "Public433_scb_seg_n005",
+  "dataset": "Public433",
+  "method": "scb_seg",
+  "display_method": "SCB-SAM",
+  "labeled_cases": 5,
+  "fold": 2,
+  "seed": 2027,
+  "budget": {
+    "kind": "ssl_primary_inputs_per_stream",
+    "completed_epochs": 36,
+    "selected_epoch_one_based": 36,
+    "successful_updates": 2484,
+    "labeled_inputs": 12420,
+    "unlabeled_inputs": 12420,
+    "selected_updates": 2484,
+    "selected_labeled_inputs": 12420,
+    "selected_unlabeled_inputs": 12420,
+    "supervised_initialization": "separate_from_SSL_exposure",
+    "counts_source": "matching_original_completion_receipt; selected Public10 5100 pairs = 15*340 fixed source recipe"
+  },
+  "selection": "native_student_epoch35_fixed_final",
+  "metric_precision": "full_precision_from_original_matching_endpoint_receipt",
+  "notes": [
+    "Current matching full-precision endpoint receipt supersedes the old epoch11 reporting record.",
+    "Five-label: fixed36 endpoint. Ten-label: actual16 epochs, development-selected15th epoch.",
+    "Comparator recipes retain 11 reference cycles; total budget and selection differ."
+  ],
+  "runtime_status": "record_not_train_command"
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "experiment_id": "BY_dualteacher_sam_n010",
+  "dataset": "BY",
+  "fold": 2,
+  "labeled_cases": 10,
+  "seed": 2027,
+  "split": "splits/by/fold2_n010.json",
+  "budget": {
+    "kind": "ssl_primary_inputs_per_stream",
+    "cycles": 36,
+    "labeled_inputs": 3240,
+    "unlabeled_inputs": 3240,
+    "native_iterations": 1620,
+    "original_recorded_optimizer_updates": 1620,
+    "mandatory_prefix": null
+  },
+  "recipe": null,
+  "stage_recipe": null,
+  "source_contract_sha256": null,
+  "runtime_status": "recorded_recipe_not_yet_portable_training_entrypoint",
+  "selection": "fixed_terminal",
+  "notes": [
+    "Accepted fixed primary exposure; original BY table retained",
+    "BY legacy ledger optimizer count uses an older convention; do not silently equate it with corrected Public dual-optimizer accounting."
+  ]
+}

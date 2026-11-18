@@ -1,0 +1,463 @@
+{
+  "schema_version": 1,
+  "experiment_id": "Public433_dualteacher_sam_n010",
+  "dataset": "Public433",
+  "fold": 2,
+  "labeled_cases": 10,
+  "seed": 2027,
+  "split": "splits/public433/fold2_n010.json",
+  "budget": {
+    "kind": "ssl_primary_inputs_per_stream",
+    "cycles": 11,
+    "labeled_inputs": 3740,
+    "unlabeled_inputs": 3740,
+    "reference_inputs_per_stream": 3740,
+    "mandatory_prefix": null,
+    "optimizer_updates": 3740
+  },
+  "recipe": {
+    "labeled_cases": 10,
+    "unlabeled_cases": 336,
+    "primary_pairs_per_cycle": 340,
+    "reference_primary_inputs": 3740,
+    "ssl_iterations": 1870,
+    "primary_inputs_per_stream": 3740,
+    "overshoot_per_stream": 0,
+    "original_clock_iterations": 6120,
+    "original_sam_start_index": 184,
+    "prefix_updates": 0,
+    "effective_optimizer_updates": 3740,
+    "student_optimizer_updates": 1870,
+    "op_effective_updates": 1870,
+    "op_step_calls": 3740,
+    "terminal_selection": "fixed_terminal_EMA_plus_OP"
+  },
+  "stage_recipe": {
+    "method": "dualteacher_sam",
+    "dataset": "Public433",
+    "ratio": 10,
+    "fold": 2,
+    "seed": 2027,
+    "official_commit": "3710e3216db8bdb444296f0460eab9532b253848",
+    "implementation": "author-source adaptation with disclosed config/device and paper-equation5 SAM autodiff repair",
+    "official_root": "MACHINE_BINDING_REMOVED_SEE_PRIVATE_PROVENANCE",
+    "source_evidence": {
+      "train.py": {
+        "bytes": 17832,
+        "sha256": "5aa647cf1a46dec0c67e360cdb261ac3cdbd16cf38ed2d7350b62235facf3d78"
+      },
+      "dataset.py": {
+        "bytes": 17541,
+        "sha256": "5b8d12dfada61fea2503a76a5571bba3371c6826de644561eae042aca77eb40d"
+      },
+      "module_list.py": {
+        "bytes": 10780,
+        "sha256": "c31cec7876fdd8b0efaf271e1017d21f414cd7ad54ed5942336936b1c985ee9c"
+      },
+      "boundary_contrastive.py": {
+        "bytes": 18318,
+        "sha256": "b64b26f5f6f2a86e2af0bf5e4c84a6d903ff12393de5938d6baa288a66fea47a"
+      },
+      "Model/Unet.py": {
+        "bytes": 22344,
+        "sha256": "ef0054750b121dd65836cafed2299671b3126179b63173b4f1c86273bd3e59ed"
+      },
+      "validate.py": {
+        "bytes": 4753,
+        "sha256": "38552d6d94d8d129e211aaeeddf4791827ece79f60cf2f631e3f1c4c04eb3650"
+      },
+      "configs/config_25.json": {
+        "bytes": 658,
+        "sha256": "796caf600221da58ec1e5f474b6bcf02ec502da503686bb348b8a03142fd32ec"
+      },
+      "configs/config_50.json": {
+        "bytes": 747,
+        "sha256": "94192b466f36f314bb990e6edcc9022a127d28ef3ae8c5b8c7d95ba1bd5a0fd3"
+      }
+    },
+    "foundation": {
+      "at": "2026-10-21T01:30:51.929350",
+      "method": "dualteacher_sam",
+      "model_family": "SAM-Med3D_turbo",
+      "variant": "medim_SAM-Med3D",
+      "bytes": 402163626,
+      "sha256": "899a46d04d3b70f723282ceb489149373558bf0aaba389a346f5ab57da5cdd3c",
+      "model_state_keys": 324,
+      "strict_cpu_verified": true,
+      "finite": true,
+      "verification_receipt_sha256": "a6f93a37d7d8e7ccfcf64afaae07a70f2a6c97be4c9aed7848fc7c50bce36db3",
+      "provenance": "Existing local Turbo reused; no new download; separate own CPU strict/size/SHA binding, not ReLiF original"
+    },
+    "initialization": "seed2027_random_native_UNet_kMaX_and_op_plus_frozen_existing_Turbo",
+    "actual_native_batches": {
+      "labeled": 2,
+      "unlabeled": 2
+    },
+    "primary_pairs": 3740,
+    "native_iterations": 1870,
+    "native_reference": {
+      "epochs": 200,
+      "iterations_per_epoch": 200
+    },
+    "clock_policy": "retain_original_36_cycle_lr_ramp_clocks; cutoff_only",
+    "native_algorithm_config": {
+      "lr": 0.0025,
+      "weight_decay": 0.0005,
+      "apply_aug": "classmix",
+      "strong_threshold": 0.97,
+      "weak_threshold": 0.7,
+      "xi": 0.1,
+      "num_negatives": 512,
+      "num_queries": 256,
+      "temp": 0.5,
+      "mun_pro": 4
+    },
+    "explicit_config_repair": {
+      "use_dynamic_threshold": true,
+      "source": "author config_50.json"
+    },
+    "student": {
+      "feature_scale": 4,
+      "in_channels": 1,
+      "n_classes": 2,
+      "mun_pro": 4,
+      "num_queries": 16,
+      "query_dim": 64
+    },
+    "optimizer": {
+      "student": "SGD",
+      "op": "SGD",
+      "learning_rate": 0.0025,
+      "momentum": 0.9,
+      "weight_decay": 0.0005,
+      "nesterov": true,
+      "primary_student_updates": 1870,
+      "op_step_calls": 3740,
+      "op_effective_updates_expected": 1870,
+      "all_native_effective_optimizer_updates_expected": 3740,
+      "caveat": "Isolated existing Conda Torch2.0.1 zero_grad defaults set_to_none=True; OP first call has no gradients and no parameter update in every iteration. Both source step calls remain; actual deltas and environment are pinned."
+    },
+    "prototype": {
+      "boundary_temperature": 0.07,
+      "local_weight": 1.0,
+      "global_weight": 0.5,
+      "hard_weight": 0.5,
+      "boundary_loss_weight": 0.1,
+      "criterion_query_projection": "native initialized orthogonal projection remains outside native optimizers; save its state; model query/prototype parameters remain trainable"
+    },
+    "consistency": {
+      "weight": 0.5,
+      "uncertainty_mask": "preserve native raw-view mask behavior",
+      "ema_alpha": 0.99,
+      "teacher_mode": "train with no_grad; native parameter-only EMA update"
+    },
+    "sam": {
+      "weight": 0.1,
+      "start_native_epoch_exclusive": 5,
+      "points_per_case": 10,
+      "positive_points": 5,
+      "negative_points": 5,
+      "input_resize": [
+        128,
+        128,
+        128
+      ],
+      "native_output_resize": [
+        96,
+        96,
+        96
+      ],
+      "native_batch": 2,
+      "loss": "MSE student foreground vs continuous sigmoid SAM probability on native valid cases",
+      "autodiff_repair": "Native student/MSE four statements re-enabled under torch.enable_grad; external teacher target stays frozen",
+      "paper_equations": [
+        5,
+        10
+      ]
+    },
+    "preprocessing": {
+      "shared_roi": [
+        128,
+        128,
+        128
+      ],
+      "native_h5_numeric_equivalence": "unknown_not_claimed",
+      "gt_roi_disclosed": true,
+      "patient_alias_identity_unresolved": true,
+      "train": [
+        "shared ToCanonical+GT CropOrPad128 without added random flip",
+        "native RandomRotFlip",
+        "native minmax Normalise",
+        "native RandomBrightness(.75,1.25)",
+        "native RandomCrop96",
+        "native ToTensor"
+      ],
+      "unlabeled_targets": "shape-only zero placeholder for image/label joint geometric transforms, never GT returned or used in loss",
+      "test": [
+        "shared ToCanonical+GT CropOrPad128",
+        "native minmax Normalise",
+        "native EMA+op sliding window96 stride16"
+      ],
+      "native_minmax_constant_input_policy": "require finite; preserve failed sample and repair separately if encountered"
+    },
+    "fixed_endpoint": {
+      "selection": "fixed_terminal_EMA_plus_OP",
+      "native_inference_model": "author validation uses EMA model and op module",
+      "native_patch": [
+        96,
+        96,
+        96
+      ],
+      "native_stride": [
+        16,
+        16,
+        16
+      ],
+      "native_windows_per_shared_roi": 27,
+      "post_processing": false,
+      "test_case_count": 87,
+      "test_evaluations": 1,
+      "intermediate_validation": false,
+      "best_checkpoint_selection": false,
+      "early_stop": false,
+      "shared_case_metrics": "same pinned common binary_case_metrics with spacing(1,1,1)",
+      "repeated_test": false
+    },
+    "prefix_training_updates": 0,
+    "terminal_contains": [
+      "student",
+      "ema",
+      "op",
+      "criterion"
+    ],
+    "checkpoint_bound": 268435456,
+    "primary_budget_only": true,
+    "total_compute_matched": false,
+    "exact_resume_supported": true,
+    "process_environment": {
+      "PYTHONNOUSERSITE": "1",
+      "torch": "2.0.1+cu117",
+      "torchvision": "0.15.2+cu117",
+      "native_zero_grad_set_to_none_default": true
+    },
+    "labels_are_case_counts_not_percent": true,
+    "original_clock_iterations": 6120,
+    "source_native_BY_recipe": {
+      "method": "dualteacher_sam",
+      "dataset": "BY",
+      "ratio": 10,
+      "fold": 2,
+      "seed": 2027,
+      "official_commit": "3710e3216db8bdb444296f0460eab9532b253848",
+      "implementation": "author-source adaptation with disclosed config/device and paper-equation5 SAM autodiff repair",
+      "official_root": "MACHINE_BINDING_REMOVED_SEE_PRIVATE_PROVENANCE",
+      "source_evidence": {
+        "train.py": {
+          "bytes": 17832,
+          "sha256": "5aa647cf1a46dec0c67e360cdb261ac3cdbd16cf38ed2d7350b62235facf3d78"
+        },
+        "dataset.py": {
+          "bytes": 17541,
+          "sha256": "5b8d12dfada61fea2503a76a5571bba3371c6826de644561eae042aca77eb40d"
+        },
+        "module_list.py": {
+          "bytes": 10780,
+          "sha256": "c31cec7876fdd8b0efaf271e1017d21f414cd7ad54ed5942336936b1c985ee9c"
+        },
+        "boundary_contrastive.py": {
+          "bytes": 18318,
+          "sha256": "b64b26f5f6f2a86e2af0bf5e4c84a6d903ff12393de5938d6baa288a66fea47a"
+        },
+        "Model/Unet.py": {
+          "bytes": 22344,
+          "sha256": "ef0054750b121dd65836cafed2299671b3126179b63173b4f1c86273bd3e59ed"
+        },
+        "validate.py": {
+          "bytes": 4753,
+          "sha256": "38552d6d94d8d129e211aaeeddf4791827ece79f60cf2f631e3f1c4c04eb3650"
+        },
+        "configs/config_25.json": {
+          "bytes": 658,
+          "sha256": "796caf600221da58ec1e5f474b6bcf02ec502da503686bb348b8a03142fd32ec"
+        },
+        "configs/config_50.json": {
+          "bytes": 747,
+          "sha256": "94192b466f36f314bb990e6edcc9022a127d28ef3ae8c5b8c7d95ba1bd5a0fd3"
+        }
+      },
+      "foundation": {
+        "at": "2026-10-21T01:30:51.929350",
+        "method": "dualteacher_sam",
+        "model_family": "SAM-Med3D_turbo",
+        "variant": "medim_SAM-Med3D",
+        "bytes": 402163626,
+        "sha256": "899a46d04d3b70f723282ceb489149373558bf0aaba389a346f5ab57da5cdd3c",
+        "model_state_keys": 324,
+        "strict_cpu_verified": true,
+        "finite": true,
+        "verification_receipt_sha256": "a6f93a37d7d8e7ccfcf64afaae07a70f2a6c97be4c9aed7848fc7c50bce36db3",
+        "provenance": "Existing local Turbo reused; no new download; separate own CPU strict/size/SHA binding, not ReLiF original"
+      },
+      "initialization": "seed2027_random_native_UNet_kMaX_and_op_plus_frozen_existing_Turbo",
+      "actual_native_batches": {
+        "labeled": 2,
+        "unlabeled": 2
+      },
+      "primary_pairs": 3240,
+      "native_iterations": 1620,
+      "native_reference": {
+        "epochs": 200,
+        "iterations_per_epoch": 200
+      },
+      "clock_policy": "floor(200*native_iteration/fixed_native_iterations); native epoch schedules retained",
+      "native_algorithm_config": {
+        "lr": 0.0025,
+        "weight_decay": 0.0005,
+        "apply_aug": "classmix",
+        "strong_threshold": 0.97,
+        "weak_threshold": 0.7,
+        "xi": 0.1,
+        "num_negatives": 512,
+        "num_queries": 256,
+        "temp": 0.5,
+        "mun_pro": 4
+      },
+      "explicit_config_repair": {
+        "use_dynamic_threshold": true,
+        "source": "author config_50.json"
+      },
+      "student": {
+        "feature_scale": 4,
+        "in_channels": 1,
+        "n_classes": 2,
+        "mun_pro": 4,
+        "num_queries": 16,
+        "query_dim": 64
+      },
+      "optimizer": {
+        "student": "SGD",
+        "op": "SGD",
+        "learning_rate": 0.0025,
+        "momentum": 0.9,
+        "weight_decay": 0.0005,
+        "nesterov": true,
+        "primary_student_updates": 1620,
+        "op_step_calls": 3240,
+        "op_effective_updates_expected": 1620,
+        "all_native_effective_optimizer_updates_expected": 3240,
+        "caveat": "Isolated existing Conda Torch2.0.1 zero_grad defaults set_to_none=True; OP first call has no gradients and no parameter update in every iteration. Both source step calls remain; actual deltas and environment are pinned."
+      },
+      "prototype": {
+        "boundary_temperature": 0.07,
+        "local_weight": 1.0,
+        "global_weight": 0.5,
+        "hard_weight": 0.5,
+        "boundary_loss_weight": 0.1,
+        "criterion_query_projection": "native initialized orthogonal projection remains outside native optimizers; save its state; model query/prototype parameters remain trainable"
+      },
+      "consistency": {
+        "weight": 0.5,
+        "uncertainty_mask": "preserve native raw-view mask behavior",
+        "ema_alpha": 0.99,
+        "teacher_mode": "train with no_grad; native parameter-only EMA update"
+      },
+      "sam": {
+        "weight": 0.1,
+        "start_native_epoch_exclusive": 5,
+        "points_per_case": 10,
+        "positive_points": 5,
+        "negative_points": 5,
+        "input_resize": [
+          128,
+          128,
+          128
+        ],
+        "native_output_resize": [
+          96,
+          96,
+          96
+        ],
+        "native_batch": 2,
+        "loss": "MSE student foreground vs continuous sigmoid SAM probability on native valid cases",
+        "autodiff_repair": "Native student/MSE four statements re-enabled under torch.enable_grad; external teacher target stays frozen",
+        "paper_equations": [
+          5,
+          10
+        ]
+      },
+      "preprocessing": {
+        "shared_roi": [
+          128,
+          128,
+          128
+        ],
+        "native_h5_numeric_equivalence": "unknown_not_claimed",
+        "gt_roi_disclosed": true,
+        "patient_alias_identity_unresolved": true,
+        "train": [
+          "shared ToCanonical+GT CropOrPad128 without added random flip",
+          "native RandomRotFlip",
+          "native minmax Normalise",
+          "native RandomBrightness(.75,1.25)",
+          "native RandomCrop96",
+          "native ToTensor"
+        ],
+        "unlabeled_targets": "shape-only zero placeholder for image/label joint geometric transforms, never GT returned or used in loss",
+        "test": [
+          "shared ToCanonical+GT CropOrPad128",
+          "native minmax Normalise",
+          "native EMA+op sliding window96 stride16"
+        ],
+        "native_minmax_constant_input_policy": "require finite; preserve failed sample and repair separately if encountered"
+      },
+      "fixed_endpoint": {
+        "selection": "fixed_terminal_EMA_plus_OP",
+        "native_inference_model": "author validation uses EMA model and op module",
+        "native_patch": [
+          96,
+          96,
+          96
+        ],
+        "native_stride": [
+          16,
+          16,
+          16
+        ],
+        "native_windows_per_shared_roi": 27,
+        "post_processing": false,
+        "test_case_count": 25,
+        "test_evaluations": 1,
+        "intermediate_validation": false,
+        "best_checkpoint_selection": false,
+        "early_stop": false,
+        "shared_case_metrics": "same pinned common binary_case_metrics with spacing(1,1,1)",
+        "repeated_test": false
+      },
+      "prefix_training_updates": 0,
+      "terminal_contains": [
+        "student",
+        "ema",
+        "op",
+        "criterion"
+      ],
+      "checkpoint_bound": 268435456,
+      "primary_budget_only": true,
+      "total_compute_matched": false,
+      "exact_resume_supported": false,
+      "process_environment": {
+        "PYTHONNOUSERSITE": "1",
+        "torch": "2.0.1+cu117",
+        "torchvision": "0.15.2+cu117",
+        "native_zero_grad_set_to_none_default": true
+      }
+    }
+  },
+  "source_contract_sha256": "3c36cf039e790173ce0aa507a2467f81ab9fdf8ace1a5f6d626e7cd5000dd3b6",
+  "runtime_status": "recorded_recipe_not_yet_portable_training_entrypoint",
+  "selection": "fixed_terminal",
+  "notes": [
+    "Accepted fixed11 primary exposure",
+    "STRICT_FP32_CPU_ATEN_UNSUPPORTED_KERNELS_V3",
+    "CUDA resize/pool forward retained; CPU ATen backward and CPU CE/NLL/float cumsum; CPU transfers, rounding and extra computation differ from full GPU native path."
+  ]
+}

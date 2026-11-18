@@ -1,0 +1,100 @@
+{
+  "audit_date": "2026-11-12",
+  "source": "actual_read_only_imports_from_original_server",
+  "cuda_initialized": false,
+  "training_started": false,
+  "clean_environment": false,
+  "packages": [
+    {
+      "distribution": "torch",
+      "metadata_version": "1.12.1+cu113",
+      "import_passed": true,
+      "module_version": "1.12.1+cu113",
+      "cuda_version": "11.3",
+      "cuda_initialized": false,
+      "import_location": "user_site"
+    },
+    {
+      "distribution": "torchvision",
+      "metadata_version": "0.13.1+cu113",
+      "import_passed": true,
+      "module_version": "0.13.1+cu113",
+      "import_location": "user_site"
+    },
+    {
+      "distribution": "numpy",
+      "metadata_version": "1.26.4",
+      "import_passed": true,
+      "module_version": "1.26.4",
+      "import_location": "user_site"
+    },
+    {
+      "distribution": "scipy",
+      "metadata_version": "1.15.3",
+      "import_passed": true,
+      "module_version": "1.15.3",
+      "import_location": "user_site"
+    },
+    {
+      "distribution": "torchio",
+      "metadata_version": "1.0.2",
+      "import_passed": true,
+      "module_version": "1.0.2",
+      "import_location": "user_site"
+    },
+    {
+      "distribution": "nibabel",
+      "metadata_version": "5.4.2",
+      "import_passed": true,
+      "module_version": "5.4.2",
+      "import_location": "conda_environment"
+    },
+    {
+      "distribution": "SimpleITK",
+      "metadata_version": "2.5.3",
+      "import_passed": true,
+      "module_version": "2.5.3",
+      "import_location": "conda_environment"
+    },
+    {
+      "distribution": "surface-distance",
+      "metadata_version": "0.1",
+      "import_passed": true,
+      "module_version": "0.1",
+      "import_location": "user_site"
+    },
+    {
+      "distribution": "einops",
+      "metadata_version": "0.8.2",
+      "import_passed": true,
+      "module_version": "0.8.2",
+      "import_location": "user_site"
+    },
+    {
+      "distribution": "timm",
+      "metadata_version": "1.0.22",
+      "import_passed": true,
+      "module_version": "1.0.22",
+      "import_location": "conda_environment"
+    },
+    {
+      "distribution": "PyYAML",
+      "metadata_version": "6.0.3",
+      "import_passed": true,
+      "module_version": "6.0.3",
+      "import_location": "conda_environment"
+    }
+  ],
+  "historical_torch_evidence": [
+    {
+      "relative_path": "expes/work_dir/semi05_gate/BY5_FOUR_ARM_RERUN_20261030/four_arm_control/preparation.json",
+      "sha256": "35da59c8a68ec350de249941f1f63d23042f5daa45bc3815efcc17d363a38a58",
+      "fields": {
+        "status": "PREPARED_NO_TRAINING",
+        "torch_version": "1.12.1+cu113",
+        "python_version": "3.10.18 (main, Jun  5 2025, 13:14:17) [GCC 11.2.0]"
+      }
+    }
+  ],
+  "scope": "Current import resolution; only the historical torch field is bound to its old preparation receipt. Other versions are not asserted to have been unchanged since training."
+}

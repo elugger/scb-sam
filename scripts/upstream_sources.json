@@ -1,0 +1,1799 @@
+{
+  "schema_version": 1,
+  "scope": "Exact byte matches only; no permission grant or training qualification implied",
+  "files": [
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/attention.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/attention.py",
+      "bytes": 3104,
+      "sha256": "451fba9d824ec52620986093083c65c8594d24b6b9f27fae798b33feec97e178"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/attention_unet.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/attention_unet.py",
+      "bytes": 6336,
+      "sha256": "422339afec2d4a1521f4e246ff73c8b1afd97233d92e19a258dd1c280eee8111"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/config.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/config.py",
+      "bytes": 7355,
+      "sha256": "393bf83ee078d7f8dcd2dd3e166cfa8720e943cd36c88b44820c151787e1d7c9"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/discriminator.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/discriminator.py",
+      "bytes": 3133,
+      "sha256": "65f880a006884a5d9eafc0440408c0265d7934b86ec34bc291fc49e37521d255"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/efficient_encoder.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/efficient_encoder.py",
+      "bytes": 17641,
+      "sha256": "fbe80bfb404dafe8769623649168e0b7d5653b2c6fe1c03e9ff23c2714c6f5cd"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/efficientunet.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/efficientunet.py",
+      "bytes": 7930,
+      "sha256": "895fcfc518acc721d6340287fc2c66c0ee09ee0e7e779db3a054a80fad6638d1"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/encoder_tool.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/encoder_tool.py",
+      "bytes": 6765,
+      "sha256": "b6111378a78cee198c183f585e04ca7c9e11ccab9a1d28e8b7e2943a65a65037"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/enet.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/enet.py",
+      "bytes": 22927,
+      "sha256": "0d0c9170b8995505d1c46fd96e456f415b3d6df1b12b56fb9b67e956b77280c6"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/grid_attention_layer.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/grid_attention_layer.py",
+      "bytes": 16619,
+      "sha256": "620603aa50e664550de2938be23f8e73f855396ba87aa7c474d7ff4ab2d31d55"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/net_factory.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/net_factory.py",
+      "bytes": 4746,
+      "sha256": "9751000cad949e063c57bbb9736cd8a7423518ef597e8949534810c10cca3629"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/net_factory_3d.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/net_factory_3d.py",
+      "bytes": 1089,
+      "sha256": "ca1d0f1a8ecd3ebd39d9c3af4951347ed56416b96fb54bfd784493b084552894"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/networks_other.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/networks_other.py",
+      "bytes": 20202,
+      "sha256": "a1a84a44358a4696ce3ba58501393481794e99a64e1640a36f04b7f595a8d0ef"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/neural_network.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/neural_network.py",
+      "bytes": 45370,
+      "sha256": "b197b00906ea8945db6d6333c00140f54414bbf9f3db392595fe51402f8e0f5a"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/nnunet.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/nnunet.py",
+      "bytes": 23919,
+      "sha256": "031edae38d583a7f9a3b2a49d78448ea6eacf645aa3be2bd2e25a1efcb12a98c"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/pnet.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/pnet.py",
+      "bytes": 4200,
+      "sha256": "af12b50868b07ca61b654e9108eaf9febe5da6723119539171690a4593ffff04"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/swin_transformer_unet_skip_expand_decoder_sys.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/swin_transformer_unet_skip_expand_decoder_sys.py",
+      "bytes": 33208,
+      "sha256": "6b8ff3627060f5b875ef1a96ddd3a699d77dcc82b9fefcf197e050283d850f7f"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/unet.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/unet.py",
+      "bytes": 13801,
+      "sha256": "2d944d06d9818119df0c258625c69813e571caa06668cb4de7fbcb53c0cd7f72"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/unet_3D.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/unet_3D.py",
+      "bytes": 3621,
+      "sha256": "665ceff184005d2521b2a977d6fcf5a75f95e92cd7b9a0677cbade4bf2d79900"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/unet_3D_dv_semi.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/unet_3D_dv_semi.py",
+      "bytes": 3865,
+      "sha256": "33a7f7b4dcd0ef663bb147b372ecfa7aae2e73b44bc9ee2f6f049f47858f5358"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/unet_3D_sdf.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/unet_3D_sdf.py",
+      "bytes": 3799,
+      "sha256": "a99b67a2ec6abdc507506ad6a79e5d20f60ac1206005de69f4f09767a8d6a155"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/utils.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/utils.py",
+      "bytes": 18130,
+      "sha256": "e9fa0fcda2f42a100281e442acf5b4e674004cae5e8a5ad83b4fe4236f039846"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/vision_transformer.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/vision_transformer.py",
+      "bytes": 3981,
+      "sha256": "90a8937cd93ed4841fa5c442556bf439cfc4e36170acf65dca83bd7cb8774483"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/vnet.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/vnet.py",
+      "bytes": 9541,
+      "sha256": "9f06ef331999dfefd17bbf274ea9ad48a7bc614a4b14f26b202018072e6e1657"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/networks/VoxResNet.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/VoxResNet.py",
+      "bytes": 3637,
+      "sha256": "a81ab5f9072b9766e69f86d40c5337bdb8cebc439b6c53b7a76eac3024f93ed5"
+    },
+    {
+      "component": "semisam",
+      "repository": "YichiZhang98/SemiSAM",
+      "revision": "e64707fcb0b9c5ea4482fa287957558327dcd75e",
+      "upstream_path": "code_semisam+/utils/click_method.py",
+      "local_path": "baselines/source_snapshots/SemiSAM-main/code_semisam+/utils/click_method.py",
+      "bytes": 7695,
+      "sha256": "a7e07b3033a7f6ebbea753a94d0ef45cb5c037a2fefdaf8a1412acc9e41936e5"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/ACDC_train.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/ACDC_train.py",
+      "bytes": 28735,
+      "sha256": "a480f3bb8021e507a8f686f512717f40d13ffed0e7f8837d4c5b735b7233cafd"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/dataloaders/dataset.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/dataloaders/dataset.py",
+      "bytes": 16071,
+      "sha256": "b2fce5090478d15c754e9fd1f908b061f008baec4a539bbc2b8a284d87da449e"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/dataloaders/la_heart_processing.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/dataloaders/la_heart_processing.py",
+      "bytes": 1653,
+      "sha256": "38af09dca7e1bccd3efb767f5862cdd25873242a1106f91640e5be3aed2a07ea"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/dataloaders/LADataset.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/dataloaders/LADataset.py",
+      "bytes": 7623,
+      "sha256": "24400bee0cf5880d4504c6604cae82e349328bc61e781464d1c9850e818d4d89"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/LA_train.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/LA_train.py",
+      "bytes": 20595,
+      "sha256": "f45e69a1eea88f3556a6ecd31a5d88cd659487b6a5d37f20c395db556ca083d6"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/networks/git_VNet.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/networks/git_VNet.py",
+      "bytes": 10314,
+      "sha256": "65f9b1de748ec13619da5408b0adec3a750e491ec94a99dad839bdbdd212ad5f"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/networks/net_factory.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/networks/net_factory.py",
+      "bytes": 559,
+      "sha256": "a74fbf69ca1f348bff1dce084e12dc1dc9966ccd1c3a02b85b3ec6e0f6edc8e0"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/networks/resnet.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/networks/resnet.py",
+      "bytes": 14359,
+      "sha256": "422601a90dfa01c2a5b8f43aadaf6c60dca114a666b998a4aa8d2927b7ac98de"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/networks/ResNet2d.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/networks/ResNet2d.py",
+      "bytes": 19472,
+      "sha256": "bb131c55a26277bc7b26849617ac3cb0cc7e27fc6e6727c20259f0ccb693419c"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/networks/resnet3d.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/networks/resnet3d.py",
+      "bytes": 8975,
+      "sha256": "ec776b2e62c00269834210136e0fc9bfc5b32f5ef02e6687c45e45a4b2e16bff"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/networks/ResVNet.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/networks/ResVNet.py",
+      "bytes": 7252,
+      "sha256": "8a16c0e3f5239ab327cb0842fa023f3bfbe0ff06a3a5778f42638f2af2bc8d0c"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/networks/unet.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/networks/unet.py",
+      "bytes": 19508,
+      "sha256": "b2ed1cf169002df642032f3a08e5e7011871933e41f58cc7f82d24064b1f26ef"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/networks/Unet3D.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/networks/Unet3D.py",
+      "bytes": 9917,
+      "sha256": "0140d86a52ea7eb9461f90cb526b73de9747ece4acfaab111737824561d6c22b"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/networks/unetr.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/networks/unetr.py",
+      "bytes": 14569,
+      "sha256": "85a87ab3c89d350c8f58f17b1ef63a8c3f33754dc36f368a9617b849d0033e05"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/networks/VNet.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/networks/VNet.py",
+      "bytes": 11890,
+      "sha256": "b2911f107484a2b16f0bd674ec3914e78d820d6a243fa314a7754b8f55df40da"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/pancreas/dataloaders.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/pancreas/dataloaders.py",
+      "bytes": 8263,
+      "sha256": "87da2dd86c7b9541bc872786a7d7c117e377f6e92ae85e9031e7731368ec896c"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/pancreas/Pancreas_train.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/pancreas/Pancreas_train.py",
+      "bytes": 13573,
+      "sha256": "862cc949e295246c0ccebd9cff406c888a0c972d5cd3e2e61e6ee9009496fa7c"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/pancreas/resnet.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/pancreas/resnet.py",
+      "bytes": 8975,
+      "sha256": "ec776b2e62c00269834210136e0fc9bfc5b32f5ef02e6687c45e45a4b2e16bff"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/pancreas/ResVNet.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/pancreas/ResVNet.py",
+      "bytes": 7241,
+      "sha256": "3625189a323a637952adf860b9b5f3454eb60e5d0c9c24ddb4bfb00589e7cb94"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/pancreas/statistic.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/pancreas/statistic.py",
+      "bytes": 5690,
+      "sha256": "2b09b10f493dac47cca3eff397f5ca04fe72bc2b95b1a3ff8aa1c3f677a1ec1f"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/pancreas/test_Pancreas.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/pancreas/test_Pancreas.py",
+      "bytes": 1749,
+      "sha256": "65160915b4d71f268f27520a0a02c4497c9541e784ed93d1da228ea99891bdfc"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/pancreas/Vnet.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/pancreas/Vnet.py",
+      "bytes": 7143,
+      "sha256": "3a9e85243d17387fe489b265b3dd502fe1456c47bb96d04aef49e522a545ea28"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/test_ACDC.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/test_ACDC.py",
+      "bytes": 10648,
+      "sha256": "1eb2c7ce856ce9a88e894cf35f821257dcf4546f451a9c8ca7416a4f8fa87be8"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/test_LA.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/test_LA.py",
+      "bytes": 3689,
+      "sha256": "294f8186e29e624a3ea4aba9214dc65a55befff81288bbc9f91c701e09bc9be9"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/utils/BCP_utils.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/utils/BCP_utils.py",
+      "bytes": 6115,
+      "sha256": "21a530c6610645a4ff47de2e8fb4df98f7728cc07f625455c3c29ef4c25b34b6"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/utils/contrastive_losses.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/utils/contrastive_losses.py",
+      "bytes": 3263,
+      "sha256": "cbffade8dd0ac6e09cc0e794d924df1714ca40484121bc7f6ae860823f53fb93"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/utils/feature_memory.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/utils/feature_memory.py",
+      "bytes": 2429,
+      "sha256": "16e19440cc97b8d61eeb94b4436e802515fa18b3cd93d54bf0dd0c877a67959c"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/utils/losses.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/utils/losses.py",
+      "bytes": 14004,
+      "sha256": "970d089915ac28c789145e77881fe5979de754c29dd660b4dac1bbd724773069"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/utils/metrics.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/utils/metrics.py",
+      "bytes": 1293,
+      "sha256": "7ffb3af7044a7b3e428bb8aeb1308e7ab6e9453985940f0880ecca39387705cc"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/utils/ramps.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/utils/ramps.py",
+      "bytes": 1334,
+      "sha256": "c8da5d80a4deb4c3424ee4ee0af005b01f884e45ecb8ee8647313463ce09f910"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/utils/test_3d_patch.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/utils/test_3d_patch.py",
+      "bytes": 17692,
+      "sha256": "cf1b2ef2292ec7d79e3cc67e0ebd327df5087b5cab9c0f3361a283a0a55ec4de"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/utils/val_2d.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/utils/val_2d.py",
+      "bytes": 3824,
+      "sha256": "d2d28263785122430d97fb6a2720880618a1d3e357dc48273be3a50242c93b52"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/dataloaders/dataset.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/dataloaders/dataset.py",
+      "bytes": 14324,
+      "sha256": "e7af7245d993acc4ee00575eb1fdd0081dd5746573aae08595e877edad9d0790"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/networks/hierarchical_vnet.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/networks/hierarchical_vnet.py",
+      "bytes": 9872,
+      "sha256": "b1a06a3b4cb1dbc7ee948b0033a66abe7e0d107903339a00830c3105d1d25f5d"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/sam_lora_image_encoder.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/sam_lora_image_encoder.py",
+      "bytes": 7171,
+      "sha256": "b3b8e9d1aabaf6555a872e4cb8ca3f3b1f76a5cb12d7c95143fcda4d39714a79"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/segment_anything_lora/__init__.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/segment_anything_lora/__init__.py",
+      "bytes": 427,
+      "sha256": "c8d8eb649610b2d51f138481a89617a3dcb61106465121dcb1c2f23affc84c30"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/segment_anything_lora/automatic_mask_generator.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/segment_anything_lora/automatic_mask_generator.py",
+      "bytes": 15132,
+      "sha256": "c818960c61c4f51d3f5a2286034d4b5f491e05ab1e84f3155756d9d031375d01"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/segment_anything_lora/build_sam.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/segment_anything_lora/build_sam.py",
+      "bytes": 5887,
+      "sha256": "6d7153d284b186a0dbfb8cf4513f66342c8bdd44e320d341eeb6dbf86073a60e"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/segment_anything_lora/modeling/__init__.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/segment_anything_lora/modeling/__init__.py",
+      "bytes": 385,
+      "sha256": "47f6363b86c0bfaa7a6abf723975136d17fae4a5f002d2814a5cce8834d18980"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/segment_anything_lora/modeling/common.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/segment_anything_lora/modeling/common.py",
+      "bytes": 1479,
+      "sha256": "59a53bfa5d0a4d446df7f2bb57d2e95808b130601592b934600fb663d256ce17"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/segment_anything_lora/modeling/image_encoder.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/segment_anything_lora/modeling/image_encoder.py",
+      "bytes": 14580,
+      "sha256": "83778a1777386bb732f4dad6833ebe5f464c5ef5a43c339e76a37be73e11fc46"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/segment_anything_lora/modeling/mask_decoder.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/segment_anything_lora/modeling/mask_decoder.py",
+      "bytes": 6762,
+      "sha256": "b68331d56579f05b65ddce2547581b2dfe8988c2503b31c94106e7e4eb1cd102"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/segment_anything_lora/modeling/prompt_encoder.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/segment_anything_lora/modeling/prompt_encoder.py",
+      "bytes": 8615,
+      "sha256": "162ed40ba4b7021e3659f41b761c953cbb8eab83bf1f279c00c39964984c9052"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/segment_anything_lora/modeling/sam.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/segment_anything_lora/modeling/sam.py",
+      "bytes": 8560,
+      "sha256": "8720f100148d1319298b7d556ba941393109d8878732d1fab490f7c310239314"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/segment_anything_lora/modeling/transformer.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/segment_anything_lora/modeling/transformer.py",
+      "bytes": 8396,
+      "sha256": "680c463c365bacb9304468f91addc8131d8de8aeb96bfc3e39ebb365f01a29a0"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/segment_anything_lora/predictor.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/segment_anything_lora/predictor.py",
+      "bytes": 11635,
+      "sha256": "7a97015cb3ea812c8c389e88cbab53fcfa825c19506a5240b4e26b723f3681c4"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/segment_anything_lora/utils/__init__.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/segment_anything_lora/utils/__init__.py",
+      "bytes": 197,
+      "sha256": "34bd8069c54764e7b8d73a78905dbe6467140a2f73170875128f6ca4d8cdd0aa"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/segment_anything_lora/utils/amg.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/segment_anything_lora/utils/amg.py",
+      "bytes": 12711,
+      "sha256": "ba333540bf125fe5fe06396e9f1bcc53f603caa21856db6223b1e89a1c56b2c2"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/segment_anything_lora/utils/onnx.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/segment_anything_lora/utils/onnx.py",
+      "bytes": 5790,
+      "sha256": "6f939eb882441220f0b2700527e9048770cde34cee8f402fa75ae91a2e16708c"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/segment_anything_lora/utils/transforms.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/segment_anything_lora/utils/transforms.py",
+      "bytes": 3968,
+      "sha256": "5d64e083cc0f68dc59c20d75f49a21b306a772b8a35560b3287b5084a9e7711a"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/test_singleclass.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/test_singleclass.py",
+      "bytes": 4595,
+      "sha256": "f9aa595a008d85f3df90f2296e9514b8a8975a0cc124d57be24b6708c5be67e3"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/test_util_singleclass.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/test_util_singleclass.py",
+      "bytes": 5464,
+      "sha256": "c5992565329e4b96e8d2ff9ec53a5cc06ae472d2cc4f91dbff28b27a785091a2"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/train_finetuning.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/train_finetuning.py",
+      "bytes": 13105,
+      "sha256": "02af504346c0eaa69504a4de66cb92e9e88efae7cc85cb82470052134550bdfc"
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/utils/ramps.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/utils/ramps.py",
+      "bytes": 1319,
+      "sha256": "272621382935891d236b5d951e3a3a7e6fe3f4d7913fd9eed4b7d47194322862"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/dataloaders/brats2019.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/dataloaders/brats2019.py",
+      "bytes": 8820,
+      "sha256": "dbc1ecd35600366e58d8a1bbf95d713043462b3230edd7fbfd391bbbee1f9269"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/dataloaders/la.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/dataloaders/la.py",
+      "bytes": 8872,
+      "sha256": "edbb62d1567246b72b3c1b08a0357a9f33e8d8ceb2c4cd72c02e916c5173d267"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/dataloaders/utils.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/dataloaders/utils.py",
+      "bytes": 6731,
+      "sha256": "9999b143d5dd36496a3424d76c405eefa990fbd7166f760dfbcd6dc960e98311"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/losses.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/losses.py",
+      "bytes": 9965,
+      "sha256": "4b3584406b02f7d00e08892cde7975137479a5e28f2f5f36525114f25fdcf9a0"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/attention.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/attention.py",
+      "bytes": 3104,
+      "sha256": "451fba9d824ec52620986093083c65c8594d24b6b9f27fae798b33feec97e178"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/attention_unet.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/attention_unet.py",
+      "bytes": 6336,
+      "sha256": "422339afec2d4a1521f4e246ff73c8b1afd97233d92e19a258dd1c280eee8111"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/config.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/config.py",
+      "bytes": 7355,
+      "sha256": "393bf83ee078d7f8dcd2dd3e166cfa8720e943cd36c88b44820c151787e1d7c9"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/discriminator.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/discriminator.py",
+      "bytes": 3133,
+      "sha256": "65f880a006884a5d9eafc0440408c0265d7934b86ec34bc291fc49e37521d255"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/efficient_encoder.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/efficient_encoder.py",
+      "bytes": 17641,
+      "sha256": "fbe80bfb404dafe8769623649168e0b7d5653b2c6fe1c03e9ff23c2714c6f5cd"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/efficientunet.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/efficientunet.py",
+      "bytes": 7930,
+      "sha256": "895fcfc518acc721d6340287fc2c66c0ee09ee0e7e779db3a054a80fad6638d1"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/encoder_tool.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/encoder_tool.py",
+      "bytes": 6765,
+      "sha256": "b6111378a78cee198c183f585e04ca7c9e11ccab9a1d28e8b7e2943a65a65037"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/enet.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/enet.py",
+      "bytes": 22927,
+      "sha256": "0d0c9170b8995505d1c46fd96e456f415b3d6df1b12b56fb9b67e956b77280c6"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/grid_attention_layer.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/grid_attention_layer.py",
+      "bytes": 16619,
+      "sha256": "620603aa50e664550de2938be23f8e73f855396ba87aa7c474d7ff4ab2d31d55"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/net_factory.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/net_factory.py",
+      "bytes": 4746,
+      "sha256": "9751000cad949e063c57bbb9736cd8a7423518ef597e8949534810c10cca3629"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/net_factory_3d.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/net_factory_3d.py",
+      "bytes": 1163,
+      "sha256": "b9bfa7df4410410912b165d758f3262d8900c0e158590d5650b1c7abfb751848"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/networks_other.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/networks_other.py",
+      "bytes": 20202,
+      "sha256": "a1a84a44358a4696ce3ba58501393481794e99a64e1640a36f04b7f595a8d0ef"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/neural_network.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/neural_network.py",
+      "bytes": 45370,
+      "sha256": "b197b00906ea8945db6d6333c00140f54414bbf9f3db392595fe51402f8e0f5a"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/nnunet.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/nnunet.py",
+      "bytes": 23919,
+      "sha256": "031edae38d583a7f9a3b2a49d78448ea6eacf645aa3be2bd2e25a1efcb12a98c"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/pnet.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/pnet.py",
+      "bytes": 4200,
+      "sha256": "af12b50868b07ca61b654e9108eaf9febe5da6723119539171690a4593ffff04"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/swin_transformer_unet_skip_expand_decoder_sys.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/swin_transformer_unet_skip_expand_decoder_sys.py",
+      "bytes": 33208,
+      "sha256": "6b8ff3627060f5b875ef1a96ddd3a699d77dcc82b9fefcf197e050283d850f7f"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/unet.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/unet.py",
+      "bytes": 13801,
+      "sha256": "2d944d06d9818119df0c258625c69813e571caa06668cb4de7fbcb53c0cd7f72"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/unet_3D.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/unet_3D.py",
+      "bytes": 4237,
+      "sha256": "a7701a5109b7be61b9009349b589442f69f5f256a3d3c7ff52340a235c440be8"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/unet_3D_dv_semi.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/unet_3D_dv_semi.py",
+      "bytes": 3865,
+      "sha256": "33a7f7b4dcd0ef663bb147b372ecfa7aae2e73b44bc9ee2f6f049f47858f5358"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/unet_3D_sdf.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/unet_3D_sdf.py",
+      "bytes": 3799,
+      "sha256": "a99b67a2ec6abdc507506ad6a79e5d20f60ac1206005de69f4f09767a8d6a155"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/utils.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/utils.py",
+      "bytes": 18130,
+      "sha256": "e9fa0fcda2f42a100281e442acf5b4e674004cae5e8a5ad83b4fe4236f039846"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/vision_transformer.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/vision_transformer.py",
+      "bytes": 3981,
+      "sha256": "90a8937cd93ed4841fa5c442556bf439cfc4e36170acf65dca83bd7cb8774483"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/vnet.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/vnet.py",
+      "bytes": 9541,
+      "sha256": "9f06ef331999dfefd17bbf274ea9ad48a7bc614a4b14f26b202018072e6e1657"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/networks/VoxResNet.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/VoxResNet.py",
+      "bytes": 3637,
+      "sha256": "a81ab5f9072b9766e69f86d40c5337bdb8cebc439b6c53b7a76eac3024f93ed5"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/__init__.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/__init__.py",
+      "bytes": 275,
+      "sha256": "b8768d82c9fee24af257661e5feebd7b19493495c49d7d9ea15bf0466585e2f9"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/build_sam3D.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/build_sam3D.py",
+      "bytes": 4697,
+      "sha256": "4db61165352f7bd8e34ae0efe3dfb3eb4a614c509c06685069d6c273cce9ae36"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/modeling/__init__.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/modeling/__init__.py",
+      "bytes": 374,
+      "sha256": "75bf6ad6b9dfa991b714c7a3778c00c89786d86db52cce8274f494eac50bb484"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/modeling/image_encoder3D.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/modeling/image_encoder3D.py",
+      "bytes": 16454,
+      "sha256": "89a41e84374b96d7e48a476377bb84542ce30ffaaa331dde2566651980974e01"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/modeling/mask_decoder3D.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/modeling/mask_decoder3D.py",
+      "bytes": 16472,
+      "sha256": "95ee738d7690e8131434be32ae97a60cb3f2dd1eacf52a4c5f9f4ccef2e7eb4a"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/modeling/prompt_encoder3D.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/modeling/prompt_encoder3D.py",
+      "bytes": 9365,
+      "sha256": "c1c326cc41bd1c0949227603e4de551e97a84f1c0603ee2b300c2e60ff1e33de"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/modeling/sam3D.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/modeling/sam3D.py",
+      "bytes": 7319,
+      "sha256": "cc85c19edae9cd79842fb03afd95f2ff5d2d9a526893178b991e33bb5208b84d"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/utils/__init__.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/utils/__init__.py",
+      "bytes": 27,
+      "sha256": "6bc9f33c18dcf856bae755c5156266d52f46767016d7590a6f48438e57b3238c"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/utils/transforms3D.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/utils/transforms3D.py",
+      "bytes": 3974,
+      "sha256": "4b924dc9ff60cef851808e369d14134519e7388f0f0bd6d0711f5377596f5c6b"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/semisam_plus.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/semisam_plus.py",
+      "bytes": 8694,
+      "sha256": "20d6e8ed124096cee67b236d6c508c7601207e2bafc31c1231c40b342dfa0ca2"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/test_3D_brats.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/test_3D_brats.py",
+      "bytes": 1770,
+      "sha256": "9b63ddf284e1e35a977e18ec55faea1c7644125dac848a4fc8d04784eacd3ae3"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/test_3D_la.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/test_3D_la.py",
+      "bytes": 1784,
+      "sha256": "0a787d717aa9198b90fb4b8edbe679f1b1a06f454e2775c647be0406a80c91ec"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/test_3D_util_brats.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/test_3D_util_brats.py",
+      "bytes": 6020,
+      "sha256": "5297c0c79e2e1a9d24a13ae1deb023845cfd04f46b01bd9fc506a8bd63f4404a"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/test_3D_util_la.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/test_3D_util_la.py",
+      "bytes": 5978,
+      "sha256": "b1dcbf7a87998236a44609dbbc1bdaa374b894fc0e9697ba0d7bbc87ebd7d3bd"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/utils/click_method.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/utils/click_method.py",
+      "bytes": 7630,
+      "sha256": "7c511e47a2301897708d133be78f5d3a0be42a933d8fd7712da391c725547229"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/utils/losses.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/utils/losses.py",
+      "bytes": 13830,
+      "sha256": "6e987220fd61a51bfc3e667fa80a8b4159fda654cd12ddac4fc39cc29125dee3"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/utils/metrics.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/utils/metrics.py",
+      "bytes": 1293,
+      "sha256": "7ffb3af7044a7b3e428bb8aeb1308e7ab6e9453985940f0880ecca39387705cc"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/utils/ramps.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/utils/ramps.py",
+      "bytes": 1319,
+      "sha256": "272621382935891d236b5d951e3a3a7e6fe3f4d7913fd9eed4b7d47194322862"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/utils/util.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/utils/util.py",
+      "bytes": 8190,
+      "sha256": "c3d586b5df85192e37c92fd480834ed12caa7502ce76d539c6a179c7bcbac342"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/val_3D_brats.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/val_3D_brats.py",
+      "bytes": 4073,
+      "sha256": "80c83012536ef0b900cf68181cc6d284d5eba0a16e35cb5be97c93b89d2353bd"
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/val_3D_la.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/val_3D_la.py",
+      "bytes": 4083,
+      "sha256": "8b36f908d1eca00994f33e24629a3ebae3678050b84f7d59b32cce427054c5ef"
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/dataloaders/acdc_data_processing.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/dataloaders/acdc_data_processing.py",
+      "bytes": 1344,
+      "sha256": "9e9e2b308edd49bc08b57c38025545133bf3eaca491fe13927ba7352ce4643dc",
+      "upstream_bytes": 1351,
+      "upstream_sha256": "c3422369e5e3dbf66e332dbea1a23eb5a5835eec8208848da6dbad0a83b3e62c",
+      "transforms": [
+        {
+          "operation": "replace",
+          "old": "\"/home/****/data/ACDC/image/*.nii.gz\"",
+          "new": "os.environ['SCB_ACDC_SOURCE_GLOB']",
+          "count": 1
+        },
+        {
+          "operation": "replace",
+          "old": "'/home/****/data/ACDC/data/{}_slice_{}.h5'",
+          "new": "os.environ['SCB_ACDC_OUTPUT_TEMPLATE']",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/pancreas/pancreas_utils.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/pancreas/pancreas_utils.py",
+      "bytes": 9570,
+      "sha256": "7d86eccee62bd8b171f53cdb980f5f76eb894dac420aadd5a6076cad0578b0c3",
+      "upstream_bytes": 9566,
+      "upstream_sha256": "80dc2a92585091f27a22fa869abed570ffa73e5c5ef4a362d43f7f7ce58217fa",
+      "transforms": [
+        {
+          "operation": "replace",
+          "old": "/home/parent1",
+          "new": "__RECORDED_HOME__",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/pancreas/test_util.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/pancreas/test_util.py",
+      "bytes": 14026,
+      "sha256": "ecd8626fa42da4cf8b503fe09a683a0fc1f7c460a6ac8c698e31680b29bacf08",
+      "upstream_bytes": 14006,
+      "upstream_sha256": "50d50b88ce47ac673788ed6fe631cc752b4ba6996ba238cf0cbf5344c8b80f31",
+      "transforms": [
+        {
+          "operation": "replace",
+          "old": "/home/ubuntu",
+          "new": "__RECORDED_HOME__",
+          "count": 4
+        }
+      ]
+    },
+    {
+      "component": "sdcl",
+      "repository": "pascalcpp/SDCL",
+      "revision": "63d701f8fdd1b2ed0b7be2495f35437eeae91ad4",
+      "upstream_path": "code/utils/LA_utils.py",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/utils/LA_utils.py",
+      "bytes": 9486,
+      "sha256": "86b0439710d8eb02a3646b1105c6b5064a88dca9b731e55553774fe62a0ca060",
+      "upstream_bytes": 9482,
+      "upstream_sha256": "acac567a35e54060fac39dc5c280f70ea7d6828c3bbf072e7b74cdb5fdfb8f91",
+      "transforms": [
+        {
+          "operation": "replace",
+          "old": "/home/parent1",
+          "new": "__RECORDED_HOME__",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/networks/hierarchical_unet_3d.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/networks/hierarchical_unet_3d.py",
+      "bytes": 3932,
+      "sha256": "217ed31e9e1a787c6babb82b6f24093a6c25aedfb02bc0827cd5f53767039968",
+      "upstream_bytes": 4041,
+      "upstream_sha256": "90354178fed78758b882d64e2b5ec461a0719f6a345ae295cd8ee7124bdf5cba",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/train_retraining.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/train_retraining.py",
+      "bytes": 13545,
+      "sha256": "53e0f8712cdbfa751a2e7cf5c5a9743d5292193a484462694d30ab8bfe566ebf",
+      "upstream_bytes": 13831,
+      "upstream_sha256": "aab06e59686b538ca8b3e73dfe2b83faa9cc248dc6c423f11bf6ec7fdc0f29f0",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/utils/bezier_curve.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/utils/bezier_curve.py",
+      "bytes": 3105,
+      "sha256": "0a537dc7fd505202b8c408020c23c4b684e3b01a8092565a13b4967df68ead1c",
+      "upstream_bytes": 3204,
+      "upstream_sha256": "25116ef4b81512eb0ed61e134963fc60cdf847f97e836dd0d261c7aa53f70b9b",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/utils/losses.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/utils/losses.py",
+      "bytes": 7954,
+      "sha256": "d31d17410e360adf64bc2c34b2d2bdfc1a37b09dcdfe35295232b8833ee90b95",
+      "upstream_bytes": 8201,
+      "upstream_sha256": "fbe80ddde1305963c57022aca18e2a949e3d97c6c52eb29f54c62e2ef200aea8",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "sfr",
+      "repository": "ShumengLI/SFR",
+      "revision": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "upstream_path": "code/utils/util.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/utils/util.py",
+      "bytes": 34997,
+      "sha256": "6c4eb139ec2769866c37c495d53ee8e263f933f1c97c78b5dfbf64d78e2f3c4b",
+      "upstream_bytes": 35571,
+      "upstream_sha256": "5340a033ce6820c5702c686cb5b2d96c3e9e012d566229a92c9c47ca08ced485",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/ReLiF_3D_train_brats.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/ReLiF_3D_train_brats.py",
+      "bytes": 21971,
+      "sha256": "4b3af1d84965e2a5fad0c441147acc74f9de1ccd6d05d2cbdb5c66b9c45536f4",
+      "upstream_bytes": 22547,
+      "upstream_sha256": "c284fe0866139e39ed802ea3216e0f15b856694a4db42318dce124a089c68d67",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/ReLiF_3D_train_la.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/ReLiF_3D_train_la.py",
+      "bytes": 21744,
+      "sha256": "7f9c7e1eefa8668b9bbb47ac59cddbff6318ff78f2c079f03eada1af6012d3fa",
+      "upstream_bytes": 22317,
+      "upstream_sha256": "a4766c745dff94613ccadb66e11606a4aa8cdd293fd07750a7d86abeac03b8bd",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/automatic_mask_generator.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/automatic_mask_generator.py",
+      "bytes": 15148,
+      "sha256": "71c698d2b6cbf5a62eafa5f12106fdf3bff676102adf1aed2287df3b3990b4e0",
+      "upstream_bytes": 15520,
+      "upstream_sha256": "2d8c5a963705d9408cbaef05f57c6dedc708ddabd45dbdbc91c060bab930a0c0",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/build_sam.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/build_sam.py",
+      "bytes": 5707,
+      "sha256": "fb406e225e976eaf465cac7ccefc6716a2c8acea6ee15fa68a1b822c422ce748",
+      "upstream_bytes": 5868,
+      "upstream_sha256": "44c01fdc1e1cc99f8070b93ad98a140977051bd6254cbac942e6f0c624f47e39",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/modeling/common.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/modeling/common.py",
+      "bytes": 1548,
+      "sha256": "93f25ae818de53cd0db8bc721d5cdb0b72b9e0ae24592fd25a79da58b7d7720b",
+      "upstream_bytes": 1593,
+      "upstream_sha256": "a1af44e8cbab343a2a9f797794f942eff206b00d2fdb908028e6800e6b346afe",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/modeling/image_encoder.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/modeling/image_encoder.py",
+      "bytes": 14556,
+      "sha256": "887ebc2e9417c9a63a92e8d1e6319d95b5a73d8d789e6894138c2d0b1ca36a08",
+      "upstream_bytes": 14957,
+      "upstream_sha256": "5d079e7d912324a8e89c37c654551756cd436e248076557d100ac7c6f2c7886a",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/modeling/mask_decoder.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/modeling/mask_decoder.py",
+      "bytes": 7073,
+      "sha256": "119b758f918d7b21f0b51848ef7ffcddc2cfb00d228d64d9bd9ef297a24356c2",
+      "upstream_bytes": 7259,
+      "upstream_sha256": "46613a66ab547a5412c3c656b710ae6dc26e3bd526b63a66643fe39ad017bbc8",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/modeling/prompt_encoder.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/modeling/prompt_encoder.py",
+      "bytes": 9127,
+      "sha256": "fbd3357ca54d61a8f0c0b6633e963c92d4e760921f03f4ebbe7d7939cb86f809",
+      "upstream_bytes": 9354,
+      "upstream_sha256": "f1522f9b323a224c90c7e15bedf13fca6e327f41193deed2c780aec2303e94d9",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/modeling/sam.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/modeling/sam.py",
+      "bytes": 7226,
+      "sha256": "22df16c551ac9938c13930d04e54627e902c2b5c4b8590556862f3560621097b",
+      "upstream_bytes": 7400,
+      "upstream_sha256": "d4712f53a763b09b41a885d7df75686441bb34e76147a26b183c65db204f65fa",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/modeling/sam_model.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/modeling/sam_model.py",
+      "bytes": 4210,
+      "sha256": "4ff6208caaf8da7be8dba1bf739cb81ba9a46b0472b2fc2e93d30537aebbbeb2",
+      "upstream_bytes": 4316,
+      "upstream_sha256": "cad4453b302ecbed904d80e2235c4dfbdf18bb500475bb9a7deaf719ccda6f2c",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/modeling/transformer.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/modeling/transformer.py",
+      "bytes": 8594,
+      "sha256": "f20c92759a8da1cd791564909dd2d827a079d400eb56c70d9fe7bdea878058f0",
+      "upstream_bytes": 8838,
+      "upstream_sha256": "f134a3af9d87fa2288adb612d89ecd6e97bc16fc846f86d1560f502bd3ed7420",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/predictor.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/predictor.py",
+      "bytes": 11639,
+      "sha256": "6077b00fa92a160f6dc5d9f05a1c248b5985ad22ab5bd2f80bcc3967512f4d05",
+      "upstream_bytes": 11910,
+      "upstream_sha256": "4c1df04a183127b7b1c6a9f204d85d5f8f6220a8f52e7cd15301df1dcfa5a44e",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/utils/amg.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/utils/amg.py",
+      "bytes": 12712,
+      "sha256": "5c10f8dd63facb642ff090f61426b35b3c6c3a07e72839595cb04d74828b1d39",
+      "upstream_bytes": 13058,
+      "upstream_sha256": "7f7d4e51cd8ad9bcb3ba4489ad8a019d8a7a12f9432980891077bcf8692139b9",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/utils/onnx.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/utils/onnx.py",
+      "bytes": 5812,
+      "sha256": "b4410ac1dc9a7bb3a09827520fa08454f9b397608775e2fe4ebfb7c8dbb02666",
+      "upstream_bytes": 5956,
+      "upstream_sha256": "c43f17e87ea8822af515158d23a86df53e49f67d13fad530eaec30b80f0360ea",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "relif",
+      "repository": "kunaljangid01/ReLiF_3D",
+      "revision": "bbda984aa337520c009091d4a02d2e104bb176d6",
+      "upstream_path": "code/segment_anything/utils/transforms.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/segment_anything/utils/transforms.py",
+      "bytes": 3952,
+      "sha256": "5494beedd396fcf574311cfef4706235f036e1534e305e324f1edb11b8c042f5",
+      "upstream_bytes": 4054,
+      "upstream_sha256": "c5855cd39232534269df677ac1f57fba7f89f52505ec316726f0f7dc4b1cc6ba",
+      "transforms": [
+        {
+          "operation": "lf"
+        }
+      ]
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/boot_tsne.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/boot_tsne.py",
+      "bytes": 7533,
+      "sha256": "a61bd2ba3211781bc118a6cfc1b4c28a60ad175bf5ee36481faa177bd0b40ba3"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/boundary_contrastive.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/boundary_contrastive.py",
+      "bytes": 18318,
+      "sha256": "b64b26f5f6f2a86e2af0bf5e4c84a6d903ff12393de5938d6baa288a66fea47a"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/Model/Unet.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/Model/Unet.py",
+      "bytes": 22344,
+      "sha256": "ef0054750b121dd65836cafed2299671b3126179b63173b4f1c86273bd3e59ed"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/train.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/train.py",
+      "bytes": 17832,
+      "sha256": "5aa647cf1a46dec0c67e360cdb261ac3cdbd16cf38ed2d7350b62235facf3d78"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/utils/__init__.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/utils/metrics.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/utils/metrics.py",
+      "bytes": 3392,
+      "sha256": "170467487be02cd693f4fd6fa91c9820f4084b73bffa55a1d2c8707d0e072ffb"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/utils/ramps.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/utils/ramps.py",
+      "bytes": 1321,
+      "sha256": "f8d918689236feb12d40d91c7be24bf0477d49b41f980fb0cec6a837abbd68ba"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/utilsm/helpers.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/utilsm/helpers.py",
+      "bytes": 1888,
+      "sha256": "d11a8d564d848ba8e7fb8be37d62e8fc332b3b1863f7e580e7faa27aae17e938"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/utilsm/loss.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/utilsm/loss.py",
+      "bytes": 5947,
+      "sha256": "d5152771300c5456c589c0af673a843b5d6559b9bc38d2a0c4f7bab7ee3ee56f"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/utilsm/metric.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/utilsm/metric.py",
+      "bytes": 2899,
+      "sha256": "c1cefd537857759b57c1a6fc339d485c835ad07336990f6c49d59fd5c20fe2f5"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/utilsm/sync_batchnorm/__init__.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/utilsm/sync_batchnorm/__init__.py",
+      "bytes": 507,
+      "sha256": "50083d11a5c9710f9b7dbd4ca012f8e3721fd0c78f63a36a6a0a1a0d82a13ede"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/utilsm/sync_batchnorm/batchnorm.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/utilsm/sync_batchnorm/batchnorm.py",
+      "bytes": 15917,
+      "sha256": "17541db0c5ee52c356d47b4bd4e9ecff3af4a1039cdea89da2736cf12adf233e"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/utilsm/sync_batchnorm/batchnorm_reimpl.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/utilsm/sync_batchnorm/batchnorm_reimpl.py",
+      "bytes": 2385,
+      "sha256": "773e9c388fecbaff9347fae66e6009b266e10f08c926d05c3a5394cc82c3553b"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/utilsm/sync_batchnorm/comm.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/utilsm/sync_batchnorm/comm.py",
+      "bytes": 4449,
+      "sha256": "9d2e776a0398e5ac29ce13d43b7475300f70f409e56f3c38428029000557a57a"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/utilsm/sync_batchnorm/replicate.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/utilsm/sync_batchnorm/replicate.py",
+      "bytes": 3226,
+      "sha256": "4498b873404fce05202d4f891262e249a95733816d3877e3aee3d2401138a6af"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/utilsm/sync_batchnorm/unittest.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/utilsm/sync_batchnorm/unittest.py",
+      "bytes": 746,
+      "sha256": "7f0fdfb71efe0458707a66525e932af4cd58d2c65e8cab42b26ded60a451abb2"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/utilsm/translate_labels.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/utilsm/translate_labels.py",
+      "bytes": 1142,
+      "sha256": "a3195c54d6cc4eef911d097fc876ce1ae4098d0b15a1a788f3715afeeed06051"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/validate.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/validate.py",
+      "bytes": 4753,
+      "sha256": "38552d6d94d8d129e211aaeeddf4791827ece79f60cf2f631e3f1c4c04eb3650"
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/dataset.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/dataset.py",
+      "bytes": 17118,
+      "sha256": "7e9621726380ad56ad0419016c6f2e0dfea8fa85daa42b804de057fd6da2f7a7",
+      "upstream_bytes": 17050,
+      "upstream_sha256": "4291c87ccedc2be5f3d743c460eeb36612aaa6e111fb55cc6959fd74e65106a6",
+      "transforms": [
+        {
+          "operation": "replace",
+          "old": "import pandas as pd\n",
+          "new": "",
+          "count": 1
+        },
+        {
+          "operation": "replace",
+          "old": "import h5py",
+          "new": "# Optional H5 reader is unused: adapter supplies bound NIfTI inputs; native augmentations retained.",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/module_list.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/module_list.py",
+      "bytes": 10516,
+      "sha256": "92cdf7303be8c576cb356ef548b0d0d8963ce8b086d3a525a17818a9cd0d2a99",
+      "upstream_bytes": 10507,
+      "upstream_sha256": "724d0ae5179ab1ad19a85176091142062aa83cfca66c2f93ad7c73e719d4be4d",
+      "transforms": [
+        {
+          "operation": "replace",
+          "old": "torch.randperm(data.size()[0])[:data.size()[0]].cuda()",
+          "new": "torch.randperm(data.size()[0])[:data.size()[0]].to(data.device)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "component": "dualteacher",
+      "repository": "Aguang094/Dualteacher-with-SAM",
+      "revision": "3710e3216db8bdb444296f0460eab9532b253848",
+      "upstream_path": "UnetBRATS/uutils.py",
+      "local_path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/uutils.py",
+      "bytes": 7295,
+      "sha256": "d6b008a9dbf83ce7cad871b9fbcd7a23b40d7d55b3dc0b0eeb5f64312a5467e6",
+      "upstream_bytes": 7279,
+      "upstream_sha256": "ac756230ef2956b518449161706a363d5ba57382013c10234281698458757a70",
+      "transforms": [
+        {
+          "operation": "replace",
+          "old": "/home/wyy",
+          "new": "__RECORDED_HOME__",
+          "count": 2
+        }
+      ]
+    }
+  ],
+  "pending": [
+    {
+      "component": "sdcl",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/pancreas/__init__.py",
+      "upstream_path": "code/pancreas/__init__.py",
+      "reason": "local_empty_package_marker"
+    },
+    {
+      "component": "sdcl",
+      "local_path": "baselines/source_snapshots/SDCL-master/code/pancreas/losses.py",
+      "upstream_path": "code/pancreas/losses.py",
+      "reason": "local_binary_segmentation_adapter_requires_provenance_review"
+    }
+  ]
+}

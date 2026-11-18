@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "experiment_id": "BY_sfr_n005",
+  "dataset": "BY",
+  "fold": 2,
+  "labeled_cases": 5,
+  "seed": 2027,
+  "split": "splits/by/fold2_n005.json",
+  "budget": {
+    "kind": "ssl_primary_inputs_per_stream",
+    "cycles": 36,
+    "labeled_inputs": 3420,
+    "unlabeled_inputs": 3420,
+    "native_iterations": 1710,
+    "original_recorded_optimizer_updates": 1710,
+    "mandatory_prefix": {
+      "method": "sfr",
+      "variant": "base SFR with MT and default VNet",
+      "source_commit": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+      "dataset": "BY",
+      "ratio": 5,
+      "seed": 2027,
+      "patch": [
+        112,
+        112,
+        80
+      ],
+      "sam_canvas": 1024,
+      "prefix_iterations": 6000,
+      "prefix_labeled_inputs": 10000,
+      "prefix_optimizer_updates": 6000,
+      "prefix_batch_size": 2,
+      "prefix_keeps_native_one_case_epoch_tail": true,
+      "prefix_test_evaluations": 0,
+      "prefix_selection": "fixed_terminal_6000",
+      "prefix_optimizer": {
+        "name": "AdamW",
+        "lr": 0.001,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "weight_decay": 0.1
+      },
+      "prefix_augmentation": {
+        "native_nt": 2,
+        "nonlinear_rate": 0.5,
+        "rotation_flip_2d": true
+      },
+      "prefix_lora_rank": 4,
+      "prefix_warmup": false,
+      "ssl_iterations": 1710,
+      "ssl_labeled_inputs": 3420,
+      "ssl_unlabeled_inputs": 3420,
+      "ssl_optimizer_updates": 1710,
+      "ssl_primary_labeled_per_iteration": 2,
+      "ssl_primary_unlabeled_per_iteration": 2,
+      "ssl_optimizer": {
+        "name": "SGD",
+        "lr": 0.01,
+        "momentum": 0.9,
+        "weight_decay": 0.0001
+      },
+      "ssl_reference_iterations": 6000,
+      "ssl_lr_rule": ".01 * .1**floor(6000*completed/(2500*ssl_iterations))",
+      "ssl_consistency_rule": ".1 * sigmoid_rampup(floor(6000*completed/(150*ssl_iterations)),40)",
+      "ssl_ema_rule": "min(1-1/(actual_zero_based_update+1),.99); parameters only, as source",
+      "ssl_teacher_input_forwards": 6840,
+      "ssl_sam_stitched_board_forwards": 3420,
+      "prefix_sam_stitched_board_forwards": 10000,
+      "inference": {
+        "patch": [
+          112,
+          112,
+          80
+        ],
+        "stride_xy": 18,
+        "stride_z": 4,
+        "aggregation": "mean_softmax"
+      },
+      "selection_uses_test": false,
+      "total_compute_matched": false,
+      "launch_ready": false
+    }
+  },
+  "recipe": null,
+  "stage_recipe": null,
+  "source_contract_sha256": null,
+  "runtime_status": "recorded_recipe_not_yet_portable_training_entrypoint",
+  "selection": "fixed_terminal",
+  "notes": [
+    "Accepted fixed primary exposure; original BY table retained"
+  ]
+}

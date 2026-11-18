@@ -1,0 +1,19 @@
+{
+  "file": "baselines/original_source_map.json",
+  "before_sha256": "9b01520a5b844b48d9be9b6f7c9f6b2a97e0c925810ce56023d6f3825139d1db",
+  "after_sha256": "63fb3db45dfe106149a1ef4dcf4e0a2c01d8c46ccc80f12e5bac57f22c8671aa",
+  "rebased_release_paths": 497,
+  "included_hash_verified": 496,
+  "excluded_from_current_scope": [
+    "baselines/source_snapshots/expes/semi05_gate/vnet_supervised_20261029/v2/losses_standard.py",
+    "baselines/source_snapshots/expes/semi05_gate/vnet_supervised_20261029/v2/prepare_contracts.py",
+    "baselines/source_snapshots/expes/semi05_gate/vnet_supervised_20261029/v2/vnet_backend.py",
+    "baselines/source_snapshots/expes/semi05_gate/vnet_supervised_20261029/v2/vnet_run.py",
+    "baselines/source_snapshots/expes/semi05_gate/vnet_supervised_20261029/v2/vnet_safety.py",
+    "baselines/source_snapshots/expes/semi05_gate/vnet_supervised_20261029/v2/vnet_standard.py",
+    "baselines/vnet/normfix_candidate/vnet_backend.py"
+  ],
+  "missing_from_public_project": [],
+  "release_hash_mismatches": [],
+  "original_sha256_preserved": true
+}

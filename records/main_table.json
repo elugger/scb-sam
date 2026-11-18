@@ -1,0 +1,1739 @@
+{
+  "schema_version": 2,
+  "recorded_on": "2026-11-10",
+  "scope": "latest_v14a_main_tables",
+  "row_count": 28,
+  "metrics_units": {
+    "dice": "fraction",
+    "jaccard": "fraction",
+    "hd95": "voxel",
+    "asd": "voxel"
+  },
+  "new_training": 0,
+  "new_model_evaluations": 0,
+  "paper_tables_sha256": {
+    "table_1.tex": "f1f47e913562bcd071245f8e77bf7ce582af332c63f6881cbe2bd0229512e77f",
+    "table_2.tex": "cc7753670f76aa71cf26f7a71dbdbc5cf25f36ff239678bc2a84c636d1395c75"
+  },
+  "rows": [
+    {
+      "id": "BY_mt_semisam_n005",
+      "dataset": "BY",
+      "method": "mt_semisam",
+      "display_method": "SemiSAM+ / MT",
+      "labeled_cases": 5,
+      "train_cases": 100,
+      "test_cases": 25,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.42811311640952887,
+        "jaccard": 0.2928320721063915,
+        "hd95": 17.576795634250985,
+        "asd": 5.283814290166165
+      },
+      "reporting_cycles": 36,
+      "notes": [
+        "Accepted fixed primary exposure; original BY table retained"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "4815971d02d2982c3a36f7f670d36877733ddf5c089fa71b4dc11c975edac4a5",
+        "acceptance_sha256": "e4f2715d1786f16b70befe05a979078baa97dd0c327ab1db4d7b87ed0ab3688c",
+        "artifact_sha256": "9e46c67f794fc3a48e7f2293592519f80001eecf38d5b346d0d6600374c4899a"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "native_iterations": 3420,
+        "original_recorded_optimizer_updates": 3420,
+        "mandatory_prefix": null
+      },
+      "checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "BY_mt_semisam_n005",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "configuration_record": "records/configs/BY_mt_semisam_n005.json",
+      "historical_configuration_path": "configs/by/BY_mt_semisam_n005.json",
+      "config": "records/configs/BY_mt_semisam_n005.json"
+    },
+    {
+      "id": "BY_uamt_semisam_n005",
+      "dataset": "BY",
+      "method": "uamt_semisam",
+      "display_method": "SemiSAM+ / UA-MT",
+      "labeled_cases": 5,
+      "train_cases": 100,
+      "test_cases": 25,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.4521672362319644,
+        "jaccard": 0.310591684781817,
+        "hd95": 20.651334342613733,
+        "asd": 5.196642346195057
+      },
+      "reporting_cycles": 36,
+      "notes": [
+        "Accepted fixed primary exposure; original BY table retained"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "4815971d02d2982c3a36f7f670d36877733ddf5c089fa71b4dc11c975edac4a5",
+        "acceptance_sha256": "41d26de15d7014223fc9384890739cc7de18ec0a8c76a69f173045666860975e",
+        "artifact_sha256": "b31ddababf3a2881fa84e6caaeda3b6f708ef9f96269aaeefbfa3dfb64f1bcda"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "native_iterations": 3420,
+        "original_recorded_optimizer_updates": 3420,
+        "mandatory_prefix": null
+      },
+      "checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "BY_uamt_semisam_n005",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "configuration_record": "records/configs/BY_uamt_semisam_n005.json",
+      "historical_configuration_path": "configs/by/BY_uamt_semisam_n005.json",
+      "config": "records/configs/BY_uamt_semisam_n005.json"
+    },
+    {
+      "id": "BY_sdcl_n005",
+      "dataset": "BY",
+      "method": "sdcl",
+      "display_method": "SDCL",
+      "labeled_cases": 5,
+      "train_cases": 100,
+      "test_cases": 25,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.5668864287973857,
+        "jaccard": 0.4187970962731359,
+        "hd95": 13.246090899581716,
+        "asd": 3.9621089624031725
+      },
+      "reporting_cycles": 36,
+      "notes": [
+        "Accepted fixed primary exposure; original BY table retained"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "4815971d02d2982c3a36f7f670d36877733ddf5c089fa71b4dc11c975edac4a5",
+        "acceptance_sha256": "b4669040361879ce601bbab5eb7842bb973e5c34d465963697cd7ce610b47201",
+        "artifact_sha256": "4b69e0528489b4b4fe695de15ea90d21f5847ae42ac9a5910d7fcccaa565a9f9"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "native_iterations": 855,
+        "original_recorded_optimizer_updates": 1710,
+        "mandatory_prefix": {
+          "pretrain_iterations": 648,
+          "pretrain_labeled_inputs": 2592,
+          "pretrain_successful_optimizer_updates": 1296,
+          "pretrain_test_evaluations": 0,
+          "ssl_iterations": 855,
+          "ssl_labeled_inputs": 3420,
+          "ssl_unlabeled_inputs": 3420,
+          "ssl_successful_optimizer_updates": 1710,
+          "native_inputs_per_stream": 4,
+          "native_optimizers": 2,
+          "prefix_selection": "fixed_terminal_not_test_best",
+          "prefix_extra_budget_disclosed": true
+        }
+      },
+      "checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "BY_sdcl_n005",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "configuration_record": "records/configs/BY_sdcl_n005.json",
+      "historical_configuration_path": "configs/by/BY_sdcl_n005.json",
+      "config": "records/configs/BY_sdcl_n005.json"
+    },
+    {
+      "id": "BY_sfr_n005",
+      "dataset": "BY",
+      "method": "sfr",
+      "display_method": "SFR",
+      "labeled_cases": 5,
+      "train_cases": 100,
+      "test_cases": 25,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.23438422751230414,
+        "jaccard": 0.15091625093472266,
+        "hd95": 41.469794301670625,
+        "asd": 24.06004748207761
+      },
+      "reporting_cycles": 36,
+      "notes": [
+        "Accepted fixed primary exposure; original BY table retained"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "4815971d02d2982c3a36f7f670d36877733ddf5c089fa71b4dc11c975edac4a5",
+        "acceptance_sha256": "39e236bbc250cc43a1be3770cbaa695ae337d37581dcc99ba6859bf24b8434ea",
+        "artifact_sha256": "f28fc0dafe13206824bfe6cef10ecb77a82ad03af40a318bfcaa465547f0a716"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "native_iterations": 1710,
+        "original_recorded_optimizer_updates": 1710,
+        "mandatory_prefix": {
+          "method": "sfr",
+          "variant": "base SFR with MT and default VNet",
+          "source_commit": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+          "dataset": "BY",
+          "ratio": 5,
+          "seed": 2027,
+          "patch": [
+            112,
+            112,
+            80
+          ],
+          "sam_canvas": 1024,
+          "prefix_iterations": 6000,
+          "prefix_labeled_inputs": 10000,
+          "prefix_optimizer_updates": 6000,
+          "prefix_batch_size": 2,
+          "prefix_keeps_native_one_case_epoch_tail": true,
+          "prefix_test_evaluations": 0,
+          "prefix_selection": "fixed_terminal_6000",
+          "prefix_optimizer": {
+            "name": "AdamW",
+            "lr": 0.001,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "weight_decay": 0.1
+          },
+          "prefix_augmentation": {
+            "native_nt": 2,
+            "nonlinear_rate": 0.5,
+            "rotation_flip_2d": true
+          },
+          "prefix_lora_rank": 4,
+          "prefix_warmup": false,
+          "ssl_iterations": 1710,
+          "ssl_labeled_inputs": 3420,
+          "ssl_unlabeled_inputs": 3420,
+          "ssl_optimizer_updates": 1710,
+          "ssl_primary_labeled_per_iteration": 2,
+          "ssl_primary_unlabeled_per_iteration": 2,
+          "ssl_optimizer": {
+            "name": "SGD",
+            "lr": 0.01,
+            "momentum": 0.9,
+            "weight_decay": 0.0001
+          },
+          "ssl_reference_iterations": 6000,
+          "ssl_lr_rule": ".01 * .1**floor(6000*completed/(2500*ssl_iterations))",
+          "ssl_consistency_rule": ".1 * sigmoid_rampup(floor(6000*completed/(150*ssl_iterations)),40)",
+          "ssl_ema_rule": "min(1-1/(actual_zero_based_update+1),.99); parameters only, as source",
+          "ssl_teacher_input_forwards": 6840,
+          "ssl_sam_stitched_board_forwards": 3420,
+          "prefix_sam_stitched_board_forwards": 10000,
+          "inference": {
+            "patch": [
+              112,
+              112,
+              80
+            ],
+            "stride_xy": 18,
+            "stride_z": 4,
+            "aggregation": "mean_softmax"
+          },
+          "selection_uses_test": false,
+          "total_compute_matched": false,
+          "launch_ready": false
+        }
+      },
+      "checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "BY_sfr_n005",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "configuration_record": "records/configs/BY_sfr_n005.json",
+      "historical_configuration_path": "configs/by/BY_sfr_n005.json",
+      "config": "records/configs/BY_sfr_n005.json"
+    },
+    {
+      "id": "BY_relif3d_n005",
+      "dataset": "BY",
+      "method": "relif3d",
+      "display_method": "ReLiF-3D",
+      "labeled_cases": 5,
+      "train_cases": 100,
+      "test_cases": 25,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.5995158455730162,
+        "jaccard": 0.4494062347401022,
+        "hd95": 14.542937568808702,
+        "asd": 3.5620295320431903
+      },
+      "reporting_cycles": 36,
+      "notes": [
+        "Accepted fixed primary exposure; original BY table retained"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "4815971d02d2982c3a36f7f670d36877733ddf5c089fa71b4dc11c975edac4a5",
+        "acceptance_sha256": "9fa7155f9a20f1af80380e6a3b64deb498c6064449c87ca1641bb9dd44bd0859",
+        "artifact_sha256": "555a73a4f675ae0fcb9586868990fead83a241023abeddf0fcdab80e8e61c6fe"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "native_iterations": 3420,
+        "original_recorded_optimizer_updates": 3420,
+        "mandatory_prefix": null
+      },
+      "checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "BY_relif3d_n005",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "configuration_record": "records/configs/BY_relif3d_n005.json",
+      "historical_configuration_path": "configs/by/BY_relif3d_n005.json",
+      "config": "records/configs/BY_relif3d_n005.json"
+    },
+    {
+      "id": "BY_dualteacher_sam_n005",
+      "dataset": "BY",
+      "method": "dualteacher_sam",
+      "display_method": "DualTeacher+SAM",
+      "labeled_cases": 5,
+      "train_cases": 100,
+      "test_cases": 25,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.32197786393051486,
+        "jaccard": 0.21983959949616497,
+        "hd95": 32.42928304532457,
+        "asd": 11.524254564852582
+      },
+      "reporting_cycles": 36,
+      "notes": [
+        "Accepted fixed primary exposure; original BY table retained",
+        "BY legacy ledger optimizer count uses an older convention; do not silently equate it with corrected Public dual-optimizer accounting."
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "3941921518242298e99f656710782c01c4c54cbd7875cba44a8862160243fbdf",
+        "acceptance_sha256": "b64ecf71ed23484c2cc9446fc579c06cdfb702e65f7c4949b3f60077c8ad65d5",
+        "artifact_sha256": "69153cfc32c370014ceef8223f2ff19b3aa96417ec5ef68b83c71ac54225f792"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "native_iterations": 1710,
+        "original_recorded_optimizer_updates": 1710,
+        "mandatory_prefix": null
+      },
+      "checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "BY_dualteacher_sam_n005",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "configuration_record": "records/configs/BY_dualteacher_sam_n005.json",
+      "historical_configuration_path": "configs/by/BY_dualteacher_sam_n005.json",
+      "config": "records/configs/BY_dualteacher_sam_n005.json"
+    },
+    {
+      "id": "BY_scb_seg_n005",
+      "dataset": "BY",
+      "method": "scb_seg",
+      "display_method": "SCB-SAM",
+      "labeled_cases": 5,
+      "train_cases": 100,
+      "test_cases": 25,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.6779282300321872,
+        "jaccard": 0.5292968205064607,
+        "hd95": 10.2390654193505,
+        "asd": 2.63258837129509
+      },
+      "reporting_cycles": 36,
+      "notes": [
+        "BY5 and BY10 now use distinct supervised initializers and 3420 main pairs; BY10 comparators used 3240 per stream.",
+        "Current records preserve GT-localized ROI development evaluation; not independent-test evidence."
+      ],
+      "provenance": {
+        "result_or_completion_receipt_sha256": "f6390acff27262f91cf710e3488695325cbc2e31f722ae672a6292294d788333",
+        "checkpoint_sha256": "1fbdb60e38db729a1760d513516add06d74ca8caddd9c82735a612f8980fc584",
+        "initializer_sha256": "b113d1731a8e535ff482bebe7c2ca0d821760d44e5ea02e59b33cae58557c4be",
+        "receipt_filename": "result.json",
+        "script_source_manifest_sha256": null
+      },
+      "distance_unit": "voxel",
+      "verification": "COMPLETE_FIXED_FINAL",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "successful_updates": 684,
+        "supervised_initialization": {
+          "epochs": 60,
+          "successful_updates": 300,
+          "separate_from_ssl_budget": true
+        }
+      },
+      "selection": "native_student_epoch35_fixed_final",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "BY_scb_seg_n005",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "recorded_hash_and_receipt_exists_current_distribution_separate",
+      "configuration_record": "records/configs/BY_scb_seg_n005.json",
+      "superseded_20261030_manifest_record": {
+        "metrics": {
+          "dice": 0.7022325327907967,
+          "jaccard": 0.5564224883606707,
+          "hd95": 9.51526925118898,
+          "asd": 2.4141342293706183
+        },
+        "selection": "historical_epoch35_terminal_36_completed_cycles",
+        "budget": {
+          "kind": "ssl_primary_inputs_per_stream",
+          "cycles": 36,
+          "labeled_inputs": 3420,
+          "unlabeled_inputs": 3420,
+          "supervised_initialization": "separate; not counted in SSL exposure"
+        },
+        "source_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+        "reason": "Old endpoint or initialization does not match the latest manuscript."
+      },
+      "metric_precision": "full_precision_from_recorded_result_or_completion_receipt",
+      "historical_configuration_path": "configs/by/BY_scb_seg_n005.json",
+      "config": "records/configs/BY_scb_seg_n005.json",
+      "checkpoint_availability": "recorded_hash_and_receipt_exists_current_distribution_separate"
+    },
+    {
+      "id": "BY_mt_semisam_n010",
+      "dataset": "BY",
+      "method": "mt_semisam",
+      "display_method": "SemiSAM+ / MT",
+      "labeled_cases": 10,
+      "train_cases": 100,
+      "test_cases": 25,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.632303721838116,
+        "jaccard": 0.4875818971672842,
+        "hd95": 11.743611171900502,
+        "asd": 3.082621610803281
+      },
+      "reporting_cycles": 36,
+      "notes": [
+        "Accepted fixed primary exposure; original BY table retained"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "4815971d02d2982c3a36f7f670d36877733ddf5c089fa71b4dc11c975edac4a5",
+        "acceptance_sha256": "b585a12dfec67cff74838dc4685df339f97952930eb8199402c8a18da7ebceb8",
+        "artifact_sha256": "e22233a5c8e1f008e7a1de5347981d17ed4f95461be0c99e63c042d0c9dc4c6f"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3240,
+        "unlabeled_inputs": 3240,
+        "native_iterations": 3240,
+        "original_recorded_optimizer_updates": 3240,
+        "mandatory_prefix": null
+      },
+      "checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "BY_mt_semisam_n010",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "configuration_record": "records/configs/BY_mt_semisam_n010.json",
+      "historical_configuration_path": "configs/by/BY_mt_semisam_n010.json",
+      "config": "records/configs/BY_mt_semisam_n010.json"
+    },
+    {
+      "id": "BY_uamt_semisam_n010",
+      "dataset": "BY",
+      "method": "uamt_semisam",
+      "display_method": "SemiSAM+ / UA-MT",
+      "labeled_cases": 10,
+      "train_cases": 100,
+      "test_cases": 25,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.6217186078256648,
+        "jaccard": 0.4822888909027894,
+        "hd95": 12.526722793386682,
+        "asd": 3.164507132137037
+      },
+      "reporting_cycles": 36,
+      "notes": [
+        "Accepted fixed primary exposure; original BY table retained"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "4815971d02d2982c3a36f7f670d36877733ddf5c089fa71b4dc11c975edac4a5",
+        "acceptance_sha256": "3b74eb485fc2b289de978f21a6f4d92917a1bc3a832f7735235ece95dc1a090e",
+        "artifact_sha256": "aa4bba23e343b59b15d455038feec0f22af321cd9388c16d23d409990a9b5d53"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3240,
+        "unlabeled_inputs": 3240,
+        "native_iterations": 3240,
+        "original_recorded_optimizer_updates": 3240,
+        "mandatory_prefix": null
+      },
+      "checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "BY_uamt_semisam_n010",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "configuration_record": "records/configs/BY_uamt_semisam_n010.json",
+      "historical_configuration_path": "configs/by/BY_uamt_semisam_n010.json",
+      "config": "records/configs/BY_uamt_semisam_n010.json"
+    },
+    {
+      "id": "BY_sdcl_n010",
+      "dataset": "BY",
+      "method": "sdcl",
+      "display_method": "SDCL",
+      "labeled_cases": 10,
+      "train_cases": 100,
+      "test_cases": 25,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.6591965300343842,
+        "jaccard": 0.5078330048959647,
+        "hd95": 11.40685686862952,
+        "asd": 2.83108213441477
+      },
+      "reporting_cycles": 36,
+      "notes": [
+        "Accepted fixed primary exposure; original BY table retained"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "4815971d02d2982c3a36f7f670d36877733ddf5c089fa71b4dc11c975edac4a5",
+        "acceptance_sha256": "6b064dc823827e47cbcd3d119171e065d05b822f696c44841072bbf755eedb86",
+        "artifact_sha256": "db917dd7dbe48894bee43fcf709fee385aff1da4770a7064a617e990a3ec9831"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3240,
+        "unlabeled_inputs": 3240,
+        "native_iterations": 810,
+        "original_recorded_optimizer_updates": 1620,
+        "mandatory_prefix": {
+          "pretrain_iterations": 1620,
+          "pretrain_labeled_inputs": 6480,
+          "pretrain_successful_optimizer_updates": 3240,
+          "pretrain_test_evaluations": 0,
+          "ssl_iterations": 810,
+          "ssl_labeled_inputs": 3240,
+          "ssl_unlabeled_inputs": 3240,
+          "ssl_successful_optimizer_updates": 1620,
+          "native_inputs_per_stream": 4,
+          "native_optimizers": 2,
+          "prefix_selection": "fixed_terminal_not_test_best",
+          "prefix_extra_budget_disclosed": true
+        }
+      },
+      "checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "BY_sdcl_n010",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "configuration_record": "records/configs/BY_sdcl_n010.json",
+      "historical_configuration_path": "configs/by/BY_sdcl_n010.json",
+      "config": "records/configs/BY_sdcl_n010.json"
+    },
+    {
+      "id": "BY_sfr_n010",
+      "dataset": "BY",
+      "method": "sfr",
+      "display_method": "SFR",
+      "labeled_cases": 10,
+      "train_cases": 100,
+      "test_cases": 25,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.5094907900065392,
+        "jaccard": 0.3684166097534186,
+        "hd95": 18.300104719157016,
+        "asd": 4.454742781810733
+      },
+      "reporting_cycles": 36,
+      "notes": [
+        "Accepted fixed primary exposure; original BY table retained"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "4815971d02d2982c3a36f7f670d36877733ddf5c089fa71b4dc11c975edac4a5",
+        "acceptance_sha256": "56c81c11291daa7bcfd62ffb2d472134ccdad3933562ffebd9f2addc921ee0af",
+        "artifact_sha256": "f0751cbc7a1b271c537e8f0ec581b05bd15198dd240b904f49745bc2b1068ec3"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3240,
+        "unlabeled_inputs": 3240,
+        "native_iterations": 1620,
+        "original_recorded_optimizer_updates": 1620,
+        "mandatory_prefix": {
+          "method": "sfr",
+          "variant": "base SFR with MT and default VNet",
+          "source_commit": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+          "dataset": "BY",
+          "ratio": 10,
+          "seed": 2027,
+          "patch": [
+            112,
+            112,
+            80
+          ],
+          "sam_canvas": 1024,
+          "prefix_iterations": 6000,
+          "prefix_labeled_inputs": 12000,
+          "prefix_optimizer_updates": 6000,
+          "prefix_batch_size": 2,
+          "prefix_keeps_native_one_case_epoch_tail": false,
+          "prefix_test_evaluations": 0,
+          "prefix_selection": "fixed_terminal_6000",
+          "prefix_optimizer": {
+            "name": "AdamW",
+            "lr": 0.001,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "weight_decay": 0.1
+          },
+          "prefix_augmentation": {
+            "native_nt": 2,
+            "nonlinear_rate": 0.5,
+            "rotation_flip_2d": true
+          },
+          "prefix_lora_rank": 4,
+          "prefix_warmup": false,
+          "ssl_iterations": 1620,
+          "ssl_labeled_inputs": 3240,
+          "ssl_unlabeled_inputs": 3240,
+          "ssl_optimizer_updates": 1620,
+          "ssl_primary_labeled_per_iteration": 2,
+          "ssl_primary_unlabeled_per_iteration": 2,
+          "ssl_optimizer": {
+            "name": "SGD",
+            "lr": 0.01,
+            "momentum": 0.9,
+            "weight_decay": 0.0001
+          },
+          "ssl_reference_iterations": 6000,
+          "ssl_lr_rule": ".01 * .1**floor(6000*completed/(2500*ssl_iterations))",
+          "ssl_consistency_rule": ".1 * sigmoid_rampup(floor(6000*completed/(150*ssl_iterations)),40)",
+          "ssl_ema_rule": "min(1-1/(actual_zero_based_update+1),.99); parameters only, as source",
+          "ssl_teacher_input_forwards": 6480,
+          "ssl_sam_stitched_board_forwards": 3240,
+          "prefix_sam_stitched_board_forwards": 12000,
+          "inference": {
+            "patch": [
+              112,
+              112,
+              80
+            ],
+            "stride_xy": 18,
+            "stride_z": 4,
+            "aggregation": "mean_softmax"
+          },
+          "selection_uses_test": false,
+          "total_compute_matched": false,
+          "launch_ready": false
+        }
+      },
+      "checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "BY_sfr_n010",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "configuration_record": "records/configs/BY_sfr_n010.json",
+      "historical_configuration_path": "configs/by/BY_sfr_n010.json",
+      "config": "records/configs/BY_sfr_n010.json"
+    },
+    {
+      "id": "BY_relif3d_n010",
+      "dataset": "BY",
+      "method": "relif3d",
+      "display_method": "ReLiF-3D",
+      "labeled_cases": 10,
+      "train_cases": 100,
+      "test_cases": 25,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.6056474473411706,
+        "jaccard": 0.46428855425526905,
+        "hd95": 13.535107992419555,
+        "asd": 3.3493786093338644
+      },
+      "reporting_cycles": 36,
+      "notes": [
+        "Accepted fixed primary exposure; original BY table retained"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "4815971d02d2982c3a36f7f670d36877733ddf5c089fa71b4dc11c975edac4a5",
+        "acceptance_sha256": "34d65942e2002ca710b2312b3538a1d95ab4ad97a4e75822cf80784f770e2f10",
+        "artifact_sha256": "dd7ccf7504a9de2084d731e347899d3b4e9abdf6198379d078ca1f88037c5622"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3240,
+        "unlabeled_inputs": 3240,
+        "native_iterations": 3240,
+        "original_recorded_optimizer_updates": 3240,
+        "mandatory_prefix": null
+      },
+      "checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "BY_relif3d_n010",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "configuration_record": "records/configs/BY_relif3d_n010.json",
+      "historical_configuration_path": "configs/by/BY_relif3d_n010.json",
+      "config": "records/configs/BY_relif3d_n010.json"
+    },
+    {
+      "id": "BY_dualteacher_sam_n010",
+      "dataset": "BY",
+      "method": "dualteacher_sam",
+      "display_method": "DualTeacher+SAM",
+      "labeled_cases": 10,
+      "train_cases": 100,
+      "test_cases": 25,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.4510011118551873,
+        "jaccard": 0.33900048343587175,
+        "hd95": 29.55043959861699,
+        "asd": 8.644798097357487
+      },
+      "reporting_cycles": 36,
+      "notes": [
+        "Accepted fixed primary exposure; original BY table retained",
+        "BY legacy ledger optimizer count uses an older convention; do not silently equate it with corrected Public dual-optimizer accounting."
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "3941921518242298e99f656710782c01c4c54cbd7875cba44a8862160243fbdf",
+        "acceptance_sha256": "a4f6588144a5e0b497cf03b1d6b06a88d2ae905eee57fa152ec521572fd34f7c",
+        "artifact_sha256": "92feab5c149a0d306bfbed5d6e9927fcf14218f27bc08c1132c07f8ca92df094"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3240,
+        "unlabeled_inputs": 3240,
+        "native_iterations": 1620,
+        "original_recorded_optimizer_updates": 1620,
+        "mandatory_prefix": null
+      },
+      "checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "BY_dualteacher_sam_n010",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "historical_terminal_weights_retired_by_prior_user_decision",
+      "configuration_record": "records/configs/BY_dualteacher_sam_n010.json",
+      "historical_configuration_path": "configs/by/BY_dualteacher_sam_n010.json",
+      "config": "records/configs/BY_dualteacher_sam_n010.json"
+    },
+    {
+      "id": "BY_scb_seg_n010",
+      "dataset": "BY",
+      "method": "scb_seg",
+      "display_method": "SCB-SAM",
+      "labeled_cases": 10,
+      "train_cases": 100,
+      "test_cases": 25,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.6959686464448257,
+        "jaccard": 0.5547134452949644,
+        "hd95": 9.567620722701498,
+        "asd": 2.5486516334241074
+      },
+      "reporting_cycles": 38,
+      "notes": [
+        "BY5 and BY10 now use distinct supervised initializers and 3420 main pairs; BY10 comparators used 3240 per stream.",
+        "Current records preserve GT-localized ROI development evaluation; not independent-test evidence."
+      ],
+      "provenance": {
+        "result_or_completion_receipt_sha256": "a7a487787be2a3f60ae4baf9d05d42d592946704a43e91c36de552487f7075a6",
+        "checkpoint_sha256": "5e8d441dc6e6a7ecb1d8aeca54523bcce3c7eb0fedad5c113bdfdfdd1e137953",
+        "initializer_sha256": null,
+        "receipt_filename": "by10_hpq_completion_20261108.json",
+        "script_source_manifest_sha256": "c2bca7795f3bcaa2f22a15e91c212a55604672766f18937eb7cbdc6911d14461"
+      },
+      "distance_unit": "voxel",
+      "verification": "COMPLETE_FIXED_FINAL_INDEPENDENTLY_CHECKED",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 38,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "successful_updates": 684,
+        "supervised_initialization": {
+          "epochs": 60,
+          "successful_updates": 600,
+          "separate_from_ssl_budget": true
+        }
+      },
+      "selection": "native_student_epoch37_fixed_final",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "BY_scb_seg_n010",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "recorded_hash_and_receipt_exists_current_distribution_separate",
+      "configuration_record": "records/configs/BY_scb_seg_n010.json",
+      "superseded_20261030_manifest_record": {
+        "metrics": {
+          "dice": 0.7202293238055825,
+          "jaccard": 0.5802045278149347,
+          "hd95": 8.722390311721139,
+          "asd": 2.282634701761731
+        },
+        "selection": "historical_epoch35_terminal_36_completed_cycles",
+        "budget": {
+          "kind": "ssl_primary_inputs_per_stream",
+          "cycles": 36,
+          "labeled_inputs": 3240,
+          "unlabeled_inputs": 3240,
+          "supervised_initialization": "separate; not counted in SSL exposure"
+        },
+        "source_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+        "reason": "Old endpoint or initialization does not match the latest manuscript."
+      },
+      "metric_precision": "full_precision_from_recorded_result_or_completion_receipt",
+      "historical_configuration_path": "configs/by/BY_scb_seg_n010.json",
+      "config": "records/configs/BY_scb_seg_n010.json",
+      "checkpoint_availability": "recorded_hash_and_receipt_exists_current_distribution_separate"
+    },
+    {
+      "id": "Public433_mt_semisam_n005",
+      "dataset": "Public433",
+      "method": "mt_semisam",
+      "display_method": "SemiSAM+ / MT",
+      "labeled_cases": 5,
+      "train_cases": 346,
+      "test_cases": 87,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.5507984509772077,
+        "jaccard": 0.4285901816293743,
+        "hd95": 15.47909384490383,
+        "asd": 7.327624792224323
+      },
+      "reporting_cycles": 11,
+      "notes": [
+        "Accepted fixed11 primary exposure"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "1267413685f044dd55a17cedb2f14f1d563c9a37b8d75cdf13b8abd5d75f4835",
+        "acceptance_sha256": "fa688505b19ac927f8089b65785521991440c991accb37503e16803e5241350f",
+        "contract_sha256": "1bcb44904c7a76b45b2613344e9fda37455f2c48af2675645b29a69699a814fe",
+        "artifact_sha256": "156ee8bae78579f7b2a0a42b5d3819a9ec813899ee6c39ccc92926771184e0cb"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3795,
+        "unlabeled_inputs": 3795,
+        "reference_inputs_per_stream": 3795,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3795
+      },
+      "engineering": {
+        "extra_complete_replayed_updates": 98
+      },
+      "checkpoint_availability": "retained_remotely_not_packaged",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "Public433_mt_semisam_n005",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "retained_remotely_not_packaged",
+      "configuration_record": "records/configs/Public433_mt_semisam_n005.json",
+      "historical_configuration_path": "configs/public433/Public433_mt_semisam_n005.json",
+      "config": "records/configs/Public433_mt_semisam_n005.json"
+    },
+    {
+      "id": "Public433_uamt_semisam_n005",
+      "dataset": "Public433",
+      "method": "uamt_semisam",
+      "display_method": "SemiSAM+ / UA-MT",
+      "labeled_cases": 5,
+      "train_cases": 346,
+      "test_cases": 87,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.5644947545035541,
+        "jaccard": 0.44630387857457904,
+        "hd95": 19.001986541111002,
+        "asd": 11.35064374995934
+      },
+      "reporting_cycles": 11,
+      "notes": [
+        "Accepted fixed11 primary exposure"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "1267413685f044dd55a17cedb2f14f1d563c9a37b8d75cdf13b8abd5d75f4835",
+        "acceptance_sha256": "682d9e8b7490ec3ac2ebfbabf167fe0a9cfb0888f549c2fb5919dea14a69fcfc",
+        "contract_sha256": "c48cdf60a604fe78443847d5a6d54fff0579584059113c2693c0163e5d04fe0d",
+        "artifact_sha256": "d70692ada0e44e1237fab54d1dba2e3964a1ea8aa94473b377f7af2655d5726c"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3795,
+        "unlabeled_inputs": 3795,
+        "reference_inputs_per_stream": 3795,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3795
+      },
+      "engineering": {
+        "own_engineering_updates": 8,
+        "extra_complete_replayed_updates": 0,
+        "formal_recovery_events": 0
+      },
+      "checkpoint_availability": "retained_remotely_not_packaged",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "Public433_uamt_semisam_n005",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "retained_remotely_not_packaged",
+      "configuration_record": "records/configs/Public433_uamt_semisam_n005.json",
+      "historical_configuration_path": "configs/public433/Public433_uamt_semisam_n005.json",
+      "config": "records/configs/Public433_uamt_semisam_n005.json"
+    },
+    {
+      "id": "Public433_sdcl_n005",
+      "dataset": "Public433",
+      "method": "sdcl",
+      "display_method": "SDCL",
+      "labeled_cases": 5,
+      "train_cases": 346,
+      "test_cases": 87,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.6782764919362423,
+        "jaccard": 0.5431038688653523,
+        "hd95": 8.000704306155367,
+        "asd": 2.0707285487190794
+      },
+      "reporting_cycles": 11,
+      "notes": [
+        "Accepted fixed11 primary exposure"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "1267413685f044dd55a17cedb2f14f1d563c9a37b8d75cdf13b8abd5d75f4835",
+        "acceptance_sha256": "d5f7df6c968021b5405e90df07c5cd0c58801f05cb8372aaf5f73c806a203335",
+        "contract_sha256": "bd6f9aaa6200cc8b7145088f2367b4be145ad9cb266e7c0dae5106544a48880c",
+        "artifact_sha256": "26ab307d7614aadfb4f86b835d1047c0ef789558d693c7a0491133db51bdee7b"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3796,
+        "unlabeled_inputs": 3796,
+        "reference_inputs_per_stream": 3795,
+        "mandatory_prefix": {
+          "iterations": 648,
+          "labeled_inputs": 2592,
+          "successful_optimizer_updates": 1296,
+          "unlabeled_inputs": 0
+        },
+        "optimizer_updates": 1898
+      },
+      "engineering": {
+        "own_engineering_updates": 24,
+        "own_engineering_labeled_inputs": 48,
+        "own_engineering_unlabeled_inputs": 24,
+        "extra_complete_replayed_updates": 0,
+        "formal_recovery_events": 0
+      },
+      "checkpoint_availability": "retained_remotely_not_packaged",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "Public433_sdcl_n005",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "retained_remotely_not_packaged",
+      "configuration_record": "records/configs/Public433_sdcl_n005.json",
+      "historical_configuration_path": "configs/public433/Public433_sdcl_n005.json",
+      "config": "records/configs/Public433_sdcl_n005.json"
+    },
+    {
+      "id": "Public433_sfr_n005",
+      "dataset": "Public433",
+      "method": "sfr",
+      "display_method": "SFR",
+      "labeled_cases": 5,
+      "train_cases": 346,
+      "test_cases": 87,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.5627207527793304,
+        "jaccard": 0.4645823538889439,
+        "hd95": 46.54079667731457,
+        "asd": 39.864143180259
+      },
+      "reporting_cycles": 11,
+      "notes": [
+        "Accepted fixed11 primary exposure"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "1267413685f044dd55a17cedb2f14f1d563c9a37b8d75cdf13b8abd5d75f4835",
+        "acceptance_sha256": "ff8f6c19303bd8dbcc06ee8f2e6ec7c0a3cb3460fb1646c47a83ec071df441a3",
+        "contract_sha256": "5d532531e6fc7e66fe63f8a53c2b0933389e277cf0d7028d7da4981ad4937720",
+        "artifact_sha256": "f9287f2cc8224174e1c24755ab7dde44f1acb55a30666e5f782603e5940a8b52"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3796,
+        "unlabeled_inputs": 3796,
+        "reference_inputs_per_stream": 3795,
+        "mandatory_prefix": {
+          "iterations": 6000,
+          "labeled_inputs": 10000,
+          "successful_optimizer_updates": 6000,
+          "unlabeled_inputs": 0
+        },
+        "optimizer_updates": 1898
+      },
+      "engineering": {
+        "own_engineering_updates": 12,
+        "own_engineering_labeled_inputs": 22,
+        "own_engineering_unlabeled_inputs": 12,
+        "extra_complete_replayed_updates": 0,
+        "formal_recovery_events": 0
+      },
+      "checkpoint_availability": "retained_remotely_not_packaged",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "Public433_sfr_n005",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "retained_remotely_not_packaged",
+      "configuration_record": "records/configs/Public433_sfr_n005.json",
+      "historical_configuration_path": "configs/public433/Public433_sfr_n005.json",
+      "config": "records/configs/Public433_sfr_n005.json"
+    },
+    {
+      "id": "Public433_relif3d_n005",
+      "dataset": "Public433",
+      "method": "relif3d",
+      "display_method": "ReLiF-3D",
+      "labeled_cases": 5,
+      "train_cases": 346,
+      "test_cases": 87,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.6252191183898956,
+        "jaccard": 0.5089048743664906,
+        "hd95": 16.178681928127,
+        "asd": 7.642289994255293
+      },
+      "reporting_cycles": 11,
+      "notes": [
+        "Accepted fixed11 primary exposure"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "1267413685f044dd55a17cedb2f14f1d563c9a37b8d75cdf13b8abd5d75f4835",
+        "acceptance_sha256": "f3d401c93caf40f0d27ec73776e1a9c5a6ca510ba585e110a41ae4cec6893fc6",
+        "contract_sha256": "9d7262de5d2fbf5437526a31c2e3d36697237edc3eb5e244b5fcc92710ac5b12",
+        "artifact_sha256": "2a94524c38c215cf83ac76429a640ab6e7168119aa43af5f6e8181b873b81d7c"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3795,
+        "unlabeled_inputs": 3795,
+        "reference_inputs_per_stream": 3795,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3795
+      },
+      "engineering": {
+        "own_engineering_updates": 14,
+        "own_engineering_labeled_inputs": 14,
+        "own_engineering_unlabeled_inputs": 14,
+        "preserved_failed_engineering_updates": 2,
+        "extra_complete_replayed_updates": 0,
+        "formal_recovery_events": 0
+      },
+      "checkpoint_availability": "retained_remotely_not_packaged",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "Public433_relif3d_n005",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "retained_remotely_not_packaged",
+      "configuration_record": "records/configs/Public433_relif3d_n005.json",
+      "historical_configuration_path": "configs/public433/Public433_relif3d_n005.json",
+      "config": "records/configs/Public433_relif3d_n005.json"
+    },
+    {
+      "id": "Public433_dualteacher_sam_n005",
+      "dataset": "Public433",
+      "method": "dualteacher_sam",
+      "display_method": "DualTeacher+SAM",
+      "labeled_cases": 5,
+      "train_cases": 346,
+      "test_cases": 87,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.5519537709398614,
+        "jaccard": 0.4526417919203721,
+        "hd95": 32.26081356272893,
+        "asd": 17.587914973311374
+      },
+      "reporting_cycles": 11,
+      "notes": [
+        "Accepted fixed11 primary exposure",
+        "STRICT_FP32_CPU_ATEN_UNSUPPORTED_KERNELS_V3",
+        "Process-local strict deterministic FP32; native CUDA resize/pool forward, original CPU ATen backward plus CPU CE/NLL/float cumsum; device execution, rounding, transfers and additional compute differ. Native equations, models, seed, optimizers, batch and clocks preserved. Bounded v4 continuation windows bitwise equal; no whole-run bitwise/equal-compute claim."
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "1267413685f044dd55a17cedb2f14f1d563c9a37b8d75cdf13b8abd5d75f4835",
+        "acceptance_sha256": "a642054920384ba565de44f159a0e2875d4a7b1b43c238f08682bdb428f1db80",
+        "contract_sha256": "f3619b78e3afae83f0042e52716a705243064aa7153a073ec6955f1740d0eebc",
+        "artifact_sha256": "b0d78f6071cef4dd847c3f3e1109a8559b88d6676a77fe4f86ada9e4bd53a551"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3796,
+        "unlabeled_inputs": 3796,
+        "reference_inputs_per_stream": 3795,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3796
+      },
+      "engineering": {
+        "own_engineering_updates": 24,
+        "total_engineering_updates_including_preserved_failures": 52,
+        "total_complete_engineering_native_iterations": 26,
+        "complete_engineering_inputs_per_stream": 52,
+        "actual_engineering_inputs_per_stream": 56,
+        "partial_forward_cost_fully_measured": false,
+        "formal_recovery_events": 0,
+        "extra_complete_replayed_updates": 0
+      },
+      "checkpoint_availability": "retained_remotely_not_packaged",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "Public433_dualteacher_sam_n005",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "retained_remotely_not_packaged",
+      "configuration_record": "records/configs/Public433_dualteacher_sam_n005.json",
+      "historical_configuration_path": "configs/public433/Public433_dualteacher_sam_n005.json",
+      "config": "records/configs/Public433_dualteacher_sam_n005.json"
+    },
+    {
+      "id": "Public433_scb_seg_n005",
+      "dataset": "Public433",
+      "method": "scb_seg",
+      "display_method": "SCB-SAM",
+      "labeled_cases": 5,
+      "train_cases": 346,
+      "test_cases": 87,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.706285387061012,
+        "jaccard": 0.5750624831703984,
+        "hd95": 6.576039936636145,
+        "asd": 1.864413970831123
+      },
+      "reporting_cycles": 36,
+      "notes": [
+        "Current matching full-precision endpoint receipt supersedes the old epoch11 reporting record.",
+        "Five-label: fixed36 endpoint. Ten-label: actual16 epochs, development-selected15th epoch.",
+        "Comparator recipes retain 11 reference cycles; total budget and selection differ."
+      ],
+      "provenance": {
+        "paper_table_sha256": "cc7753670f76aa71cf26f7a71dbdbc5cf25f36ff239678bc2a84c636d1395c75",
+        "resource_receipt_sha256": "9570a8019dccccdd02acbe6194c7ba6d68493c84d2a4171a015fd9b4416122d5",
+        "checkpoint_sha256": "473431661269c375b7eb583793df32b5397fe619143c7e1a709ae38b49f4db54",
+        "initializer_sha256": "12a580d460406f52d526b3d73c17b3053d34bb7dc41d814b1daedcfddbe9153f",
+        "checkpoint_existence_checked_at": "2026-11-06T14:25:23.846627+08:00",
+        "endpoint_result_sha256": "25a6a1029df001c3d358c58704c74564bb247000d3c0a85e0db348fe80f27d68",
+        "endpoint_record": "expes/work_dir/semi05_gate/PUBLIC_N005_FINEQ_R3_20261020/fold2/A1B/formal_r1/final_metrics.json",
+        "selected_endpoint_sha256": null,
+        "selected_checkpoint_sha256": "473431661269c375b7eb583793df32b5397fe619143c7e1a709ae38b49f4db54"
+      },
+      "distance_unit": "voxel",
+      "verification": "original_terminal_or_selected_endpoint_receipt_retrieved_20261110_no_new_model_evaluation",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "completed_epochs": 36,
+        "selected_epoch_one_based": 36,
+        "successful_updates": 2484,
+        "labeled_inputs": 12420,
+        "unlabeled_inputs": 12420,
+        "selected_updates": 2484,
+        "selected_labeled_inputs": 12420,
+        "selected_unlabeled_inputs": 12420,
+        "supervised_initialization": "separate_from_SSL_exposure",
+        "counts_source": "matching_original_completion_receipt; selected Public10 5100 pairs = 15*340 fixed source recipe"
+      },
+      "selection": "native_student_epoch35_fixed_final",
+      "checkpoint_availability": "recorded_existence_and_sha_as_of_20261106_not_download_permission",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "Public433_scb_seg_n005",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "recorded_existence_and_sha_as_of_20261106_not_download_permission",
+      "configuration_record": "records/configs/Public433_scb_seg_n005.json",
+      "superseded_20261030_manifest_record": {
+        "metrics": {
+          "dice": 0.7111712253139462,
+          "jaccard": 0.5850407746639286,
+          "hd95": 6.460066555049884,
+          "asd": 1.769454160163623
+        },
+        "selection": "retrospective_epoch11_development_point",
+        "budget": {
+          "kind": "ssl_primary_inputs_per_stream",
+          "cycles": 11,
+          "labeled_inputs": 3795,
+          "unlabeled_inputs": 3795,
+          "supervised_initialization": "separate; not counted in SSL exposure"
+        },
+        "source_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+        "reason": "Old endpoint or initialization does not match the latest manuscript."
+      },
+      "metric_precision": "full_precision_from_original_matching_endpoint_receipt",
+      "historical_configuration_path": "configs/public433/Public433_scb_seg_n005.json",
+      "config": "records/configs/Public433_scb_seg_n005.json"
+    },
+    {
+      "id": "Public433_mt_semisam_n010",
+      "dataset": "Public433",
+      "method": "mt_semisam",
+      "display_method": "SemiSAM+ / MT",
+      "labeled_cases": 10,
+      "train_cases": 346,
+      "test_cases": 87,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.6519064785590714,
+        "jaccard": 0.543354709243622,
+        "hd95": 8.929758842543835,
+        "asd": 2.558300168557006
+      },
+      "reporting_cycles": 11,
+      "notes": [
+        "Accepted fixed11 primary exposure"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "1267413685f044dd55a17cedb2f14f1d563c9a37b8d75cdf13b8abd5d75f4835",
+        "acceptance_sha256": "00b1f7239877bd58fcc55dcef882528e2e884e188284aac6400026292063d683",
+        "contract_sha256": "34cfe2ff4fbbc7ff4cb54a7c6acf05e10bbe15e8a23823218411785f0a5866ed",
+        "artifact_sha256": "333b5096bee752493bcecc645c296bebacea45cbcb8d44e19ec2db51a1e99d28"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3740,
+        "unlabeled_inputs": 3740,
+        "reference_inputs_per_stream": 3740,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3740
+      },
+      "engineering": {
+        "own_engineering_updates": 8,
+        "own_engineering_inputs_per_stream": 8,
+        "formal_recovery_events": 0,
+        "extra_complete_replayed_updates": 0
+      },
+      "checkpoint_availability": "retained_remotely_not_packaged",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "Public433_mt_semisam_n010",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "retained_remotely_not_packaged",
+      "configuration_record": "records/configs/Public433_mt_semisam_n010.json",
+      "historical_configuration_path": "configs/public433/Public433_mt_semisam_n010.json",
+      "config": "records/configs/Public433_mt_semisam_n010.json"
+    },
+    {
+      "id": "Public433_uamt_semisam_n010",
+      "dataset": "Public433",
+      "method": "uamt_semisam",
+      "display_method": "SemiSAM+ / UA-MT",
+      "labeled_cases": 10,
+      "train_cases": 346,
+      "test_cases": 87,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.6521678013223893,
+        "jaccard": 0.5446285931450833,
+        "hd95": 16.10240356382606,
+        "asd": 10.739948801443122
+      },
+      "reporting_cycles": 11,
+      "notes": [
+        "Accepted fixed11 primary exposure"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "1267413685f044dd55a17cedb2f14f1d563c9a37b8d75cdf13b8abd5d75f4835",
+        "acceptance_sha256": "0f099ec8e41c951d7c3964ba40b1f26a0aa58dd62b7ce9d264ab46268db1b913",
+        "contract_sha256": "0bc347cd92088058d3954c5772cb666494bf941a526844496c45bc47fd414c82",
+        "artifact_sha256": "a9f10aa0405eb75db69db988534eabe678277a4fea024ae351e2a57ca213691e"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3740,
+        "unlabeled_inputs": 3740,
+        "reference_inputs_per_stream": 3740,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3740
+      },
+      "engineering": {
+        "own_engineering_updates": 8,
+        "own_engineering_inputs_per_stream": 8,
+        "formal_recovery_events": 0,
+        "extra_complete_replayed_updates": 0
+      },
+      "checkpoint_availability": "retained_remotely_not_packaged",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "Public433_uamt_semisam_n010",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "retained_remotely_not_packaged",
+      "configuration_record": "records/configs/Public433_uamt_semisam_n010.json",
+      "historical_configuration_path": "configs/public433/Public433_uamt_semisam_n010.json",
+      "config": "records/configs/Public433_uamt_semisam_n010.json"
+    },
+    {
+      "id": "Public433_sdcl_n010",
+      "dataset": "Public433",
+      "method": "sdcl",
+      "display_method": "SDCL",
+      "labeled_cases": 10,
+      "train_cases": 346,
+      "test_cases": 87,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.7036041724388571,
+        "jaccard": 0.5789844486022285,
+        "hd95": 7.244762528932653,
+        "asd": 1.853638475022725
+      },
+      "reporting_cycles": 11,
+      "notes": [
+        "Accepted fixed11 primary exposure"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "1267413685f044dd55a17cedb2f14f1d563c9a37b8d75cdf13b8abd5d75f4835",
+        "acceptance_sha256": "f38df3271c8bbdd0b77179c03db941c84f1f47741d46f575394a7e3430648c99",
+        "contract_sha256": "e3a8734bea260dfe94921f7232825f227e077e904034854e7fb5fc29704b9339",
+        "artifact_sha256": "939055bd286b88a449c0465421093776a942e11b9034bc95b814d5a2a9482409"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3740,
+        "unlabeled_inputs": 3740,
+        "reference_inputs_per_stream": 3740,
+        "mandatory_prefix": {
+          "iterations": 1620,
+          "labeled_inputs": 6480,
+          "unlabeled_inputs": 0,
+          "successful_optimizer_updates": 3240
+        },
+        "optimizer_updates": 1870
+      },
+      "engineering": {
+        "own_engineering_updates": 24,
+        "own_engineering_labeled_inputs": 48,
+        "own_engineering_unlabeled_inputs": 24,
+        "formal_recovery_events": 0,
+        "extra_complete_replayed_updates": 0
+      },
+      "checkpoint_availability": "retained_remotely_not_packaged",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "Public433_sdcl_n010",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "retained_remotely_not_packaged",
+      "configuration_record": "records/configs/Public433_sdcl_n010.json",
+      "historical_configuration_path": "configs/public433/Public433_sdcl_n010.json",
+      "config": "records/configs/Public433_sdcl_n010.json"
+    },
+    {
+      "id": "Public433_sfr_n010",
+      "dataset": "Public433",
+      "method": "sfr",
+      "display_method": "SFR",
+      "labeled_cases": 10,
+      "train_cases": 346,
+      "test_cases": 87,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.5914676650376567,
+        "jaccard": 0.4997843967664246,
+        "hd95": 59.51602168628561,
+        "asd": 54.53773249422073
+      },
+      "reporting_cycles": 11,
+      "notes": [
+        "Accepted fixed11 primary exposure"
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "1267413685f044dd55a17cedb2f14f1d563c9a37b8d75cdf13b8abd5d75f4835",
+        "acceptance_sha256": "b7c4bbe183a77611c0caf0de7f9ee29181f39168871ff3063f8dde3049c07efe",
+        "contract_sha256": "e8b3f994746fa8f4d79c7b415a36b7659d949c35fdd75707d594bf3c8a6c1960",
+        "artifact_sha256": "2bff6cfdbd990b252606e5d46bb9a6acc294ca60a26c7de79f8caebe720493fd"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3740,
+        "unlabeled_inputs": 3740,
+        "reference_inputs_per_stream": 3740,
+        "mandatory_prefix": {
+          "unlabeled_inputs": 0,
+          "labeled_inputs": 12000,
+          "successful_optimizer_updates": 6000,
+          "iterations": 6000
+        },
+        "optimizer_updates": 1870
+      },
+      "engineering": {
+        "own_engineering_updates": 12,
+        "own_engineering_labeled_inputs": 24,
+        "own_engineering_unlabeled_inputs": 12,
+        "formal_recovery_events": 0,
+        "extra_complete_replayed_updates": 0
+      },
+      "checkpoint_availability": "retained_remotely_not_packaged",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "Public433_sfr_n010",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "retained_remotely_not_packaged",
+      "configuration_record": "records/configs/Public433_sfr_n010.json",
+      "historical_configuration_path": "configs/public433/Public433_sfr_n010.json",
+      "config": "records/configs/Public433_sfr_n010.json"
+    },
+    {
+      "id": "Public433_relif3d_n010",
+      "dataset": "Public433",
+      "method": "relif3d",
+      "display_method": "ReLiF-3D",
+      "labeled_cases": 10,
+      "train_cases": 346,
+      "test_cases": 87,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.6599712153234624,
+        "jaccard": 0.5494700298321898,
+        "hd95": 8.474122725399148,
+        "asd": 2.4429768643237657
+      },
+      "reporting_cycles": 11,
+      "notes": [
+        "Accepted fixed11 primary exposure",
+        "HD95 corrected from a local summary transcription during migration; see results/corrections_20261030.json. Original evidence unchanged."
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "1267413685f044dd55a17cedb2f14f1d563c9a37b8d75cdf13b8abd5d75f4835",
+        "acceptance_sha256": "b139f2ff28dd182ab6a278094af28ad19edf8a380c86d2188de0eb384cf70ab5",
+        "contract_sha256": "edcb51d30c8e92664083b519f272aac3e03c2ee92a844276fe75044955f20091",
+        "artifact_sha256": "d4456ec431601107321e905391c46ea8106b91474c9187ddae5b3b8748ad2a7b3",
+        "remote_acceptance_sha256": "10a882aceff1b9240cc4685460277ea94d0574ec015c1d518b6975cbe26521d2",
+        "cases_sha256": "7dcfdfa9a20f171b82eed81dd56d53b95e08e551f7dd682169eaa2076be8ea93",
+        "correction_record": "results/corrections_20261030.json"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3740,
+        "unlabeled_inputs": 3740,
+        "reference_inputs_per_stream": 3740,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3740
+      },
+      "engineering": {
+        "own_engineering_updates": 12,
+        "own_engineering_labeled_inputs": 12,
+        "own_engineering_unlabeled_inputs": 12,
+        "formal_recovery_events": 0,
+        "extra_complete_replayed_updates": 0
+      },
+      "checkpoint_availability": "retained_remotely_not_packaged",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "Public433_relif3d_n010",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "retained_remotely_not_packaged",
+      "configuration_record": "records/configs/Public433_relif3d_n010.json",
+      "historical_configuration_path": "configs/public433/Public433_relif3d_n010.json",
+      "config": "records/configs/Public433_relif3d_n010.json"
+    },
+    {
+      "id": "Public433_dualteacher_sam_n010",
+      "dataset": "Public433",
+      "method": "dualteacher_sam",
+      "display_method": "DualTeacher+SAM",
+      "labeled_cases": 10,
+      "train_cases": 346,
+      "test_cases": 87,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.5917818056332126,
+        "jaccard": 0.4965592557623851,
+        "hd95": 20.387442287224395,
+        "asd": 10.988644443512094
+      },
+      "reporting_cycles": 11,
+      "notes": [
+        "Accepted fixed11 primary exposure",
+        "STRICT_FP32_CPU_ATEN_UNSUPPORTED_KERNELS_V3",
+        "CUDA resize/pool forward retained; CPU ATen backward and CPU CE/NLL/float cumsum; CPU transfers, rounding and extra computation differ from full GPU native path.",
+        "HD95 corrected from a local summary transcription during migration; see results/corrections_20261030.json. Original evidence unchanged."
+      ],
+      "provenance": {
+        "working_table_sha256": "ddc481cbe73b8eed31c2649a7a7a2e201c830b425c97394941b575a143c7d710",
+        "result_ledger_sha256": "1267413685f044dd55a17cedb2f14f1d563c9a37b8d75cdf13b8abd5d75f4835",
+        "acceptance_sha256": "8623574c50f6ab2d241e90486a1c79ab060c92581e5399f34c7184e5989cd494",
+        "contract_sha256": "3c36cf039e790173ce0aa507a2467f81ab9fdf8ace1a5f6d626e7cd5000dd3b6",
+        "artifact_sha256": "47905d5aaae1be1aef8846c98831378eb0786c9bdb84b6df8187aa1c174e5d55",
+        "remote_acceptance_sha256": "04fdb082178188827be2ecc6c2869a29420ddfa814a41de3e7e7f7f5b942db90",
+        "cases_sha256": "8ec703e5e0319120825970d74bc58523fa6c74c0176c62287b57c8bf847de48f",
+        "correction_record": "results/corrections_20261030.json"
+      },
+      "distance_unit": "voxel",
+      "verification": "independently_accepted",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3740,
+        "unlabeled_inputs": 3740,
+        "reference_inputs_per_stream": 3740,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3740
+      },
+      "engineering": {
+        "own_engineering_updates": 24,
+        "own_engineering_labeled_inputs": 24,
+        "own_engineering_unlabeled_inputs": 24,
+        "formal_recovery_events": 0,
+        "extra_complete_replayed_updates": 0
+      },
+      "checkpoint_availability": "retained_remotely_not_packaged",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "Public433_dualteacher_sam_n010",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "retained_remotely_not_packaged",
+      "configuration_record": "records/configs/Public433_dualteacher_sam_n010.json",
+      "historical_configuration_path": "configs/public433/Public433_dualteacher_sam_n010.json",
+      "config": "records/configs/Public433_dualteacher_sam_n010.json"
+    },
+    {
+      "id": "Public433_scb_seg_n010",
+      "dataset": "Public433",
+      "method": "scb_seg",
+      "display_method": "SCB-SAM",
+      "labeled_cases": 10,
+      "train_cases": 346,
+      "test_cases": 87,
+      "fold": 2,
+      "seed": 2027,
+      "metrics": {
+        "dice": 0.7276138331075723,
+        "jaccard": 0.6007931937747649,
+        "hd95": 6.0306260196571335,
+        "asd": 1.637180521375748
+      },
+      "reporting_cycles": 15,
+      "notes": [
+        "Current matching full-precision endpoint receipt supersedes the old epoch11 reporting record.",
+        "Five-label: fixed36 endpoint. Ten-label: actual16 epochs, development-selected15th epoch.",
+        "Comparator recipes retain 11 reference cycles; total budget and selection differ."
+      ],
+      "provenance": {
+        "paper_table_sha256": "cc7753670f76aa71cf26f7a71dbdbc5cf25f36ff239678bc2a84c636d1395c75",
+        "resource_receipt_sha256": "9570a8019dccccdd02acbe6194c7ba6d68493c84d2a4171a015fd9b4416122d5",
+        "checkpoint_sha256": "fb54e162fadb6b43a186c6f077b1063195a0f0a0eef46dbe85cc68ad47cd6524",
+        "initializer_sha256": "e0b0054027306e50905d1092cd4175bec9d8a37983e686071becbe0e3f1a8db2",
+        "checkpoint_existence_checked_at": "2026-11-06T14:25:23.846627+08:00",
+        "endpoint_result_sha256": "8bcbce27399f425e7042b15c8a9b3f73b92dbac803ee516413d38068b2c14fce",
+        "endpoint_record": "expes/work_dir/semi05_gate/PUBLIC_N010_FINEQ_BEST_RESTART4_20261027/fold2/A1B/formal_r1/selection_metrics.json",
+        "selected_endpoint_sha256": "f20ec7f4178433f9c5cd0cb18679353a831e31581269c8f9bc5be13f459dd75b",
+        "selected_checkpoint_sha256": "fb54e162fadb6b43a186c6f077b1063195a0f0a0eef46dbe85cc68ad47cd6524"
+      },
+      "distance_unit": "voxel",
+      "verification": "original_terminal_or_selected_endpoint_receipt_retrieved_20261110_no_new_model_evaluation",
+      "training_runtime_portability": "recorded_sources_require_port_verification",
+      "budget": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "completed_epochs": 16,
+        "selected_epoch_one_based": 15,
+        "successful_updates": 1088,
+        "labeled_inputs": 5440,
+        "unlabeled_inputs": 5440,
+        "selected_updates": 1020,
+        "selected_labeled_inputs": 5100,
+        "selected_unlabeled_inputs": 5100,
+        "supervised_initialization": "separate_from_SSL_exposure",
+        "counts_source": "matching_original_completion_receipt; selected Public10 5100 pairs = 15*340 fixed source recipe"
+      },
+      "selection": "development_selected_epoch14_of_16_completed_epochs",
+      "checkpoint_availability": "recorded_existence_and_sha_as_of_20261106_not_download_permission",
+      "source_snapshot_manifest_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+      "source_snapshot_row_id": "Public433_scb_seg_n010",
+      "table_scope": "latest_paper_v14a",
+      "historical_checkpoint_availability": "recorded_existence_and_sha_as_of_20261106_not_download_permission",
+      "configuration_record": "records/configs/Public433_scb_seg_n010.json",
+      "superseded_20261030_manifest_record": {
+        "metrics": {
+          "dice": 0.7271601671954531,
+          "jaccard": 0.6009377605230879,
+          "hd95": 6.033065090300414,
+          "asd": 1.6329694797912933
+        },
+        "selection": "retrospective_epoch11_development_point",
+        "budget": {
+          "kind": "ssl_primary_inputs_per_stream",
+          "cycles": 11,
+          "labeled_inputs": 3740,
+          "unlabeled_inputs": 3740,
+          "supervised_initialization": "separate; not counted in SSL exposure"
+        },
+        "source_sha256": "dab997ffb0288d471ba002a3bcfb9a4f606e2d957cbb5632352d9f3b9e5abb22",
+        "reason": "Old endpoint or initialization does not match the latest manuscript."
+      },
+      "metric_precision": "full_precision_from_original_matching_endpoint_receipt",
+      "historical_configuration_path": "configs/public433/Public433_scb_seg_n010.json",
+      "config": "records/configs/Public433_scb_seg_n010.json"
+    }
+  ],
+  "open_items": [
+    "Portable execution, current checkpoint availability and redistribution terms require separate validation."
+  ]
+}

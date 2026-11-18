@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETE_FIXED_FINAL",
+  "group": "HPQ",
+  "completed_epochs": 36,
+  "successful_updates": 684,
+  "attempted_updates": 684,
+  "metrics": {
+    "dice": 0.6779282300321872,
+    "jaccard": 0.5292968205064607,
+    "hd95": 10.2390654193505,
+    "asd": 2.63258837129509
+  },
+  "initializer_sha256": "b113d1731a8e535ff482bebe7c2ca0d821760d44e5ea02e59b33cae58557c4be",
+  "checkpoint_sha256": "1fbdb60e38db729a1760d513516add06d74ca8caddd9c82735a612f8980fc584",
+  "selection": "native_student_epoch35_fixed_final",
+  "source_result_sha256": "f6390acff27262f91cf710e3488695325cbc2e31f722ae672a6292294d788333",
+  "source_result_record": "HP_HQ_FINAL_20261106/results/HPQ/result.json",
+  "historical_checkpoint_saved": true,
+  "independent_test": false
+}

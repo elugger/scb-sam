@@ -1,0 +1,23 @@
+{
+  "expes/common/seg_metrics.py": "8f6289463c2ae10d6743d7e74b60b18df77b373e1b91ec972edb4bb97ee567c9",
+  "expes/common/semi_data.py": "03a3484538c45d27c577ca472b61e9fb86381cc937841566df3bb67d724f1215",
+  "segment_anything/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+  "segment_anything/auto_sam_seg.pyc": "fbb8bbeab975cf7cadfd609ed9f0c57a673d12a1d4d014c729cd90852a9a068e",
+  "segment_anything/build_sam3D.py": "53178647d1bc4f7482733a3c27349ca4ded84e891314fb366a9b95d0b75368b9",
+  "segment_anything/build_sam3D_cascade.pyc": "5a74f2fa34c6c686367da536cc91cc6802f167dc40010846de30f6932c7df2ae",
+  "segment_anything/modeling/__init__.py": "e17de3e103365ed58a0226ebba24ff4e00e38818ae1b751b810038076132ee39",
+  "segment_anything/modeling/coarse_nnunet3d.py": "9394d19e57cc52f3e35c8a406c508f9838c3a51a8160d24cc89d8963e4174ed1",
+  "segment_anything/modeling/image_encoder3D.py": "4d2ce9b5633dd71f228900a61b040cf35456c3c7bb6e028b02009cdabbaa0a3f",
+  "segment_anything/modeling/mask_decoder3D.py": "c32d5255d14adb4ff2fa80480f8b6a090352d48f11b2347519688375ef0bb80f",
+  "segment_anything/modeling/prompt_encoder3D.py": "e0a42f28028d4af48d1ce3b26c70ab2bebb5a82d678232aeed66440115defccf",
+  "segment_anything/modeling/sam3D.py": "ee5293c90c2093139e7fcd1f791de4310871c091dc61b54bd50bdef849436938",
+  "segment_anything/modeling/sam3D_cascade.pyc": "dd80ad61a3c6a6217184ee6e967d6daefac187eaae5d126476ce22a5ae7629e2",
+  "utils/auto_sam_loss.py": "932267d7e92c2dee47bf44f49103c2a6efd3a867ff6500cdc7a66cd3e7249206",
+  "utils/cascade_train_utils.py": "1157566e0a3cb0ba339c4987327fcf2c61128e46a5321f814a54baeabf33371b",
+  "utils/data_loader.py": "e8049e507c3ecd99614e797916dc2841c7bd774b5f84df0ff69a477e4c84380e",
+  "expes/semi05_gate/public_hpq_epochdiag_20261019/hpq_contract.py": "7b7afaef9ab4e9f31d4287dd8ec759e011d0e3bfec5f191116fc57d83f277cea",
+  "expes/semi05_gate/public_hpq_epochdiag_20261019/hpq_inputs.py": "cf11d945d7869c2d1ad373cf205677355942c8996b4bfcb7cf72271cc8ceaf4f",
+  "expes/semi05_gate/public_hpq_epochdiag_20261019/hpq_resources.py": "427c96de05328b996c896fc329ea552ffa0b84b0a221aa54bd963b85b4ad7171",
+  "expes/semi05_gate/main_table_20261019_r3/runtime_resources.py": "ecb24e61b93a567eea3d9fb44550f050a7a39f2558d572e3a418f75dc825c34c",
+  "expes/semi05_gate/public_sup_20261018/public_recovery_guard_20261019.py": "6032a10c6768f7bbefde76a0e87146d17ae79953a3bd8e3772625baf9d15a76d"
+}

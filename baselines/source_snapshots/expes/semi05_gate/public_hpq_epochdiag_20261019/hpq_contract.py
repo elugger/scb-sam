@@ -1,0 +1,189 @@
+"""CPU-only contract for the new fixed-fold run; not a launcher or GPU proof.
+
+No dependency on the old five-fold manifest, test-selected initializer or
+formal entry point. Data transforms retain the disclosed GT-ROI limitation.
+"""
+from collections import Counter
+from pathlib import Path, PurePosixPath
+import hashlib
+import json
+import os
+import re
+
+ROOT = PurePosixPath('__RECORDED_PROJECT_ROOT__')
+INIT = ROOT / 'expes/artifacts/FCD_A_MATRIX_20261006/PUBLIC_BASIC_SUP_FOLD2_20261018/sup05/final.pth'
+INIT_SHA = '5bcabbbac25e183e99eacf505854f9a2e568398bc95b17f8fe934fc17b6b19a2'
+METRICS_SHA = '2dae051a83a92b21223c1f44ada41857265be8adf07ebb66f24b3a6d9bd4f063'
+BASE = ROOT / 'expes/work_dir/semi05_gate/PUBLIC05_HPQ_EPOCHDIAG_20261019/fold2/A1B'
+STORE = ROOT / 'expes/artifacts/FCD_A_MATRIX_20261006/PUBLIC05_HPQ_EPOCHDIAG_20261019/fold2/A1B/formal_r1'
+EPOCHS, MICRO_PER_EPOCH, ACCUMULATION = 36, 330, 5
+UPDATES_PER_EPOCH, UPDATES, MICROBATCHES = 66, 2376, 11880
+
+
+def require(ok, message):
+    if not ok:
+        raise ValueError(message)
+
+
+def sha_file(path):
+    h = hashlib.sha256()
+    with Path(path).open('rb') as f:
+        for block in iter(lambda: f.read(8 * 1024 ** 2), b''):
+            h.update(block)
+    return h.hexdigest()
+
+
+def is_sha(value):
+    return isinstance(value, str) and re.fullmatch('[0-9a-f]{64}', value) is not None
+
+
+def validate_scope(fold, seed, phase, gpu):
+    require(type(fold) is int and fold == 2, 'Only fold2 is authorized')
+    require(type(seed) is int and seed == 2027, 'Only seed2027 is authorized')
+    require(phase in ('bridge', 'formal'), 'Unknown phase')
+    require(type(gpu) is int and gpu in (0, 1), 'Invalid physical GPU')
+
+
+def validate_scientific_config(cfg, ancestor):
+    """Exact frozen science equality after only reviewed transport fields.
+
+    Ancestor is separately SHA-bound by preparation, not an arbitrary caller
+    assertion. This validator never reads old test scores or selects a winner.
+    """
+    import copy
+    a, b = copy.deepcopy(ancestor), copy.deepcopy(cfg)
+    require(b['dataset']['fold'] == 2 and b['experiment']['seed'] == 2027, 'Wrong fold/seed')
+    require(b['dataset']['split_root'] == 'expes/splits/public/public_semi05_cv5' and
+            b['dataset']['fold_cv_dir_template'] == 'data/Public_433_Folds/fold_{fold}', 'Wrong dataset')
+    require(b['semi']['matrix_group'] == 'A1B' and b['semi']['matrix_c'] == 'B', 'Not original HPQ')
+    require(b['semi']['ucp_epochs'] == 36 and b['semi']['ucp_accumulation'] == 5, 'Wrong training budget')
+    require(b['semi']['paired_refresh_labels'] is False and b['semi']['paired_workers'] == 0,
+            'Frozen pairing changed')
+    frozen = {'ucp_encoder_lr': 5e-8, 'ucp_decoder_lr': 2e-7, 'ucp_coarse_lr': 2e-7,
+              'fclr_head_lr': 1e-4, 'zea_lr': 1e-4, 'xsa_cross_gain': .5,
+              'cross_style_complement': 'two-donor-full-decoder'}
+    for k, v in frozen.items():
+        require(b['semi'].get(k) == v, 'Frozen field differs: ' + k)
+    # Different fold transport only; do not silently drop arbitrary cfg keys.
+    b['dataset']['fold'] = a['dataset']['fold']
+    for obj in (a, b):
+        for key in ('gpu', 'output_dir'):
+            obj['experiment'].pop(key, None)
+        obj['semi'].pop('paired_checkpoint_dir', None)
+    require(a == b, 'Unreviewed scientific config change')
+
+
+def validate_initialization(path, digest, acceptance):
+    require(str(path) == str(INIT) and digest == INIT_SHA, 'Not the accepted sup05 final')
+    require(acceptance.get('status') == 'VERIFIED_COMPLETE', 'Sup05 not accepted')
+    require(acceptance.get('final_sha256') == INIT_SHA, 'Acceptance weight differs')
+    require(acceptance.get('final_metrics_sha256') == METRICS_SHA, 'Acceptance metrics differ')
+
+
+def validate_checkpoint_metadata(payload):
+    require(payload.get('format') == 'public_basic_sup_fixed_final_student_v1', 'Not basic supervised final')
+    for k, v in (('completed_epochs', 60), ('epoch', 59), ('successful_updates', 1020),
+                 ('test_evaluations_before_save', 0)):
+        require(type(payload.get(k)) is int and payload[k] == v, 'Invalid checkpoint field: ' + k)
+    require(payload.get('selection_rule') == 'fixed_epoch_60_student', 'Not fixed final selection')
+    require(isinstance(payload.get('student'), dict) and payload['student'], 'Missing full student state')
+
+
+def validate_splits(splits):
+    sizes = {'train_lab': 17, 'train_unlab': 329, 'train_whole': 346, 'test': 87}
+    require(set(splits) == set(sizes), 'Unexpected split roles')
+    sets = {}
+    for role, size in sizes.items():
+        ids = splits[role]
+        require(isinstance(ids, (tuple, list)) and len(ids) == size, 'Count: ' + role)
+        require(all(isinstance(x, str) and re.fullmatch('[A-Za-z0-9_-]+', x) for x in ids), 'Unsafe case ID')
+        require(len(set(ids)) == size, 'Duplicate: ' + role)
+        sets[role] = set(ids)
+    require(not sets['train_lab'] & sets['train_unlab'], 'Lab/unlab overlap')
+    require(sets['train_lab'] | sets['train_unlab'] == sets['train_whole'], 'Training union mismatch')
+    require(not sets['train_whole'] & sets['test'], 'Train/test overlap')
+    return {'file_id_boundary_verified': True, 'patient_alias_boundary_verified': False,
+            'unique_patient_count': None}
+
+
+def epoch_tokens(epoch):
+    require(type(epoch) is int and 0 <= epoch < EPOCHS, 'Epoch out of budget')
+    return [(epoch, 0, i) for i in range(329)] + [(epoch, 1, epoch % 329)]
+
+
+def validate_loaded_case(sample, expected_id, expected_index, labeled):
+    """Called before SeededCases can overwrite requested_index metadata."""
+    require(sample.get('case_id') == expected_id, 'Actual returned case differs')
+    require(type(sample.get('actual_index')) is int and sample['actual_index'] == expected_index,
+            'Actual returned index differs')
+    keys = {'image', 'case_id', 'actual_index', 'gt_roi_used', 'origin_adjusted', 'direction_adjusted'}
+    if labeled:
+        keys.add('label')
+    require(set(sample) == keys, 'Unexpected/missing sample key, possible hidden label')
+    require(sample['gt_roi_used'] is True, 'Inherited ROI limitation must not be hidden')
+    require(type(sample['origin_adjusted']) is bool and type(sample['direction_adjusted']) is bool,
+            'Geometry adjustment provenance is missing')
+
+
+def validate_micro_trace(row, splits, epoch, step, labeled_order):
+    """Pure scalar trace validation; labeled_order comes from frozen RNG helper."""
+    require(type(step) is int and 0 <= step < MICRO_PER_EPOCH, 'Microstep out of range')
+    require(len(labeled_order) == 17 and set(labeled_order) == set(range(17))
+            and all(type(i) is int for i in labeled_order), 'Wrong frozen labeled permutation')
+    token = epoch_tokens(epoch)[step]
+    li = labeled_order[step % 17]
+    ui = token[2]
+    expected = {'epoch': epoch, 'step': step, 'labeled_index': li, 'unlabeled_index': ui,
+                'labeled_case_id': splits['train_lab'][li], 'unlabeled_case_id': splits['train_unlab'][ui],
+                'unlabeled_replay': token[1], 'padding': bool(token[1]),
+                'padding_case_id': splits['train_unlab'][ui] if token[1] else None,
+                'unlabeled_label_returned': False, 'gt_roi_used': True}
+    for k, v in expected.items():
+        require(type(row.get(k)) is type(v) and row[k] == v, 'Trace mismatch: ' + k)
+    return expected
+
+
+def validate_epoch_trace(rows, splits, epoch, labeled_order):
+    require(len(rows) == MICRO_PER_EPOCH, 'Incomplete epoch microtrace')
+    for step, row in enumerate(rows):
+        validate_micro_trace(row, splits, epoch, step, labeled_order)
+    expected = Counter(splits['train_unlab'])
+    expected[splits['train_unlab'][epoch % 329]] += 1
+    require(Counter(r['unlabeled_case_id'] for r in rows) == expected, 'Actual unlab coverage differs')
+    require(set(r['labeled_case_id'] for r in rows) == set(splits['train_lab']), 'Lab coverage differs')
+    return {'epoch': epoch, 'microbatches': 330, 'updates': 66, 'unique_unlabeled': 329,
+            'unique_labeled': 17, 'padding_case_id': splits['train_unlab'][epoch % 329]}
+
+
+def validate_test_boundary(state):
+    for k, v in (('completed_epochs', 36), ('updates', 2376), ('microbatches', 11880),
+                 ('saved_epoch', 35), ('test_evaluations_started', 35)):
+        require(type(state.get(k)) is int and state[k] == v, 'Final test budget violation: ' + k)
+    require(state.get('phase') == 'formal', 'Bridge cannot evaluate test')
+    require(state.get('strict_reload_verified') is True, 'Final not strictly reloaded')
+    require(state.get('final_path') == str(STORE / 'final.pth'), 'Noncanonical final target')
+    require(is_sha(state.get('final_sha256')) and state.get('reloaded_sha256') == state['final_sha256'],
+            'Final/reload identity differs')
+
+
+def claim_final_test(output, state):
+    """One-way durable intent. Never remove/retry after a partial failed test.
+
+    Caller must have independently checked the complete ledger and actual
+    six-root strict reload; this function checks their receipt and file digest.
+    """
+    validate_test_boundary(state)
+    output = Path(output)
+    require(output.as_posix() == str(BASE / 'formal_r1'), 'Wrong final output')
+    final = Path(state['final_path'])
+    for path in (output, final):
+        require(not any(p.is_symlink() for p in (path, *path.parents)), 'Symlink/ancestor not allowed')
+    require(output.is_dir() and final.is_file(), 'Missing final output/weight')
+    require(sha_file(final) == state['final_sha256'], 'Final changed before evaluation')
+    marker = output / 'test_evaluation_started.json'
+    with marker.open('x', encoding='utf-8') as f:
+        json.dump({'final_sha256': state['final_sha256'], 'test_cases': 87,
+                   'selection_rule': 'fixed_epoch35_native_student', 'automatic_retry': False}, f)
+        f.flush()
+        os.fsync(f.fileno())
+    return marker

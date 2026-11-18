@@ -1,0 +1,17 @@
+{
+  "files": {
+    "by_inputs.py": "0a1cc32f421360924b438190595cd67547c1acacdffe888afc571b34558b3dd8",
+    "by_protocol.py": "d847525151f3e2fb63e06e35658c24f87518722dea0126dc4cf1488423f7e19b",
+    "by_resources.py": "faddff2fb61774075556bcfea980ed88456672cce0a5d99eaffd97c17d91d731",
+    "by_runtime.py": "8f38bbb8b0335e7808e141e8829355ccb77ee6edc08afede6aecb77f579c197e",
+    "dependency_pins.json": "c9a8c51a74c2209249999f5309c5a6a0ca298fb2b7e0c909a33bfc16624f492d",
+    "four_contract.py": "b1935546537bb3261ff117826a4afbeaa751f423318158a84eea3a6fcd9cd85b",
+    "four_training.py": "2bc2e0bd45695795939765e45c5a120dd97a6ce499b143cd16131081e3fd3127",
+    "infrastructure_pins.json": "40ca4339a36615c25c78d658092d65331f0418bbcab5b66437565fc5cdcdf7e0",
+    "prepare_by5.py": "c7b0084da37f7f8173857f24c00c8a3b841e0d84126f329dc8ec853d62f3ed11",
+    "run_by10.py": "c5ded5e4a1749b50cb326fe304eb24f0e08204f5c50c3b69ec4c86c3c0db32c9",
+    "step_gates.py": "59b70de44fc73ec37885f7c859ac274016cee1fbaf3e6760ad07650fa9a40550",
+    "test_by10.py": "6f592b2faffd1576ec03f819648c5870e9cf7b635d6e5bcb1cf7f10884010e32",
+    "train_by5.py": "cd94896aca93baaac13e85520702327b25dccf00548430575b159dd1a8926822"
+  }
+}

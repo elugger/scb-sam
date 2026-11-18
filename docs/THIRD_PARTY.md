@@ -1,0 +1,55 @@
+# Third-party provenance and licensing status
+
+Audit date: 2026-11-10. Scope: the six comparator recipes in the 28-row main table, their three SAM foundation checkpoints, and the shared supervised initializers used by SCB-SAM / H / HP / HQ / HPQ. This is an evidence register, not a declaration that every dependency is cleared for redistribution.
+
+The repository's [Apache License 2.0](../LICENSE) applies to original project code for which the project authors can grant that license. It does not replace licenses, copyright notices, or restrictions belonging to upstream implementations, model weights, or datasets. Model weights and patient data are not part of the code repository. A public repository, paper citation, or recorded SHA-256 is not by itself a redistribution grant.
+
+## Main-table comparator code
+
+| Recipe | Primary upstream source | Exact version evidence available locally | License evidence checked | Release status / unresolved item |
+|---|---|---|---|---|
+| SemiSAM+ / MT | [YichiZhang98/SemiSAM](https://github.com/YichiZhang98/SemiSAM); the official README identifies `code_semisam+` and its MT runner | The experimental adapter belongs to `main_table_20261019_r3`; no exact upstream Git commit was established in this audit | The official root listing and README examined did not provide an explicit license grant. The README attributes implementation components to UA-MT, SSL4MIS and SAM-Med3D | Upstream source provenance identified; permission for copied SemiSAM-specific code and its transitive components remains unconfirmed. Do not relabel them Apache-2.0 |
+| SemiSAM+ / UA-MT | [YichiZhang98/SemiSAM](https://github.com/YichiZhang98/SemiSAM), [yulequan/UA-MT](https://github.com/yulequan/UA-MT), [HiLab-git/SSL4MIS](https://github.com/HiLab-git/SSL4MIS) | Same adapter family; exact upstream revisions and per-file ancestry still need binding | No explicit SemiSAM license grant was found in the inspected official root/README. UA-MT/SSL4MIS transitive permission has not been fully audited here | Unconfirmed; the license of a dependency cannot supply missing permission for a downstream author's additions |
+| SDCL | [pascalcpp/SDCL](https://github.com/pascalcpp/SDCL) | Local native adapter/source fingerprints exist; an exact upstream Git commit was not established here | The official root listing and README examined did not show an explicit license grant. The README credits BCP and SSL4MIS | Attribution confirmed; redistribution permission and transitive file licenses unresolved. Engineering `qualification_prefix` files are not formal initializers and are not included |
+| SFR | [ShumengLI/SFR](https://github.com/ShumengLI/SFR), [official README](https://raw.githubusercontent.com/ShumengLI/SFR/main/README.md) | Local `sfr_stage_protocol.py` pins commit `dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6`; `sfr_runtime_components.py` separately pins source files | The official README identifies the SFR implementation. No explicit root license was found in the inspected upstream listing; the attempted root `LICENSE` URL did not yield license text | Version pin confirmed locally; SFR-specific redistribution permission remains unconfirmed. SAM's Apache license does not automatically license the SFR additions |
+| ReLiF-3D | [kunaljangid01/ReLiF_3D](https://github.com/kunaljangid01/ReLiF_3D) | Local `relif_official_pin.json` / `relif_native.py` pin commit `bbda984aa337520c009091d4a02d2e104bb176d6` and thirteen source-file hashes | The official README describes research/educational use and refers to a LICENSE file. No such root file appeared in the inspected listing, and the attempted direct URL did not yield its terms | Do not classify as Apache or unrestricted open-source permission. Full license terms and their applicability to the pinned revision remain unresolved |
+| DualTeacher+SAM | Exact original upstream repository URL has not been established by this audit | Local `dualteacher_protocol.py` / `dualteacher_core.py` record upstream commit `3710e3216db8bdb444296f0460eab9532b253848`; the experimental source family is `dualteacher_fixed_final_20261021_v4_conda` | Original repository license not verified. Some native files separately attribute ClassMix, Synchronized-BatchNorm-PyTorch and CSAILVision utilities | Commit alone is insufficient to identify source ownership or permission. Keep the URL/license mapping unresolved until the original checkout provenance is supplied; do not substitute a similarly named method |
+
+The entries above distinguish algorithm attribution, local version evidence, and redistribution permission. None of the unresolved entries is silently licensed by the project's new Apache license. Any copied third-party files require their applicable license and notices to be retained; the exact vendored-file set must be reconciled with this table before publishing those files.
+
+## Three SAM foundation checkpoints
+
+| Asset / use | Primary code and weight source | Verified upstream license evidence | Exact local asset binding / remaining check |
+|---|---|---|---|
+| `sam_vit_b_01ec64.pth` — original 2D SAM used by SFR | [facebookresearch/segment-anything](https://github.com/facebookresearch/segment-anything), [official checkpoint](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth) | [Upstream LICENSE](https://github.com/facebookresearch/segment-anything/blob/main/LICENSE) is Apache-2.0; the official README explicitly applies Apache-2.0 to the model | Recorded size: 375,042,383 bytes. Historical recipe checks the original ViT-B identity. Exact packaged/downloaded weight SHA must be verified and recorded separately; it was not rehashed by this license audit |
+| `sam_med3d.pth` — original SAM-Med3D used by ReLiF-3D | [uni-medical/SAM-Med3D](https://github.com/uni-medical/SAM-Med3D), [linked model repository](https://huggingface.co/blueyo0/SAM-Med3D) | [Upstream code LICENSE](https://github.com/uni-medical/SAM-Med3D/blob/main/LICENSE) is Apache-2.0. The model card declares Apache-2.0, but its YAML metadata warns that metadata is empty/missing; preserve the actual card and checkpoint revision instead of relying only on a badge | Recorded size: 1,205,248,025 bytes. ReLiF's local binding requires original SAM-Med3D / `vit_b_ori` and explicitly rejects Turbo substitution. Exact asset SHA and original model-card revision still need the artifact manifest |
+| `sam_med3d_turbo.pth` — cascade, SemiSAM+ and recorded Turbo consumers | [SAM-Med3D checkpoint section](https://github.com/uni-medical/SAM-Med3D#-checkpoint), [model repository](https://huggingface.co/blueyo0/SAM-Med3D) | Same upstream Apache-2.0 project license and model-card declaration. The official README identifies Turbo as a separate fine-tuned model; it must not be substituted for the original checkpoint in ReLiF | Recorded size: 402,163,626 bytes; expected SHA-256 `899a46d04d3b70f723282ceb489149373558bf0aaba389a346f5ab57da5cdd3c`. This is an existing experimental pin, not a new content verification performed by this audit |
+
+Upstream licenses govern any later distribution of these assets. Keeping weights outside the code repository does not remove attribution obligations for copied code. Upstream training-data licenses and the project's patient-data permissions are separate from the model/code licenses.
+
+## Shared supervised initializers
+
+These four files are project-trained initializers derived from the bound model architecture and pretrained dependency. Their SHA values identify the intended artifacts; they do not grant new rights in third-party components. They are external assets, not code-repository contents.
+
+| Initialization | Expected SHA-256 | Recorded bytes | Exact artifact path relative to original project root |
+|---|---|---:|---|
+| BY five-label shared H / HP / HQ / HPQ | `b113d1731a8e535ff482bebe7c2ca0d821760d44e5ea02e59b33cae58557c4be` | 811,897,257 | `expes/artifacts/FCD_A_MATRIX_20261006/MAIN_TABLE_FIXED_FINAL_20261019/by5_four_arm_rerun_20261030/supervised/final.pth` |
+| BY ten-label SCB-SAM | `c212028a044773ff7535e284929fafc2e51a76f354ee82067792aa7feb08e0da` | 811,899,497 | `expes/artifacts/FCD_A_MATRIX_20261006/MAIN_TABLE_FIXED_FINAL_20261019/by10_hpq_20261107/supervised/final.pth` |
+| Public433 five actual labeled cases | `12a580d460406f52d526b3d73c17b3053d34bb7dc41d814b1daedcfddbe9153f` | 811,884,393 | `expes/artifacts/FCD_A_MATRIX_20261006/MAIN_TABLE_FIXED_FINAL_20261019/basic_cascade_ncase/Public433/lab005/fold2/r1/final.pth` |
+| Public433 ten actual labeled cases | `e0b0054027306e50905d1092cd4175bec9d8a37983e686071becbe0e3f1a8db2` | 811,899,945 | `expes/artifacts/FCD_A_MATRIX_20261006/MAIN_TABLE_FIXED_FINAL_20261019/basic_cascade_ncase/Public433/lab010/fold2/r1/final.pth` |
+
+The older percentage-based Public `sup05` / `sup10` checkpoints are different protocols. Generated SFR `sam_prefix` artifacts and SDCL qualification probes are not added as initial dependencies of a full from-scratch run. This register excludes trained final comparators and additional with-SAM experiments.
+
+## Version and source completeness
+
+The three cascade modules have now been supplied as readable source with complete compiled-code equivalence verified against the frozen training bytecode, normalizing only source filenames. Two came from historical source candidates; the exact historical `build_sam3D_cascade.py` file was not located, so its code was reconstructed from the actual training bytecode and independently checked. Recovery does not establish new redistribution rights or prove the original comments and file bytes were recovered. See `CASCADE_SOURCE_RECOVERY.md` and `CASCADE_SOURCE_VERIFICATION.json` for provenance and source/bytecode hashes. This later source audit is separate from the licensing audit below.
+
+Upstream pages were checked on 2026-11-10; current web pages are not proof that the same license existed at a historical pinned commit. Exact upstream revisions remain unresolved where indicated. This audit did not SSH to either training server, run training, load checkpoints, or change model weights.
+
+## Project license text
+
+`LICENSE` is the unchanged official Apache-2.0 text downloaded from [apache.org](https://www.apache.org/licenses/LICENSE-2.0.txt), 11,358 bytes, SHA-256 `cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30`. This file supplies the selected license for original project code; the third-party distinctions above still apply.
+
+## November 18 source-preview resolution
+
+The earlier unresolved source copies for SemiSAM, SDCL, SFR, ReLiF and DualTeacher are now external dependencies rather than published vendored copies: 173 files with original/final hash binding. DualTeacher upstream is Aguang094/Dualteacher-with-SAM at the recorded commit. The local SDCL binary losses adapter and standalone VNet review copy are withheld. SAM-Med3D and Meta SAM Apache-2.0 texts are included in third_party_licenses. See EXTERNAL_SOURCES.md for the actual preview scope and remaining runtime gaps. Historical audit statements above are preserved as dated evidence, not current publication status.

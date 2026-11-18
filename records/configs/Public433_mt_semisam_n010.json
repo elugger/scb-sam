@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "experiment_id": "Public433_mt_semisam_n010",
+  "dataset": "Public433",
+  "fold": 2,
+  "labeled_cases": 10,
+  "seed": 2027,
+  "split": "splits/public433/fold2_n010.json",
+  "budget": {
+    "kind": "ssl_primary_inputs_per_stream",
+    "cycles": 11,
+    "labeled_inputs": 3740,
+    "unlabeled_inputs": 3740,
+    "reference_inputs_per_stream": 3740,
+    "mandatory_prefix": null,
+    "optimizer_updates": 3740
+  },
+  "recipe": {
+    "semi": {
+      "consistency": 0.1,
+      "consistency_rampup": 200.0,
+      "ramp_iter_div": 150,
+      "sam_consistency_scale": 0.1,
+      "prompt": "unc",
+      "sam_num_clicks": 10,
+      "noise_std": 0.1,
+      "noise_clamp": 0.2,
+      "uamt_mc_samples": 8
+    },
+    "ema": {
+      "alpha": 0.99
+    }
+  },
+  "stage_recipe": null,
+  "source_contract_sha256": "34cfe2ff4fbbc7ff4cb54a7c6acf05e10bbe15e8a23823218411785f0a5866ed",
+  "runtime_status": "recorded_recipe_not_yet_portable_training_entrypoint",
+  "selection": "fixed_terminal",
+  "notes": [
+    "Accepted fixed11 primary exposure"
+  ]
+}

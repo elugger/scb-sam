@@ -1,0 +1,105 @@
+{
+  "status": "PASS_STATIC_AND_ISOLATED_FOUR_GROUP_ROUTING",
+  "entry_sha256": "759458bb761558e82e3f0eeae4fe814ad423ab11ce76e5787bfccd037808b4d1",
+  "python_file_count": 86,
+  "comments": 0,
+  "docstrings": 0,
+  "report_results": {
+    "H": {
+      "H": 65.38724967206922
+    },
+    "HP": {
+      "HP": 66.16582191830057
+    },
+    "HQ": {
+      "HQ": 66.90289753904912
+    },
+    "HPQ": {
+      "HPQ": 67.79282300321871
+    },
+    "all": {
+      "H": 65.38724967206922,
+      "HP": 66.16582191830057,
+      "HQ": 66.90289753904912,
+      "HPQ": 67.79282300321871
+    }
+  },
+  "worker_routing": {
+    "H": [
+      [
+        "configure_runtime",
+        "H",
+        "routing_fixture"
+      ],
+      [
+        "run_hp",
+        "H"
+      ]
+    ],
+    "HP": [
+      [
+        "configure_runtime",
+        "HP",
+        "routing_fixture"
+      ],
+      [
+        "run_hp",
+        "HP"
+      ]
+    ],
+    "HQ": [
+      [
+        "configure_runtime",
+        "HQ",
+        "routing_fixture"
+      ],
+      [
+        "configure_ccbs"
+      ],
+      [
+        "run_hq",
+        "HQ"
+      ]
+    ],
+    "HPQ": [
+      [
+        "configure_runtime",
+        "HPQ",
+        "routing_fixture"
+      ],
+      [
+        "run_hp",
+        "HPQ"
+      ]
+    ]
+  },
+  "all_launch_routing": [
+    "H",
+    "HP",
+    "HQ",
+    "HPQ"
+  ],
+  "reservations_bytes": {
+    "H": 2147483648,
+    "HP": 2147483648,
+    "HQ": 1073741824,
+    "HPQ": 2147483648
+  },
+  "scientific_functions_ast_identical": [
+    "run_hp",
+    "run_hq",
+    "build_trainer",
+    "configure_ccbs",
+    "group_config",
+    "supervise",
+    "validate_bridge",
+    "save_development_checkpoint"
+  ],
+  "torch_imported": false,
+  "training_started": false,
+  "gpu_validation": false,
+  "source_and_data_preparation_rebound": false,
+  "raw_patient_ids_in_public_python": false,
+  "original_scope_note": "Original 86-file static/routing audit before three restored dependency modules; entry remains unchanged. Added dependency verification is recorded separately.",
+  "added_dependency_verification": "../docs/CASCADE_SOURCE_VERIFICATION.json"
+}

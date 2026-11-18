@@ -1,0 +1,9 @@
+{
+  "status": "PASS_SIX_STANDARD_LIBRARY_PROJECT_ENTRY_TESTS",
+  "tests": 6,
+  "training_started": false,
+  "clean_machine_training_verified": false,
+  "entry_sha256": "374574468fbbec3ff7c4c738ff97e10281bcc6389caf5b33c01f2ca7860e7950",
+  "stdout": "",
+  "stderr": "test_exact_scope_and_unique_routes (test_project.ProjectEntryTests.test_exact_scope_and_unique_routes) ... ok\ntest_hq_result_and_no_historical_weight_claim (test_project.ProjectEntryTests.test_hq_result_and_no_historical_weight_claim) ... ok\ntest_plan_keeps_real_group_and_no_launch (test_project.ProjectEntryTests.test_plan_keeps_real_group_and_no_launch) ... ok\ntest_unknown_experiment_is_rejected (test_project.ProjectEntryTests.test_unknown_experiment_is_rejected) ... ok\ntest_unqualified_train_is_rejected (test_project.ProjectEntryTests.test_unqualified_train_is_rejected) ... ok\ntest_valid_structure_does_not_claim_training_readiness (test_project.ProjectEntryTests.test_valid_structure_does_not_claim_training_readiness) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.364s\n\nOK\n"
+}

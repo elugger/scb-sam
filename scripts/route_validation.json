@@ -1,0 +1,14 @@
+{
+  "status": "PASS_STATIC_MAPPING_NOT_RUNTIME",
+  "routes": 32,
+  "main_rows": 28,
+  "configuration_rows": 4,
+  "entrypoint_sources_checked": 12,
+  "by10_files_copied": 14,
+  "public_full_precision_rows_updated": 2,
+  "enabled_training_routes": 0,
+  "no_train_commands_executed": true,
+  "argparse_templates_checked": true,
+  "all_source_paths_exist_at_inspection": true,
+  "private_data_copied": false
+}

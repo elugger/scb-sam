@@ -1,0 +1,19 @@
+{
+  "source": "installed_distribution_metadata_read_without_model_or_CUDA_initialization",
+  "python": "3.10.18",
+  "torch": "1.12.1",
+  "torchvision": "0.15.2+cu117",
+  "numpy": "1.23.5",
+  "scipy": "1.15.3",
+  "torchio": "1.0.2",
+  "nibabel": "5.4.2",
+  "SimpleITK": "2.5.3",
+  "surface-distance": "0.1",
+  "einops": "0.8.2",
+  "timm": "1.0.22",
+  "PyYAML": "6.0.3",
+  "h5py": null,
+  "medpy": null,
+  "scikit-image": null,
+  "clean_install_validated": false
+}

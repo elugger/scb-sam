@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-18",
+  "scope": "source_preview",
+  "upstream_files_live_verified": 173,
+  "unit_tests": 17,
+  "cascade_compiled_identity_checks": 6,
+  "fixed_split_checks": 4,
+  "clean_environment_training_verified": false,
+  "training_dispatch_enabled": false,
+  "model_weights_published": false,
+  "withheld_sources": [
+    "baselines/source_snapshots/SDCL-master/code/pancreas/losses.py",
+    "src/scb_seg/models/vnet.py"
+  ]
+}

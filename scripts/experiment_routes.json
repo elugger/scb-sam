@@ -1,0 +1,3565 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-11-10",
+  "scope": {
+    "main": 28,
+    "configuration": 4,
+    "with_sam_included": false
+  },
+  "policy": {
+    "default_execution": "deny",
+    "templates_are_executable_commands": false,
+    "enable_only_after": "source checksum, scientific equivalence, local data and initializer mapping, resource guards, environment and fresh qualification verified",
+    "no_training_during_route_build": true
+  },
+  "sources": [
+    {
+      "path": "ours/hp_hq_final.py",
+      "sha256": "759458bb761558e82e3f0eeae4fe814ad423ab11ce76e5787bfccd037808b4d1",
+      "argparse_options": [
+        {
+          "flags": [
+            "--action"
+          ],
+          "choices": [
+            "report",
+            "preflight",
+            "train",
+            "worker"
+          ],
+          "default": "report",
+          "line": 129
+        },
+        {
+          "flags": [
+            "--group"
+          ],
+          "choices": [
+            "H",
+            "HP",
+            "HQ",
+            "HPQ",
+            "both",
+            "all"
+          ],
+          "default": "all",
+          "line": 130
+        },
+        {
+          "flags": [
+            "--run-id"
+          ],
+          "line": 131
+        },
+        {
+          "flags": [
+            "--phase"
+          ],
+          "choices": [
+            "bridge",
+            "formal"
+          ],
+          "line": 132
+        },
+        {
+          "flags": [
+            "--fd"
+          ],
+          "line": 133
+        },
+        {
+          "flags": [
+            "--dev"
+          ],
+          "line": 134
+        },
+        {
+          "flags": [
+            "--ino"
+          ],
+          "line": 135
+        },
+        {
+          "flags": [
+            "--bridge-sha"
+          ],
+          "line": 136
+        }
+      ],
+      "validation": "STATIC_PARSE_AND_FLAG_READ_ONLY_NO_TRAINING"
+    },
+    {
+      "path": "baselines/by10_hpq/run_by10.py",
+      "sha256": "c5ded5e4a1749b50cb326fe304eb24f0e08204f5c50c3b69ec4c86c3c0db32c9",
+      "argparse_options": [
+        {
+          "flags": [
+            "--action"
+          ],
+          "choices": [
+            "prepare",
+            "launch",
+            "supervise",
+            "worker"
+          ],
+          "required": true,
+          "line": 135
+        },
+        {
+          "flags": [
+            "--bundle"
+          ],
+          "required": true,
+          "line": 136
+        },
+        {
+          "flags": [
+            "--preparation"
+          ],
+          "line": 136
+        },
+        {
+          "flags": [
+            "--phase"
+          ],
+          "line": 136
+        }
+      ],
+      "validation": "STATIC_PARSE_AND_FLAG_READ_ONLY_NO_TRAINING"
+    },
+    {
+      "path": "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+      "sha256": "7bf636e65fc3025c04c3fada46dd0383e28e7d7099abc87a7322c7e20cd465b4",
+      "argparse_options": [
+        {
+          "flags": [
+            "--action"
+          ],
+          "choices": [
+            "prepare",
+            "qualify",
+            "launch",
+            "worker"
+          ],
+          "required": true,
+          "line": 188
+        },
+        {
+          "flags": [
+            "--method"
+          ],
+          "choices": [
+            "mt_semisam",
+            "uamt_semisam",
+            "sdcl"
+          ],
+          "required": true,
+          "line": 189
+        },
+        {
+          "flags": [
+            "--dataset"
+          ],
+          "choices": [
+            "BY",
+            "Public433"
+          ],
+          "required": true,
+          "line": 190
+        },
+        {
+          "flags": [
+            "--ratio"
+          ],
+          "choices": [
+            5,
+            10
+          ],
+          "required": true,
+          "line": 191
+        },
+        {
+          "flags": [
+            "--gpu"
+          ],
+          "choices": [
+            1
+          ],
+          "default": 1,
+          "line": 192
+        },
+        {
+          "flags": [
+            "--tag"
+          ],
+          "default": "r1",
+          "line": 193
+        },
+        {
+          "flags": [
+            "--ready-sha"
+          ],
+          "line": 194
+        }
+      ],
+      "validation": "STATIC_PARSE_AND_FLAG_READ_ONLY_NO_TRAINING"
+    },
+    {
+      "path": "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/run_native_baseline.py",
+      "sha256": "b98c1a2b13c4dbdb72202762ebc0eeec4f9f4097eb7bdf7cc47606886f1e4f93",
+      "argparse_options": [
+        {
+          "flags": [
+            "--action"
+          ],
+          "choices": [
+            "prepare",
+            "qualify",
+            "launch",
+            "worker"
+          ],
+          "required": true,
+          "line": 431
+        },
+        {
+          "flags": [
+            "--method"
+          ],
+          "choices": [
+            "sfr",
+            "relif3d"
+          ],
+          "required": true,
+          "line": 432
+        },
+        {
+          "flags": [
+            "--dataset"
+          ],
+          "choices": [
+            "BY",
+            "Public433"
+          ],
+          "required": true,
+          "line": 433
+        },
+        {
+          "flags": [
+            "--ratio"
+          ],
+          "choices": [
+            5,
+            10
+          ],
+          "required": true,
+          "line": 434
+        },
+        {
+          "flags": [
+            "--gpu"
+          ],
+          "choices": [
+            1
+          ],
+          "default": 1,
+          "line": 435
+        },
+        {
+          "flags": [
+            "--tag"
+          ],
+          "default": "r1",
+          "line": 436
+        },
+        {
+          "flags": [
+            "--official-code-root"
+          ],
+          "line": 437
+        },
+        {
+          "flags": [
+            "--foundation-pin"
+          ],
+          "line": 438
+        },
+        {
+          "flags": [
+            "--foundation-pin-sha"
+          ],
+          "line": 439
+        },
+        {
+          "flags": [
+            "--contract-sha"
+          ],
+          "line": 440
+        },
+        {
+          "flags": [
+            "--ready-sha"
+          ],
+          "line": 441
+        },
+        {
+          "flags": [
+            "--lease-fd"
+          ],
+          "line": 442
+        }
+      ],
+      "validation": "STATIC_PARSE_AND_FLAG_READ_ONLY_NO_TRAINING"
+    },
+    {
+      "path": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/run_dualteacher.py",
+      "sha256": "d43b888b99d9357239203de33452e0ca5e8c198ab738401737cc97699ab431aa",
+      "argparse_options": [
+        {
+          "flags": [
+            "--action"
+          ],
+          "choices": [
+            "prepare",
+            "qualify",
+            "launch",
+            "worker"
+          ],
+          "required": true,
+          "line": 339
+        },
+        {
+          "flags": [
+            "--method"
+          ],
+          "choices": "dynamic_source_constant",
+          "required": true,
+          "line": 340
+        },
+        {
+          "flags": [
+            "--dataset"
+          ],
+          "choices": [
+            "BY"
+          ],
+          "required": true,
+          "line": 340
+        },
+        {
+          "flags": [
+            "--ratio"
+          ],
+          "choices": [
+            5,
+            10
+          ],
+          "required": true,
+          "line": 341
+        },
+        {
+          "flags": [
+            "--gpu"
+          ],
+          "choices": [
+            1
+          ],
+          "default": 1,
+          "line": 341
+        },
+        {
+          "flags": [
+            "--tag"
+          ],
+          "default": "r1",
+          "line": 341
+        },
+        {
+          "flags": [
+            "--lease-fd"
+          ],
+          "line": 343
+        }
+      ],
+      "validation": "STATIC_PARSE_AND_FLAG_READ_ONLY_NO_TRAINING"
+    },
+    {
+      "path": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/public_operator.py",
+      "sha256": "f1b0a9372387cb8d614f42af22642ac69b07f3fc581d60b8ce04216880bc88a4",
+      "argparse_options": [
+        {
+          "flags": [
+            "--action"
+          ],
+          "choices": [
+            "prepare",
+            "qualify",
+            "resume-probe",
+            "admit",
+            "start",
+            "start-transition",
+            "resume",
+            "worker",
+            "status"
+          ],
+          "required": true,
+          "line": 142
+        },
+        {
+          "flags": [
+            "--method"
+          ],
+          "choices": [
+            "mt_semisam",
+            "uamt_semisam"
+          ],
+          "line": 143
+        },
+        {
+          "flags": [
+            "--labels"
+          ],
+          "choices": [
+            5,
+            10
+          ],
+          "line": 143
+        },
+        {
+          "flags": [
+            "--tag"
+          ],
+          "default": "r1",
+          "line": 143
+        },
+        {
+          "flags": [
+            "--job"
+          ],
+          "line": 144
+        },
+        {
+          "flags": [
+            "--contract-sha"
+          ],
+          "line": 144
+        },
+        {
+          "flags": [
+            "--confirm"
+          ],
+          "line": 144
+        },
+        {
+          "flags": [
+            "--fd"
+          ],
+          "line": 144
+        },
+        {
+          "flags": [
+            "--resume-worker"
+          ],
+          "action": "store_true",
+          "line": 144
+        }
+      ],
+      "validation": "STATIC_PARSE_AND_FLAG_READ_ONLY_NO_TRAINING"
+    },
+    {
+      "path": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sdcl_budget11_v1/public_operator.py",
+      "sha256": "927a53b60cc13b19db477237d8783341e8be20b3644b53e3abf36b40c8e4eb40",
+      "argparse_options": [
+        {
+          "flags": [
+            "--action"
+          ],
+          "required": true,
+          "choices": [
+            "prepare",
+            "qualify",
+            "resume-probe",
+            "admit",
+            "start",
+            "resume",
+            "worker"
+          ],
+          "line": 125
+        },
+        {
+          "flags": [
+            "--labels"
+          ],
+          "choices": [
+            5,
+            10
+          ],
+          "line": 126
+        },
+        {
+          "flags": [
+            "--tag"
+          ],
+          "default": "r1",
+          "line": 126
+        },
+        {
+          "flags": [
+            "--phase"
+          ],
+          "choices": [
+            "prefix",
+            "ssl"
+          ],
+          "line": 126
+        },
+        {
+          "flags": [
+            "--job"
+          ],
+          "line": 127
+        },
+        {
+          "flags": [
+            "--contract-sha"
+          ],
+          "line": 127
+        },
+        {
+          "flags": [
+            "--confirm"
+          ],
+          "line": 127
+        },
+        {
+          "flags": [
+            "--fd"
+          ],
+          "line": 127
+        },
+        {
+          "flags": [
+            "--resume-worker"
+          ],
+          "action": "store_true",
+          "line": 127
+        }
+      ],
+      "validation": "STATIC_PARSE_AND_FLAG_READ_ONLY_NO_TRAINING"
+    },
+    {
+      "path": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sfr_budget11_v2/public_operator.py",
+      "sha256": "146084390bfb9bb6879ac811a9a55e09cdc90d72b618654e53290dbfbdd4773b",
+      "argparse_options": [
+        {
+          "flags": [
+            "--action"
+          ],
+          "required": true,
+          "choices": [
+            "prepare",
+            "qualify",
+            "resume-probe",
+            "admit",
+            "review-resume",
+            "start",
+            "resume",
+            "worker"
+          ],
+          "line": 135
+        },
+        {
+          "flags": [
+            "--labels"
+          ],
+          "choices": [
+            5,
+            10
+          ],
+          "line": 136
+        },
+        {
+          "flags": [
+            "--tag"
+          ],
+          "default": "r1",
+          "line": 136
+        },
+        {
+          "flags": [
+            "--phase"
+          ],
+          "choices": [
+            "prefix",
+            "ssl"
+          ],
+          "line": 136
+        },
+        {
+          "flags": [
+            "--job"
+          ],
+          "line": 137
+        },
+        {
+          "flags": [
+            "--contract-sha"
+          ],
+          "line": 137
+        },
+        {
+          "flags": [
+            "--confirm"
+          ],
+          "line": 137
+        },
+        {
+          "flags": [
+            "--fd"
+          ],
+          "line": 137
+        },
+        {
+          "flags": [
+            "--resume-worker"
+          ],
+          "action": "store_true",
+          "line": 137
+        },
+        {
+          "flags": [
+            "--checkpoint-sha"
+          ],
+          "line": 137
+        },
+        {
+          "flags": [
+            "--reason"
+          ],
+          "line": 137
+        }
+      ],
+      "validation": "STATIC_PARSE_AND_FLAG_READ_ONLY_NO_TRAINING"
+    },
+    {
+      "path": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_relif_budget11_v3/public_operator.py",
+      "sha256": "559c3ff041573bd63f9295b3f76bdac3bf99e96e44a9ac1cd4c7baa4b083006a",
+      "argparse_options": [
+        {
+          "flags": [
+            "--action"
+          ],
+          "required": true,
+          "choices": [
+            "prepare",
+            "qualify",
+            "import-qualification",
+            "resume-probe",
+            "admit",
+            "start",
+            "worker",
+            "review-resume",
+            "resume"
+          ],
+          "line": 218
+        },
+        {
+          "flags": [
+            "--labels"
+          ],
+          "choices": [
+            5,
+            10
+          ],
+          "line": 219
+        },
+        {
+          "flags": [
+            "--tag"
+          ],
+          "default": "r1",
+          "line": 219
+        },
+        {
+          "flags": [
+            "--job"
+          ],
+          "line": 220
+        },
+        {
+          "flags": [
+            "--contract-sha"
+          ],
+          "line": 220
+        },
+        {
+          "flags": [
+            "--confirm"
+          ],
+          "line": 220
+        },
+        {
+          "flags": [
+            "--window"
+          ],
+          "choices": [
+            "warmup",
+            "larc"
+          ],
+          "line": 221
+        },
+        {
+          "flags": [
+            "--fd"
+          ],
+          "line": 221
+        },
+        {
+          "flags": [
+            "--checkpoint-sha"
+          ],
+          "line": 222
+        },
+        {
+          "flags": [
+            "--reason"
+          ],
+          "line": 222
+        },
+        {
+          "flags": [
+            "--resume-worker"
+          ],
+          "action": "store_true",
+          "line": 222
+        }
+      ],
+      "validation": "STATIC_PARSE_AND_FLAG_READ_ONLY_NO_TRAINING"
+    },
+    {
+      "path": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_dualteacher_budget11_v4/public_operator.py",
+      "sha256": "5744cfd0d36570ec3068fc429f4a4cb022aca17c2be1e0834c96452c071cb744",
+      "argparse_options": [
+        {
+          "flags": [
+            "--action"
+          ],
+          "required": true,
+          "choices": [
+            "prepare",
+            "qualify",
+            "resume-probe",
+            "admit",
+            "start",
+            "worker",
+            "review-resume",
+            "resume"
+          ],
+          "line": 218
+        },
+        {
+          "flags": [
+            "--labels"
+          ],
+          "choices": [
+            5,
+            10
+          ],
+          "line": 219
+        },
+        {
+          "flags": [
+            "--tag"
+          ],
+          "default": "r1",
+          "line": 219
+        },
+        {
+          "flags": [
+            "--job"
+          ],
+          "line": 220
+        },
+        {
+          "flags": [
+            "--contract-sha"
+          ],
+          "line": 220
+        },
+        {
+          "flags": [
+            "--confirm"
+          ],
+          "line": 220
+        },
+        {
+          "flags": [
+            "--window"
+          ],
+          "choices": [
+            "warmup",
+            "sam"
+          ],
+          "line": 221
+        },
+        {
+          "flags": [
+            "--fd"
+          ],
+          "line": 221
+        },
+        {
+          "flags": [
+            "--checkpoint-sha"
+          ],
+          "line": 222
+        },
+        {
+          "flags": [
+            "--reason"
+          ],
+          "line": 222
+        },
+        {
+          "flags": [
+            "--resume-worker"
+          ],
+          "action": "store_true",
+          "line": 222
+        }
+      ],
+      "validation": "STATIC_PARSE_AND_FLAG_READ_ONLY_NO_TRAINING"
+    },
+    {
+      "path": "baselines/source_snapshots/expes/semi05_gate/public_hpq_fineq_r3_20261020/launch_hpq.py",
+      "sha256": "9b3fc923ae8bd856fb1baf8119b150d8f912595e4e8ebafcdaacca8754602979",
+      "argparse_options": [
+        {
+          "flags": [
+            "--action"
+          ],
+          "required": true,
+          "choices": [
+            "prepare",
+            "launch",
+            "worker"
+          ],
+          "line": 221
+        },
+        {
+          "flags": [
+            "--phase"
+          ],
+          "choices": [
+            "bridge",
+            "formal"
+          ],
+          "line": 222
+        },
+        {
+          "flags": [
+            "--gpu"
+          ],
+          "choices": [
+            0
+          ],
+          "line": 223
+        },
+        {
+          "flags": [
+            "--preparation-sha"
+          ],
+          "line": 224
+        },
+        {
+          "flags": [
+            "--bundle-sha"
+          ],
+          "line": 225
+        },
+        {
+          "flags": [
+            "--nonce"
+          ],
+          "line": 226
+        }
+      ],
+      "validation": "STATIC_PARSE_AND_FLAG_READ_ONLY_NO_TRAINING"
+    },
+    {
+      "path": "baselines/source_snapshots/expes/semi05_gate/public_hpq_fineq_n010_restart4_20261027/launch_hpq.py",
+      "sha256": "5475a2dd0c721ebcdf4dfb34c31a1105a528ebdfed69c5ecbce74ebc3f2b2903",
+      "argparse_options": [
+        {
+          "flags": [
+            "--action"
+          ],
+          "required": true,
+          "choices": [
+            "prepare",
+            "launch",
+            "worker"
+          ],
+          "line": 228
+        },
+        {
+          "flags": [
+            "--phase"
+          ],
+          "choices": [
+            "bridge",
+            "formal"
+          ],
+          "line": 229
+        },
+        {
+          "flags": [
+            "--gpu"
+          ],
+          "choices": [
+            0
+          ],
+          "line": 230
+        },
+        {
+          "flags": [
+            "--preparation-sha"
+          ],
+          "line": 231
+        },
+        {
+          "flags": [
+            "--bundle-sha"
+          ],
+          "line": 232
+        },
+        {
+          "flags": [
+            "--nonce"
+          ],
+          "line": 233
+        }
+      ],
+      "validation": "STATIC_PARSE_AND_FLAG_READ_ONLY_NO_TRAINING"
+    }
+  ],
+  "routes": [
+    {
+      "id": "BY_mt_semisam_n005",
+      "table": "main",
+      "dataset": "BY",
+      "labeled_cases": 5,
+      "method": "mt_semisam",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "BY_mt_semisam_n005",
+      "configuration_record": "records/configs/BY_mt_semisam_n005.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+      "entrypoint_sha256": "7bf636e65fc3025c04c3fada46dd0383e28e7d7099abc87a7322c7e20cd465b4",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+            "--action",
+            "prepare",
+            "--method",
+            "mt_semisam",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "5",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}"
+          ]
+        },
+        {
+          "role": "qualification_then_independent_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "launch",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+            "--action",
+            "launch",
+            "--method",
+            "mt_semisam",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "5",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--ready-sha",
+            "{new_verified_ready_sha}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/source_inventory.json",
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/dataset_pins.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "native_iterations": 3420,
+        "original_recorded_optimizer_updates": 3420,
+        "mandatory_prefix": null
+      }
+    },
+    {
+      "id": "BY_uamt_semisam_n005",
+      "table": "main",
+      "dataset": "BY",
+      "labeled_cases": 5,
+      "method": "uamt_semisam",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "BY_uamt_semisam_n005",
+      "configuration_record": "records/configs/BY_uamt_semisam_n005.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+      "entrypoint_sha256": "7bf636e65fc3025c04c3fada46dd0383e28e7d7099abc87a7322c7e20cd465b4",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+            "--action",
+            "prepare",
+            "--method",
+            "uamt_semisam",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "5",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}"
+          ]
+        },
+        {
+          "role": "qualification_then_independent_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "launch",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+            "--action",
+            "launch",
+            "--method",
+            "uamt_semisam",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "5",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--ready-sha",
+            "{new_verified_ready_sha}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/source_inventory.json",
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/dataset_pins.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "native_iterations": 3420,
+        "original_recorded_optimizer_updates": 3420,
+        "mandatory_prefix": null
+      }
+    },
+    {
+      "id": "BY_sdcl_n005",
+      "table": "main",
+      "dataset": "BY",
+      "labeled_cases": 5,
+      "method": "sdcl",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "BY_sdcl_n005",
+      "configuration_record": "records/configs/BY_sdcl_n005.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+      "entrypoint_sha256": "7bf636e65fc3025c04c3fada46dd0383e28e7d7099abc87a7322c7e20cd465b4",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+            "--action",
+            "prepare",
+            "--method",
+            "sdcl",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "5",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}"
+          ]
+        },
+        {
+          "role": "qualification_then_independent_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "launch",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+            "--action",
+            "launch",
+            "--method",
+            "sdcl",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "5",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--ready-sha",
+            "{new_verified_ready_sha}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/source_inventory.json",
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/dataset_pins.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "native_iterations": 855,
+        "original_recorded_optimizer_updates": 1710,
+        "mandatory_prefix": {
+          "pretrain_iterations": 648,
+          "pretrain_labeled_inputs": 2592,
+          "pretrain_successful_optimizer_updates": 1296,
+          "pretrain_test_evaluations": 0,
+          "ssl_iterations": 855,
+          "ssl_labeled_inputs": 3420,
+          "ssl_unlabeled_inputs": 3420,
+          "ssl_successful_optimizer_updates": 1710,
+          "native_inputs_per_stream": 4,
+          "native_optimizers": 2,
+          "prefix_selection": "fixed_terminal_not_test_best",
+          "prefix_extra_budget_disclosed": true
+        }
+      }
+    },
+    {
+      "id": "BY_sfr_n005",
+      "table": "main",
+      "dataset": "BY",
+      "labeled_cases": 5,
+      "method": "sfr",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "BY_sfr_n005",
+      "configuration_record": "records/configs/BY_sfr_n005.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/run_native_baseline.py",
+      "entrypoint_sha256": "b98c1a2b13c4dbdb72202762ebc0eeec4f9f4097eb7bdf7cc47606886f1e4f93",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/run_native_baseline.py",
+            "--action",
+            "prepare",
+            "--method",
+            "sfr",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "5",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--official-code-root",
+            "{pinned_upstream_root}",
+            "--foundation-pin",
+            "{foundation_pin_json}",
+            "--foundation-pin-sha",
+            "{foundation_pin_sha}"
+          ]
+        },
+        {
+          "role": "qualification_then_independent_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "launch",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/run_native_baseline.py",
+            "--action",
+            "launch",
+            "--method",
+            "sfr",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "5",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--ready-sha",
+            "{new_verified_ready_sha}",
+            "--contract-sha",
+            "{new_contract_sha}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/dataset_pins.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "native_iterations": 1710,
+        "original_recorded_optimizer_updates": 1710,
+        "mandatory_prefix": {
+          "method": "sfr",
+          "variant": "base SFR with MT and default VNet",
+          "source_commit": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+          "dataset": "BY",
+          "ratio": 5,
+          "seed": 2027,
+          "patch": [
+            112,
+            112,
+            80
+          ],
+          "sam_canvas": 1024,
+          "prefix_iterations": 6000,
+          "prefix_labeled_inputs": 10000,
+          "prefix_optimizer_updates": 6000,
+          "prefix_batch_size": 2,
+          "prefix_keeps_native_one_case_epoch_tail": true,
+          "prefix_test_evaluations": 0,
+          "prefix_selection": "fixed_terminal_6000",
+          "prefix_optimizer": {
+            "name": "AdamW",
+            "lr": 0.001,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "weight_decay": 0.1
+          },
+          "prefix_augmentation": {
+            "native_nt": 2,
+            "nonlinear_rate": 0.5,
+            "rotation_flip_2d": true
+          },
+          "prefix_lora_rank": 4,
+          "prefix_warmup": false,
+          "ssl_iterations": 1710,
+          "ssl_labeled_inputs": 3420,
+          "ssl_unlabeled_inputs": 3420,
+          "ssl_optimizer_updates": 1710,
+          "ssl_primary_labeled_per_iteration": 2,
+          "ssl_primary_unlabeled_per_iteration": 2,
+          "ssl_optimizer": {
+            "name": "SGD",
+            "lr": 0.01,
+            "momentum": 0.9,
+            "weight_decay": 0.0001
+          },
+          "ssl_reference_iterations": 6000,
+          "ssl_lr_rule": ".01 * .1**floor(6000*completed/(2500*ssl_iterations))",
+          "ssl_consistency_rule": ".1 * sigmoid_rampup(floor(6000*completed/(150*ssl_iterations)),40)",
+          "ssl_ema_rule": "min(1-1/(actual_zero_based_update+1),.99); parameters only, as source",
+          "ssl_teacher_input_forwards": 6840,
+          "ssl_sam_stitched_board_forwards": 3420,
+          "prefix_sam_stitched_board_forwards": 10000,
+          "inference": {
+            "patch": [
+              112,
+              112,
+              80
+            ],
+            "stride_xy": 18,
+            "stride_z": 4,
+            "aggregation": "mean_softmax"
+          },
+          "selection_uses_test": false,
+          "total_compute_matched": false,
+          "launch_ready": false
+        }
+      }
+    },
+    {
+      "id": "BY_relif3d_n005",
+      "table": "main",
+      "dataset": "BY",
+      "labeled_cases": 5,
+      "method": "relif3d",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "BY_relif3d_n005",
+      "configuration_record": "records/configs/BY_relif3d_n005.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/run_native_baseline.py",
+      "entrypoint_sha256": "b98c1a2b13c4dbdb72202762ebc0eeec4f9f4097eb7bdf7cc47606886f1e4f93",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/run_native_baseline.py",
+            "--action",
+            "prepare",
+            "--method",
+            "relif3d",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "5",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--official-code-root",
+            "{pinned_upstream_root}",
+            "--foundation-pin",
+            "{foundation_pin_json}",
+            "--foundation-pin-sha",
+            "{foundation_pin_sha}"
+          ]
+        },
+        {
+          "role": "qualification_then_independent_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "launch",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/run_native_baseline.py",
+            "--action",
+            "launch",
+            "--method",
+            "relif3d",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "5",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--ready-sha",
+            "{new_verified_ready_sha}",
+            "--contract-sha",
+            "{new_contract_sha}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/dataset_pins.json",
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/relif_official_pin.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "native_iterations": 3420,
+        "original_recorded_optimizer_updates": 3420,
+        "mandatory_prefix": null
+      }
+    },
+    {
+      "id": "BY_dualteacher_sam_n005",
+      "table": "main",
+      "dataset": "BY",
+      "labeled_cases": 5,
+      "method": "dualteacher_sam",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "BY_dualteacher_sam_n005",
+      "configuration_record": "records/configs/BY_dualteacher_sam_n005.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/run_dualteacher.py",
+      "entrypoint_sha256": "d43b888b99d9357239203de33452e0ca5e8c198ab738401737cc97699ab431aa",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/run_dualteacher.py",
+            "--action",
+            "prepare",
+            "--method",
+            "dualteacher_sam",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "5",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--official-code-root",
+            "{pinned_upstream_root}",
+            "--foundation-pin",
+            "{foundation_pin_json}",
+            "--foundation-pin-sha",
+            "{foundation_pin_sha}",
+            "--environment-pin",
+            "{environment_pin_json}",
+            "--environment-pin-sha",
+            "{environment_pin_sha}"
+          ]
+        },
+        {
+          "role": "qualification_then_independent_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "launch",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/run_dualteacher.py",
+            "--action",
+            "launch",
+            "--method",
+            "dualteacher_sam",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "5",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--ready-sha",
+            "{new_verified_ready_sha}",
+            "--contract-sha",
+            "{new_contract_sha}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/dataset_pins.json",
+          "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/admission_review.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "native_iterations": 1710,
+        "original_recorded_optimizer_updates": 1710,
+        "mandatory_prefix": null
+      }
+    },
+    {
+      "id": "BY_scb_seg_n005",
+      "table": "main",
+      "dataset": "BY",
+      "labeled_cases": 5,
+      "method": "scb_seg",
+      "group": "HPQ",
+      "record_file": "records/main_table.json",
+      "record_row_id": "BY_scb_seg_n005",
+      "configuration_record": "records/configs/BY_scb_seg_n005.json",
+      "entrypoint": "ours/hp_hq_final.py",
+      "entrypoint_sha256": "759458bb761558e82e3f0eeae4fe814ad423ab11ce76e5787bfccd037808b4d1",
+      "entrypoint_role": "ported_single_group_entry_with_historical_runtime_dependency",
+      "command_templates": [
+        {
+          "role": "single_group_train",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "ours/hp_hq_final.py",
+            "--action",
+            "train",
+            "--group",
+            "HPQ",
+            "--run-id",
+            "{unique_run_id}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "ASNET_ROOT_SCIENTIFIC_DEPENDENCIES_AND_FROZEN_RECEIPTS_REQUIRED"
+        ],
+        "missing_metadata_in_current_review_copy": [],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "successful_updates": 684,
+        "supervised_initialization": {
+          "epochs": 60,
+          "successful_updates": 300,
+          "separate_from_ssl_budget": true
+        }
+      }
+    },
+    {
+      "id": "BY_mt_semisam_n010",
+      "table": "main",
+      "dataset": "BY",
+      "labeled_cases": 10,
+      "method": "mt_semisam",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "BY_mt_semisam_n010",
+      "configuration_record": "records/configs/BY_mt_semisam_n010.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+      "entrypoint_sha256": "7bf636e65fc3025c04c3fada46dd0383e28e7d7099abc87a7322c7e20cd465b4",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+            "--action",
+            "prepare",
+            "--method",
+            "mt_semisam",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "10",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}"
+          ]
+        },
+        {
+          "role": "qualification_then_independent_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "launch",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+            "--action",
+            "launch",
+            "--method",
+            "mt_semisam",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "10",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--ready-sha",
+            "{new_verified_ready_sha}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/source_inventory.json",
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/dataset_pins.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3240,
+        "unlabeled_inputs": 3240,
+        "native_iterations": 3240,
+        "original_recorded_optimizer_updates": 3240,
+        "mandatory_prefix": null
+      }
+    },
+    {
+      "id": "BY_uamt_semisam_n010",
+      "table": "main",
+      "dataset": "BY",
+      "labeled_cases": 10,
+      "method": "uamt_semisam",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "BY_uamt_semisam_n010",
+      "configuration_record": "records/configs/BY_uamt_semisam_n010.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+      "entrypoint_sha256": "7bf636e65fc3025c04c3fada46dd0383e28e7d7099abc87a7322c7e20cd465b4",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+            "--action",
+            "prepare",
+            "--method",
+            "uamt_semisam",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "10",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}"
+          ]
+        },
+        {
+          "role": "qualification_then_independent_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "launch",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+            "--action",
+            "launch",
+            "--method",
+            "uamt_semisam",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "10",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--ready-sha",
+            "{new_verified_ready_sha}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/source_inventory.json",
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/dataset_pins.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3240,
+        "unlabeled_inputs": 3240,
+        "native_iterations": 3240,
+        "original_recorded_optimizer_updates": 3240,
+        "mandatory_prefix": null
+      }
+    },
+    {
+      "id": "BY_sdcl_n010",
+      "table": "main",
+      "dataset": "BY",
+      "labeled_cases": 10,
+      "method": "sdcl",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "BY_sdcl_n010",
+      "configuration_record": "records/configs/BY_sdcl_n010.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+      "entrypoint_sha256": "7bf636e65fc3025c04c3fada46dd0383e28e7d7099abc87a7322c7e20cd465b4",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+            "--action",
+            "prepare",
+            "--method",
+            "sdcl",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "10",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}"
+          ]
+        },
+        {
+          "role": "qualification_then_independent_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "launch",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/run_main_baseline.py",
+            "--action",
+            "launch",
+            "--method",
+            "sdcl",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "10",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--ready-sha",
+            "{new_verified_ready_sha}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/source_inventory.json",
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r3/dataset_pins.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3240,
+        "unlabeled_inputs": 3240,
+        "native_iterations": 810,
+        "original_recorded_optimizer_updates": 1620,
+        "mandatory_prefix": {
+          "pretrain_iterations": 1620,
+          "pretrain_labeled_inputs": 6480,
+          "pretrain_successful_optimizer_updates": 3240,
+          "pretrain_test_evaluations": 0,
+          "ssl_iterations": 810,
+          "ssl_labeled_inputs": 3240,
+          "ssl_unlabeled_inputs": 3240,
+          "ssl_successful_optimizer_updates": 1620,
+          "native_inputs_per_stream": 4,
+          "native_optimizers": 2,
+          "prefix_selection": "fixed_terminal_not_test_best",
+          "prefix_extra_budget_disclosed": true
+        }
+      }
+    },
+    {
+      "id": "BY_sfr_n010",
+      "table": "main",
+      "dataset": "BY",
+      "labeled_cases": 10,
+      "method": "sfr",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "BY_sfr_n010",
+      "configuration_record": "records/configs/BY_sfr_n010.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/run_native_baseline.py",
+      "entrypoint_sha256": "b98c1a2b13c4dbdb72202762ebc0eeec4f9f4097eb7bdf7cc47606886f1e4f93",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/run_native_baseline.py",
+            "--action",
+            "prepare",
+            "--method",
+            "sfr",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "10",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--official-code-root",
+            "{pinned_upstream_root}",
+            "--foundation-pin",
+            "{foundation_pin_json}",
+            "--foundation-pin-sha",
+            "{foundation_pin_sha}"
+          ]
+        },
+        {
+          "role": "qualification_then_independent_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "launch",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/run_native_baseline.py",
+            "--action",
+            "launch",
+            "--method",
+            "sfr",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "10",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--ready-sha",
+            "{new_verified_ready_sha}",
+            "--contract-sha",
+            "{new_contract_sha}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/dataset_pins.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3240,
+        "unlabeled_inputs": 3240,
+        "native_iterations": 1620,
+        "original_recorded_optimizer_updates": 1620,
+        "mandatory_prefix": {
+          "method": "sfr",
+          "variant": "base SFR with MT and default VNet",
+          "source_commit": "dc32304b6ba7a6f9ecbcea5a30e9eebe98510ad6",
+          "dataset": "BY",
+          "ratio": 10,
+          "seed": 2027,
+          "patch": [
+            112,
+            112,
+            80
+          ],
+          "sam_canvas": 1024,
+          "prefix_iterations": 6000,
+          "prefix_labeled_inputs": 12000,
+          "prefix_optimizer_updates": 6000,
+          "prefix_batch_size": 2,
+          "prefix_keeps_native_one_case_epoch_tail": false,
+          "prefix_test_evaluations": 0,
+          "prefix_selection": "fixed_terminal_6000",
+          "prefix_optimizer": {
+            "name": "AdamW",
+            "lr": 0.001,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "weight_decay": 0.1
+          },
+          "prefix_augmentation": {
+            "native_nt": 2,
+            "nonlinear_rate": 0.5,
+            "rotation_flip_2d": true
+          },
+          "prefix_lora_rank": 4,
+          "prefix_warmup": false,
+          "ssl_iterations": 1620,
+          "ssl_labeled_inputs": 3240,
+          "ssl_unlabeled_inputs": 3240,
+          "ssl_optimizer_updates": 1620,
+          "ssl_primary_labeled_per_iteration": 2,
+          "ssl_primary_unlabeled_per_iteration": 2,
+          "ssl_optimizer": {
+            "name": "SGD",
+            "lr": 0.01,
+            "momentum": 0.9,
+            "weight_decay": 0.0001
+          },
+          "ssl_reference_iterations": 6000,
+          "ssl_lr_rule": ".01 * .1**floor(6000*completed/(2500*ssl_iterations))",
+          "ssl_consistency_rule": ".1 * sigmoid_rampup(floor(6000*completed/(150*ssl_iterations)),40)",
+          "ssl_ema_rule": "min(1-1/(actual_zero_based_update+1),.99); parameters only, as source",
+          "ssl_teacher_input_forwards": 6480,
+          "ssl_sam_stitched_board_forwards": 3240,
+          "prefix_sam_stitched_board_forwards": 12000,
+          "inference": {
+            "patch": [
+              112,
+              112,
+              80
+            ],
+            "stride_xy": 18,
+            "stride_z": 4,
+            "aggregation": "mean_softmax"
+          },
+          "selection_uses_test": false,
+          "total_compute_matched": false,
+          "launch_ready": false
+        }
+      }
+    },
+    {
+      "id": "BY_relif3d_n010",
+      "table": "main",
+      "dataset": "BY",
+      "labeled_cases": 10,
+      "method": "relif3d",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "BY_relif3d_n010",
+      "configuration_record": "records/configs/BY_relif3d_n010.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/run_native_baseline.py",
+      "entrypoint_sha256": "b98c1a2b13c4dbdb72202762ebc0eeec4f9f4097eb7bdf7cc47606886f1e4f93",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/run_native_baseline.py",
+            "--action",
+            "prepare",
+            "--method",
+            "relif3d",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "10",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--official-code-root",
+            "{pinned_upstream_root}",
+            "--foundation-pin",
+            "{foundation_pin_json}",
+            "--foundation-pin-sha",
+            "{foundation_pin_sha}"
+          ]
+        },
+        {
+          "role": "qualification_then_independent_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "launch",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/run_native_baseline.py",
+            "--action",
+            "launch",
+            "--method",
+            "relif3d",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "10",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--ready-sha",
+            "{new_verified_ready_sha}",
+            "--contract-sha",
+            "{new_contract_sha}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/dataset_pins.json",
+          "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/relif_official_pin.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3240,
+        "unlabeled_inputs": 3240,
+        "native_iterations": 3240,
+        "original_recorded_optimizer_updates": 3240,
+        "mandatory_prefix": null
+      }
+    },
+    {
+      "id": "BY_dualteacher_sam_n010",
+      "table": "main",
+      "dataset": "BY",
+      "labeled_cases": 10,
+      "method": "dualteacher_sam",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "BY_dualteacher_sam_n010",
+      "configuration_record": "records/configs/BY_dualteacher_sam_n010.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/run_dualteacher.py",
+      "entrypoint_sha256": "d43b888b99d9357239203de33452e0ca5e8c198ab738401737cc97699ab431aa",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/run_dualteacher.py",
+            "--action",
+            "prepare",
+            "--method",
+            "dualteacher_sam",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "10",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--official-code-root",
+            "{pinned_upstream_root}",
+            "--foundation-pin",
+            "{foundation_pin_json}",
+            "--foundation-pin-sha",
+            "{foundation_pin_sha}",
+            "--environment-pin",
+            "{environment_pin_json}",
+            "--environment-pin-sha",
+            "{environment_pin_sha}"
+          ]
+        },
+        {
+          "role": "qualification_then_independent_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "launch",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/run_dualteacher.py",
+            "--action",
+            "launch",
+            "--method",
+            "dualteacher_sam",
+            "--dataset",
+            "BY",
+            "--ratio",
+            "10",
+            "--gpu",
+            "1",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--ready-sha",
+            "{new_verified_ready_sha}",
+            "--contract-sha",
+            "{new_contract_sha}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/dataset_pins.json",
+          "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/admission_review.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 36,
+        "labeled_inputs": 3240,
+        "unlabeled_inputs": 3240,
+        "native_iterations": 1620,
+        "original_recorded_optimizer_updates": 1620,
+        "mandatory_prefix": null
+      }
+    },
+    {
+      "id": "BY_scb_seg_n010",
+      "table": "main",
+      "dataset": "BY",
+      "labeled_cases": 10,
+      "method": "scb_seg",
+      "group": "HPQ",
+      "record_file": "records/main_table.json",
+      "record_row_id": "BY_scb_seg_n010",
+      "configuration_record": "records/configs/BY_scb_seg_n010.json",
+      "entrypoint": "baselines/by10_hpq/run_by10.py",
+      "entrypoint_sha256": "c5ded5e4a1749b50cb326fe304eb24f0e08204f5c50c3b69ec4c86c3c0db32c9",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare_with_supervised_prefix_recipe",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/by10_hpq/run_by10.py",
+            "--action",
+            "prepare",
+            "--bundle",
+            "{new_verified_bundle_sha}"
+          ]
+        },
+        {
+          "role": "launch",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/by10_hpq/run_by10.py",
+            "--action",
+            "launch",
+            "--bundle",
+            "{new_verified_bundle_sha}",
+            "--preparation",
+            "{new_preparation_sha}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REDACTED_ROOT_AND_DEVICE_PLACEHOLDERS",
+          "ORIGINAL_SOURCE_MANIFEST_NOT_RELEASE_MANIFEST",
+          "SUPERVISED_INITIALIZER_OR_PREFIX_MUST_MATCH_BY10"
+        ],
+        "missing_metadata_in_current_review_copy": [],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 38,
+        "labeled_inputs": 3420,
+        "unlabeled_inputs": 3420,
+        "successful_updates": 684,
+        "supervised_initialization": {
+          "epochs": 60,
+          "successful_updates": 600,
+          "separate_from_ssl_budget": true
+        }
+      }
+    },
+    {
+      "id": "Public433_mt_semisam_n005",
+      "table": "main",
+      "dataset": "Public433",
+      "labeled_cases": 5,
+      "method": "mt_semisam",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "Public433_mt_semisam_n005",
+      "configuration_record": "records/configs/Public433_mt_semisam_n005.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/public_operator.py",
+      "entrypoint_sha256": "f1b0a9372387cb8d614f42af22642ac69b07f3fc581d60b8ce04216880bc88a4",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/public_operator.py",
+            "--action",
+            "prepare",
+            "--labels",
+            "5",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--method",
+            "mt_semisam"
+          ]
+        },
+        {
+          "role": "qualification_resume_probe_and_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "start",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/public_operator.py",
+            "--action",
+            "start",
+            "--job",
+            "{new_bound_job}",
+            "--contract-sha",
+            "{new_contract_sha}",
+            "--confirm",
+            "START_PUBLIC_NCASE"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/template.json",
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/budget11.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3795,
+        "unlabeled_inputs": 3795,
+        "reference_inputs_per_stream": 3795,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3795
+      }
+    },
+    {
+      "id": "Public433_uamt_semisam_n005",
+      "table": "main",
+      "dataset": "Public433",
+      "labeled_cases": 5,
+      "method": "uamt_semisam",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "Public433_uamt_semisam_n005",
+      "configuration_record": "records/configs/Public433_uamt_semisam_n005.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/public_operator.py",
+      "entrypoint_sha256": "f1b0a9372387cb8d614f42af22642ac69b07f3fc581d60b8ce04216880bc88a4",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/public_operator.py",
+            "--action",
+            "prepare",
+            "--labels",
+            "5",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--method",
+            "uamt_semisam"
+          ]
+        },
+        {
+          "role": "qualification_resume_probe_and_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "start",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/public_operator.py",
+            "--action",
+            "start",
+            "--job",
+            "{new_bound_job}",
+            "--contract-sha",
+            "{new_contract_sha}",
+            "--confirm",
+            "START_PUBLIC_NCASE"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/template.json",
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/budget11.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3795,
+        "unlabeled_inputs": 3795,
+        "reference_inputs_per_stream": 3795,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3795
+      }
+    },
+    {
+      "id": "Public433_sdcl_n005",
+      "table": "main",
+      "dataset": "Public433",
+      "labeled_cases": 5,
+      "method": "sdcl",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "Public433_sdcl_n005",
+      "configuration_record": "records/configs/Public433_sdcl_n005.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sdcl_budget11_v1/public_operator.py",
+      "entrypoint_sha256": "927a53b60cc13b19db477237d8783341e8be20b3644b53e3abf36b40c8e4eb40",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sdcl_budget11_v1/public_operator.py",
+            "--action",
+            "prepare",
+            "--labels",
+            "5",
+            "--tag",
+            "{fresh_engineering_tag}"
+          ]
+        },
+        {
+          "role": "qualification_resume_probe_and_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "start",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sdcl_budget11_v1/public_operator.py",
+            "--action",
+            "start",
+            "--job",
+            "{new_bound_job}",
+            "--contract-sha",
+            "{new_contract_sha}",
+            "--confirm",
+            "START_PUBLIC_NCASE"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sdcl_budget11_v1/template.json",
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sdcl_budget11_v1/budget11.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3796,
+        "unlabeled_inputs": 3796,
+        "reference_inputs_per_stream": 3795,
+        "mandatory_prefix": {
+          "iterations": 648,
+          "labeled_inputs": 2592,
+          "successful_optimizer_updates": 1296,
+          "unlabeled_inputs": 0
+        },
+        "optimizer_updates": 1898
+      }
+    },
+    {
+      "id": "Public433_sfr_n005",
+      "table": "main",
+      "dataset": "Public433",
+      "labeled_cases": 5,
+      "method": "sfr",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "Public433_sfr_n005",
+      "configuration_record": "records/configs/Public433_sfr_n005.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sfr_budget11_v2/public_operator.py",
+      "entrypoint_sha256": "146084390bfb9bb6879ac811a9a55e09cdc90d72b618654e53290dbfbdd4773b",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sfr_budget11_v2/public_operator.py",
+            "--action",
+            "prepare",
+            "--labels",
+            "5",
+            "--tag",
+            "{fresh_engineering_tag}"
+          ]
+        },
+        {
+          "role": "qualification_resume_probe_and_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "start",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sfr_budget11_v2/public_operator.py",
+            "--action",
+            "start",
+            "--job",
+            "{new_bound_job}",
+            "--contract-sha",
+            "{new_contract_sha}",
+            "--confirm",
+            "START_PUBLIC_NCASE"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sfr_budget11_v2/template.json",
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sfr_budget11_v2/budget11.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3796,
+        "unlabeled_inputs": 3796,
+        "reference_inputs_per_stream": 3795,
+        "mandatory_prefix": {
+          "iterations": 6000,
+          "labeled_inputs": 10000,
+          "successful_optimizer_updates": 6000,
+          "unlabeled_inputs": 0
+        },
+        "optimizer_updates": 1898
+      }
+    },
+    {
+      "id": "Public433_relif3d_n005",
+      "table": "main",
+      "dataset": "Public433",
+      "labeled_cases": 5,
+      "method": "relif3d",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "Public433_relif3d_n005",
+      "configuration_record": "records/configs/Public433_relif3d_n005.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_relif_budget11_v3/public_operator.py",
+      "entrypoint_sha256": "559c3ff041573bd63f9295b3f76bdac3bf99e96e44a9ac1cd4c7baa4b083006a",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_relif_budget11_v3/public_operator.py",
+            "--action",
+            "prepare",
+            "--labels",
+            "5",
+            "--tag",
+            "{fresh_engineering_tag}"
+          ]
+        },
+        {
+          "role": "qualification_resume_probe_and_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "start",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_relif_budget11_v3/public_operator.py",
+            "--action",
+            "start",
+            "--job",
+            "{new_bound_job}",
+            "--contract-sha",
+            "{new_contract_sha}",
+            "--confirm",
+            "START_PUBLIC_NCASE"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_relif_budget11_v3/template.json",
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_relif_budget11_v3/budget11.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3795,
+        "unlabeled_inputs": 3795,
+        "reference_inputs_per_stream": 3795,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3795
+      }
+    },
+    {
+      "id": "Public433_dualteacher_sam_n005",
+      "table": "main",
+      "dataset": "Public433",
+      "labeled_cases": 5,
+      "method": "dualteacher_sam",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "Public433_dualteacher_sam_n005",
+      "configuration_record": "records/configs/Public433_dualteacher_sam_n005.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_dualteacher_budget11_v4/public_operator.py",
+      "entrypoint_sha256": "5744cfd0d36570ec3068fc429f4a4cb022aca17c2be1e0834c96452c071cb744",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_dualteacher_budget11_v4/public_operator.py",
+            "--action",
+            "prepare",
+            "--labels",
+            "5",
+            "--tag",
+            "{fresh_engineering_tag}"
+          ]
+        },
+        {
+          "role": "qualification_resume_probe_and_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "start",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_dualteacher_budget11_v4/public_operator.py",
+            "--action",
+            "start",
+            "--job",
+            "{new_bound_job}",
+            "--contract-sha",
+            "{new_contract_sha}",
+            "--confirm",
+            "START_PUBLIC_NCASE"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_dualteacher_budget11_v4/template.json",
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_dualteacher_budget11_v4/budget11.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3796,
+        "unlabeled_inputs": 3796,
+        "reference_inputs_per_stream": 3795,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3796
+      }
+    },
+    {
+      "id": "Public433_scb_seg_n005",
+      "table": "main",
+      "dataset": "Public433",
+      "labeled_cases": 5,
+      "method": "scb_seg",
+      "group": "HPQ",
+      "record_file": "records/main_table.json",
+      "record_row_id": "Public433_scb_seg_n005",
+      "configuration_record": "records/configs/Public433_scb_seg_n005.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/public_hpq_fineq_r3_20261020/launch_hpq.py",
+      "entrypoint_sha256": "9b3fc923ae8bd856fb1baf8119b150d8f912595e4e8ebafcdaacca8754602979",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_hpq_fineq_r3_20261020/launch_hpq.py",
+            "--action",
+            "prepare",
+            "--bundle-sha",
+            "{new_verified_bundle_sha}"
+          ]
+        },
+        {
+          "role": "finite_bridge",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_hpq_fineq_r3_20261020/launch_hpq.py",
+            "--action",
+            "launch",
+            "--phase",
+            "bridge",
+            "--gpu",
+            "0",
+            "--preparation-sha",
+            "{new_preparation_sha}"
+          ]
+        },
+        {
+          "role": "formal",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_hpq_fineq_r3_20261020/launch_hpq.py",
+            "--action",
+            "launch",
+            "--phase",
+            "formal",
+            "--gpu",
+            "0",
+            "--preparation-sha",
+            "{new_preparation_sha}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "THREE_CASCADE_COMPONENTS_ONLY_PINNED_BYTECODE",
+          "PUBLIC_ENDPOINT_SELECTION_PROTOCOL_MUST_BE_PRESERVED"
+        ],
+        "missing_metadata_in_current_review_copy": [],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "completed_epochs": 36,
+        "selected_epoch_one_based": 36,
+        "successful_updates": 2484,
+        "labeled_inputs": 12420,
+        "unlabeled_inputs": 12420,
+        "selected_updates": 2484,
+        "selected_labeled_inputs": 12420,
+        "selected_unlabeled_inputs": 12420,
+        "supervised_initialization": "separate_from_SSL_exposure",
+        "counts_source": "matching_original_completion_receipt; selected Public10 5100 pairs = 15*340 fixed source recipe"
+      }
+    },
+    {
+      "id": "Public433_mt_semisam_n010",
+      "table": "main",
+      "dataset": "Public433",
+      "labeled_cases": 10,
+      "method": "mt_semisam",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "Public433_mt_semisam_n010",
+      "configuration_record": "records/configs/Public433_mt_semisam_n010.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/public_operator.py",
+      "entrypoint_sha256": "f1b0a9372387cb8d614f42af22642ac69b07f3fc581d60b8ce04216880bc88a4",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/public_operator.py",
+            "--action",
+            "prepare",
+            "--labels",
+            "10",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--method",
+            "mt_semisam"
+          ]
+        },
+        {
+          "role": "qualification_resume_probe_and_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "start",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/public_operator.py",
+            "--action",
+            "start",
+            "--job",
+            "{new_bound_job}",
+            "--contract-sha",
+            "{new_contract_sha}",
+            "--confirm",
+            "START_PUBLIC_NCASE"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/template.json",
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/budget11.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3740,
+        "unlabeled_inputs": 3740,
+        "reference_inputs_per_stream": 3740,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3740
+      }
+    },
+    {
+      "id": "Public433_uamt_semisam_n010",
+      "table": "main",
+      "dataset": "Public433",
+      "labeled_cases": 10,
+      "method": "uamt_semisam",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "Public433_uamt_semisam_n010",
+      "configuration_record": "records/configs/Public433_uamt_semisam_n010.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/public_operator.py",
+      "entrypoint_sha256": "f1b0a9372387cb8d614f42af22642ac69b07f3fc581d60b8ce04216880bc88a4",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/public_operator.py",
+            "--action",
+            "prepare",
+            "--labels",
+            "10",
+            "--tag",
+            "{fresh_engineering_tag}",
+            "--method",
+            "uamt_semisam"
+          ]
+        },
+        {
+          "role": "qualification_resume_probe_and_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "start",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/public_operator.py",
+            "--action",
+            "start",
+            "--job",
+            "{new_bound_job}",
+            "--contract-sha",
+            "{new_contract_sha}",
+            "--confirm",
+            "START_PUBLIC_NCASE"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/template.json",
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_mt_budget11_v5/budget11.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3740,
+        "unlabeled_inputs": 3740,
+        "reference_inputs_per_stream": 3740,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3740
+      }
+    },
+    {
+      "id": "Public433_sdcl_n010",
+      "table": "main",
+      "dataset": "Public433",
+      "labeled_cases": 10,
+      "method": "sdcl",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "Public433_sdcl_n010",
+      "configuration_record": "records/configs/Public433_sdcl_n010.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sdcl_budget11_v1/public_operator.py",
+      "entrypoint_sha256": "927a53b60cc13b19db477237d8783341e8be20b3644b53e3abf36b40c8e4eb40",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sdcl_budget11_v1/public_operator.py",
+            "--action",
+            "prepare",
+            "--labels",
+            "10",
+            "--tag",
+            "{fresh_engineering_tag}"
+          ]
+        },
+        {
+          "role": "qualification_resume_probe_and_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "start",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sdcl_budget11_v1/public_operator.py",
+            "--action",
+            "start",
+            "--job",
+            "{new_bound_job}",
+            "--contract-sha",
+            "{new_contract_sha}",
+            "--confirm",
+            "START_PUBLIC_NCASE"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sdcl_budget11_v1/template.json",
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sdcl_budget11_v1/budget11.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3740,
+        "unlabeled_inputs": 3740,
+        "reference_inputs_per_stream": 3740,
+        "mandatory_prefix": {
+          "iterations": 1620,
+          "labeled_inputs": 6480,
+          "unlabeled_inputs": 0,
+          "successful_optimizer_updates": 3240
+        },
+        "optimizer_updates": 1870
+      }
+    },
+    {
+      "id": "Public433_sfr_n010",
+      "table": "main",
+      "dataset": "Public433",
+      "labeled_cases": 10,
+      "method": "sfr",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "Public433_sfr_n010",
+      "configuration_record": "records/configs/Public433_sfr_n010.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sfr_budget11_v2/public_operator.py",
+      "entrypoint_sha256": "146084390bfb9bb6879ac811a9a55e09cdc90d72b618654e53290dbfbdd4773b",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sfr_budget11_v2/public_operator.py",
+            "--action",
+            "prepare",
+            "--labels",
+            "10",
+            "--tag",
+            "{fresh_engineering_tag}"
+          ]
+        },
+        {
+          "role": "qualification_resume_probe_and_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "start",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sfr_budget11_v2/public_operator.py",
+            "--action",
+            "start",
+            "--job",
+            "{new_bound_job}",
+            "--contract-sha",
+            "{new_contract_sha}",
+            "--confirm",
+            "START_PUBLIC_NCASE"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sfr_budget11_v2/template.json",
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_sfr_budget11_v2/budget11.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3740,
+        "unlabeled_inputs": 3740,
+        "reference_inputs_per_stream": 3740,
+        "mandatory_prefix": {
+          "unlabeled_inputs": 0,
+          "labeled_inputs": 12000,
+          "successful_optimizer_updates": 6000,
+          "iterations": 6000
+        },
+        "optimizer_updates": 1870
+      }
+    },
+    {
+      "id": "Public433_relif3d_n010",
+      "table": "main",
+      "dataset": "Public433",
+      "labeled_cases": 10,
+      "method": "relif3d",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "Public433_relif3d_n010",
+      "configuration_record": "records/configs/Public433_relif3d_n010.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_relif_budget11_v3/public_operator.py",
+      "entrypoint_sha256": "559c3ff041573bd63f9295b3f76bdac3bf99e96e44a9ac1cd4c7baa4b083006a",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_relif_budget11_v3/public_operator.py",
+            "--action",
+            "prepare",
+            "--labels",
+            "10",
+            "--tag",
+            "{fresh_engineering_tag}"
+          ]
+        },
+        {
+          "role": "qualification_resume_probe_and_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "start",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_relif_budget11_v3/public_operator.py",
+            "--action",
+            "start",
+            "--job",
+            "{new_bound_job}",
+            "--contract-sha",
+            "{new_contract_sha}",
+            "--confirm",
+            "START_PUBLIC_NCASE"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_relif_budget11_v3/template.json",
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_relif_budget11_v3/budget11.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3740,
+        "unlabeled_inputs": 3740,
+        "reference_inputs_per_stream": 3740,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3740
+      }
+    },
+    {
+      "id": "Public433_dualteacher_sam_n010",
+      "table": "main",
+      "dataset": "Public433",
+      "labeled_cases": 10,
+      "method": "dualteacher_sam",
+      "group": null,
+      "record_file": "records/main_table.json",
+      "record_row_id": "Public433_dualteacher_sam_n010",
+      "configuration_record": "records/configs/Public433_dualteacher_sam_n010.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_dualteacher_budget11_v4/public_operator.py",
+      "entrypoint_sha256": "5744cfd0d36570ec3068fc429f4a4cb022aca17c2be1e0834c96452c071cb744",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_dualteacher_budget11_v4/public_operator.py",
+            "--action",
+            "prepare",
+            "--labels",
+            "10",
+            "--tag",
+            "{fresh_engineering_tag}"
+          ]
+        },
+        {
+          "role": "qualification_resume_probe_and_admission_required",
+          "argv_template": null
+        },
+        {
+          "role": "start",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_dualteacher_budget11_v4/public_operator.py",
+            "--action",
+            "start",
+            "--job",
+            "{new_bound_job}",
+            "--contract-sha",
+            "{new_contract_sha}",
+            "--confirm",
+            "START_PUBLIC_NCASE"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "REQUIRED_ORIGINAL_METADATA_NOT_PRESENT_IN_REVIEW_COPY"
+        ],
+        "missing_metadata_in_current_review_copy": [
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_dualteacher_budget11_v4/template.json",
+          "baselines/source_snapshots/expes/semi05_gate/public_ncase_baselines_20261024/public_dualteacher_budget11_v4/budget11.json"
+        ],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "cycles": 11,
+        "labeled_inputs": 3740,
+        "unlabeled_inputs": 3740,
+        "reference_inputs_per_stream": 3740,
+        "mandatory_prefix": null,
+        "optimizer_updates": 3740
+      }
+    },
+    {
+      "id": "Public433_scb_seg_n010",
+      "table": "main",
+      "dataset": "Public433",
+      "labeled_cases": 10,
+      "method": "scb_seg",
+      "group": "HPQ",
+      "record_file": "records/main_table.json",
+      "record_row_id": "Public433_scb_seg_n010",
+      "configuration_record": "records/configs/Public433_scb_seg_n010.json",
+      "entrypoint": "baselines/source_snapshots/expes/semi05_gate/public_hpq_fineq_n010_restart4_20261027/launch_hpq.py",
+      "entrypoint_sha256": "5475a2dd0c721ebcdf4dfb34c31a1105a528ebdfed69c5ecbce74ebc3f2b2903",
+      "entrypoint_role": "recorded_controller",
+      "command_templates": [
+        {
+          "role": "prepare",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_hpq_fineq_n010_restart4_20261027/launch_hpq.py",
+            "--action",
+            "prepare",
+            "--bundle-sha",
+            "{new_verified_bundle_sha}"
+          ]
+        },
+        {
+          "role": "finite_bridge",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_hpq_fineq_n010_restart4_20261027/launch_hpq.py",
+            "--action",
+            "launch",
+            "--phase",
+            "bridge",
+            "--gpu",
+            "0",
+            "--preparation-sha",
+            "{new_preparation_sha}"
+          ]
+        },
+        {
+          "role": "formal",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "baselines/source_snapshots/expes/semi05_gate/public_hpq_fineq_n010_restart4_20261027/launch_hpq.py",
+            "--action",
+            "launch",
+            "--phase",
+            "formal",
+            "--gpu",
+            "0",
+            "--preparation-sha",
+            "{new_preparation_sha}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "THREE_CASCADE_COMPONENTS_ONLY_PINNED_BYTECODE",
+          "PUBLIC_ENDPOINT_SELECTION_PROTOCOL_MUST_BE_PRESERVED"
+        ],
+        "missing_metadata_in_current_review_copy": [],
+        "verified_launch_argv": null
+      },
+      "expected_budget_from_record": {
+        "kind": "ssl_primary_inputs_per_stream",
+        "completed_epochs": 16,
+        "selected_epoch_one_based": 15,
+        "successful_updates": 1088,
+        "labeled_inputs": 5440,
+        "unlabeled_inputs": 5440,
+        "selected_updates": 1020,
+        "selected_labeled_inputs": 5100,
+        "selected_unlabeled_inputs": 5100,
+        "supervised_initialization": "separate_from_SSL_exposure",
+        "counts_source": "matching_original_completion_receipt; selected Public10 5100 pairs = 15*340 fixed source recipe"
+      }
+    },
+    {
+      "id": "ablation_H",
+      "table": "configuration",
+      "dataset": "BY",
+      "labeled_cases": 5,
+      "method": "scb_seg_configuration",
+      "group": "H",
+      "record_file": "records/configurations/H.json",
+      "entrypoint": "ours/hp_hq_final.py",
+      "entrypoint_sha256": "759458bb761558e82e3f0eeae4fe814ad423ab11ce76e5787bfccd037808b4d1",
+      "entrypoint_role": "ported_single_group_entry_with_historical_runtime_dependency",
+      "command_templates": [
+        {
+          "role": "single_group_train",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "ours/hp_hq_final.py",
+            "--action",
+            "train",
+            "--group",
+            "H",
+            "--run-id",
+            "{unique_run_id}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "ASNET_ROOT_SCIENTIFIC_DEPENDENCIES_AND_FROZEN_RECEIPTS_REQUIRED"
+        ],
+        "verified_launch_argv": null
+      },
+      "historical_hq_weight_available": null
+    },
+    {
+      "id": "ablation_HP",
+      "table": "configuration",
+      "dataset": "BY",
+      "labeled_cases": 5,
+      "method": "scb_seg_configuration",
+      "group": "HP",
+      "record_file": "records/configurations/HP.json",
+      "entrypoint": "ours/hp_hq_final.py",
+      "entrypoint_sha256": "759458bb761558e82e3f0eeae4fe814ad423ab11ce76e5787bfccd037808b4d1",
+      "entrypoint_role": "ported_single_group_entry_with_historical_runtime_dependency",
+      "command_templates": [
+        {
+          "role": "single_group_train",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "ours/hp_hq_final.py",
+            "--action",
+            "train",
+            "--group",
+            "HP",
+            "--run-id",
+            "{unique_run_id}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "ASNET_ROOT_SCIENTIFIC_DEPENDENCIES_AND_FROZEN_RECEIPTS_REQUIRED"
+        ],
+        "verified_launch_argv": null
+      },
+      "historical_hq_weight_available": null
+    },
+    {
+      "id": "ablation_HQ",
+      "table": "configuration",
+      "dataset": "BY",
+      "labeled_cases": 5,
+      "method": "scb_seg_configuration",
+      "group": "HQ",
+      "record_file": "records/configurations/HQ.json",
+      "entrypoint": "ours/hp_hq_final.py",
+      "entrypoint_sha256": "759458bb761558e82e3f0eeae4fe814ad423ab11ce76e5787bfccd037808b4d1",
+      "entrypoint_role": "ported_single_group_entry_with_historical_runtime_dependency",
+      "command_templates": [
+        {
+          "role": "single_group_train",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "ours/hp_hq_final.py",
+            "--action",
+            "train",
+            "--group",
+            "HQ",
+            "--run-id",
+            "{unique_run_id}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "ASNET_ROOT_SCIENTIFIC_DEPENDENCIES_AND_FROZEN_RECEIPTS_REQUIRED"
+        ],
+        "verified_launch_argv": null
+      },
+      "historical_hq_weight_available": false
+    },
+    {
+      "id": "ablation_HPQ",
+      "table": "configuration",
+      "dataset": "BY",
+      "labeled_cases": 5,
+      "method": "scb_seg_configuration",
+      "group": "HPQ",
+      "record_file": "records/configurations/HPQ.json",
+      "entrypoint": "ours/hp_hq_final.py",
+      "entrypoint_sha256": "759458bb761558e82e3f0eeae4fe814ad423ab11ce76e5787bfccd037808b4d1",
+      "entrypoint_role": "ported_single_group_entry_with_historical_runtime_dependency",
+      "command_templates": [
+        {
+          "role": "single_group_train",
+          "argv_template": [
+            "{python}",
+            "-B",
+            "ours/hp_hq_final.py",
+            "--action",
+            "train",
+            "--group",
+            "HPQ",
+            "--run-id",
+            "{unique_run_id}"
+          ]
+        }
+      ],
+      "execution": {
+        "enabled": false,
+        "status": "BLOCKED_UNVERIFIED_NEW_MACHINE_BINDING",
+        "blocked_reasons": [
+          "NEW_MACHINE_PROJECT_AND_DATA_BINDING_UNVALIDATED",
+          "ORIGINAL_CONTROLLER_SOURCE_AND_RESOURCE_CONTRACTS_NOT_PORTED",
+          "CLEAN_ENVIRONMENT_AND_FRESH_QUALIFICATION_REQUIRED",
+          "ASNET_ROOT_SCIENTIFIC_DEPENDENCIES_AND_FROZEN_RECEIPTS_REQUIRED"
+        ],
+        "verified_launch_argv": null
+      },
+      "historical_hq_weight_available": null
+    }
+  ]
+}

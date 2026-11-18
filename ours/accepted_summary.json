@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "group": "H",
+      "dice_percent": 65.38724967206922,
+      "source_result_sha256": "92924dbf1e9b036fcd1bf9d931f3eae00e865a2b561ed72d6b3d0b8cd23d20cb",
+      "checkpoint_available": true
+    },
+    {
+      "group": "HP",
+      "dice_percent": 66.16582191830057,
+      "source_result_sha256": "b56528454847d02b8847fb97908048576262e2c172994657496aa09fddbba5d8",
+      "checkpoint_available": true
+    },
+    {
+      "group": "HQ",
+      "dice_percent": 66.90289753904912,
+      "source_result_sha256": "a5b88d8e891f8e34656d5f76020ee365d70e4ff8d2ef76f8fbf532a2462df879",
+      "checkpoint_available": false
+    },
+    {
+      "group": "HPQ",
+      "dice_percent": 67.79282300321871,
+      "source_result_sha256": "f6390acff27262f91cf710e3488695325cbc2e31f722ae672a6292294d788333",
+      "checkpoint_available": true
+    }
+  ],
+  "hq_coefficient": 0.25,
+  "hq_checkpoint_available": false,
+  "original_hq_target_band_met": false,
+  "acceptance": "USER_ACCEPTED_CCBS025_FIXED_FINAL_RESULT"
+}

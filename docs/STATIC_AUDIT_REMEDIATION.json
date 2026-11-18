@@ -1,0 +1,24 @@
+{
+  "file": "baselines/source_snapshots/SDCL-master/code/dataloaders/acdc_data_processing.py",
+  "source_sha256": "c3422369e5e3dbf66e332dbea1a23eb5a5835eec8208848da6dbad0a83b3e62c",
+  "release_sha256": "9e9e2b308edd49bc08b57c38025545133bf3eaca491fe13927ba7352ce4643dc",
+  "source_ast_sha256": "74aa412f35605a34be6c88af2f6b3c472734684663f9cab66d09cabadeeef0a0",
+  "release_ast_sha256": "634948fb87cbce66dc6a0058882adbc63aadabeb7281b9ba50af89a791dcc77f",
+  "changes": [
+    {
+      "original_line": 9,
+      "change": "literal_host_path_to_required_environment_variable",
+      "environment_key": "SCB_ACDC_SOURCE_GLOB",
+      "original_literal_was_masked_placeholder": true
+    },
+    {
+      "original_line": 30,
+      "change": "literal_host_path_to_required_environment_variable",
+      "environment_key": "SCB_ACDC_OUTPUT_TEMPLATE",
+      "original_literal_was_masked_placeholder": true
+    }
+  ],
+  "comments_preserved": true,
+  "original_historical_source_changed": false,
+  "training_started": false
+}

@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE_FIXED_FINAL",
+  "at": "2026-10-30T22:49:35.677494+08:00",
+  "group": "H",
+  "successful_updates": 684,
+  "attempted_updates": 684,
+  "completed_epochs": 36,
+  "development_evaluations": 1,
+  "metrics": {
+    "dice": 0.6538724967206921,
+    "jaccard": 0.4982718216724962,
+    "hd95": 10.490717525832071,
+    "asd": 2.685763693306147
+  },
+  "initializer_sha256": "b113d1731a8e535ff482bebe7c2ca0d821760d44e5ea02e59b33cae58557c4be",
+  "checkpoint_sha256": "0eaf5fc8f59fda5c5a941fc84752764b2aa2cac995ec0b98fa809663e96942d4",
+  "selection": "native_student_epoch35_fixed_final",
+  "seed": 2027,
+  "gt_roi_used": true,
+  "independent_test": false,
+  "distance_unit": "voxel_not_mm",
+  "source_result_sha256": "92924dbf1e9b036fcd1bf9d931f3eae00e865a2b561ed72d6b3d0b8cd23d20cb",
+  "publication_note": "Case-level identifiers, exposure maps, private paths and raw evidence references removed. Aggregate metrics unchanged."
+}

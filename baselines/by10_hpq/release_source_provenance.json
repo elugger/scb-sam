@@ -1,0 +1,92 @@
+{
+  "status": "RECORDED_SOURCE_NOT_PORTABLE_RUNTIME",
+  "files": [
+    {
+      "file": "by_inputs.py",
+      "original_sha256": "0a1cc32f421360924b438190595cd67547c1acacdffe888afc571b34558b3dd8",
+      "release_sha256": "0a1cc32f421360924b438190595cd67547c1acacdffe888afc571b34558b3dd8",
+      "private_path_or_device_replacement": false
+    },
+    {
+      "file": "by_protocol.py",
+      "original_sha256": "d847525151f3e2fb63e06e35658c24f87518722dea0126dc4cf1488423f7e19b",
+      "release_sha256": "aeb3136f3d2a25467fbd6504b1177ec32c5888aae5c1c1b494b871fe24cd476d",
+      "private_path_or_device_replacement": true
+    },
+    {
+      "file": "by_resources.py",
+      "original_sha256": "faddff2fb61774075556bcfea980ed88456672cce0a5d99eaffd97c17d91d731",
+      "release_sha256": "faddff2fb61774075556bcfea980ed88456672cce0a5d99eaffd97c17d91d731",
+      "private_path_or_device_replacement": false
+    },
+    {
+      "file": "by_runtime.py",
+      "original_sha256": "8f38bbb8b0335e7808e141e8829355ccb77ee6edc08afede6aecb77f579c197e",
+      "release_sha256": "8f38bbb8b0335e7808e141e8829355ccb77ee6edc08afede6aecb77f579c197e",
+      "private_path_or_device_replacement": false
+    },
+    {
+      "file": "dependency_pins.json",
+      "original_sha256": "c9a8c51a74c2209249999f5309c5a6a0ca298fb2b7e0c909a33bfc16624f492d",
+      "release_sha256": "c9a8c51a74c2209249999f5309c5a6a0ca298fb2b7e0c909a33bfc16624f492d",
+      "private_path_or_device_replacement": false
+    },
+    {
+      "file": "four_contract.py",
+      "original_sha256": "b1935546537bb3261ff117826a4afbeaa751f423318158a84eea3a6fcd9cd85b",
+      "release_sha256": "a17f081ceb0b101087a02d6fecac6b520f7a504f1b1e130bbb63b7cec2c57d52",
+      "private_path_or_device_replacement": true
+    },
+    {
+      "file": "four_training.py",
+      "original_sha256": "2bc2e0bd45695795939765e45c5a120dd97a6ce499b143cd16131081e3fd3127",
+      "release_sha256": "2bc2e0bd45695795939765e45c5a120dd97a6ce499b143cd16131081e3fd3127",
+      "private_path_or_device_replacement": false
+    },
+    {
+      "file": "infrastructure_pins.json",
+      "original_sha256": "40ca4339a36615c25c78d658092d65331f0418bbcab5b66437565fc5cdcdf7e0",
+      "release_sha256": "40ca4339a36615c25c78d658092d65331f0418bbcab5b66437565fc5cdcdf7e0",
+      "private_path_or_device_replacement": false
+    },
+    {
+      "file": "prepare_by5.py",
+      "original_sha256": "c7b0084da37f7f8173857f24c00c8a3b841e0d84126f329dc8ec853d62f3ed11",
+      "release_sha256": "c7b0084da37f7f8173857f24c00c8a3b841e0d84126f329dc8ec853d62f3ed11",
+      "private_path_or_device_replacement": false
+    },
+    {
+      "file": "run_by10.py",
+      "original_sha256": "c5ded5e4a1749b50cb326fe304eb24f0e08204f5c50c3b69ec4c86c3c0db32c9",
+      "release_sha256": "c5ded5e4a1749b50cb326fe304eb24f0e08204f5c50c3b69ec4c86c3c0db32c9",
+      "private_path_or_device_replacement": false
+    },
+    {
+      "file": "source_manifest.json",
+      "original_sha256": "c2bca7795f3bcaa2f22a15e91c212a55604672766f18937eb7cbdc6911d14461",
+      "release_sha256": "c2bca7795f3bcaa2f22a15e91c212a55604672766f18937eb7cbdc6911d14461",
+      "private_path_or_device_replacement": false
+    },
+    {
+      "file": "step_gates.py",
+      "original_sha256": "59b70de44fc73ec37885f7c859ac274016cee1fbaf3e6760ad07650fa9a40550",
+      "release_sha256": "59b70de44fc73ec37885f7c859ac274016cee1fbaf3e6760ad07650fa9a40550",
+      "private_path_or_device_replacement": false
+    },
+    {
+      "file": "test_by10.py",
+      "original_sha256": "6f592b2faffd1576ec03f819648c5870e9cf7b635d6e5bcb1cf7f10884010e32",
+      "release_sha256": "6f592b2faffd1576ec03f819648c5870e9cf7b635d6e5bcb1cf7f10884010e32",
+      "private_path_or_device_replacement": false
+    },
+    {
+      "file": "train_by5.py",
+      "original_sha256": "cd94896aca93baaac13e85520702327b25dccf00548430575b159dd1a8926822",
+      "release_sha256": "cd94896aca93baaac13e85520702327b25dccf00548430575b159dd1a8926822",
+      "private_path_or_device_replacement": false
+    }
+  ],
+  "scientific_source_versions_preserved": true,
+  "original_pins_rebound": false,
+  "note": "The source_manifest/dependency_pins retain historical hashes. Redaction changes release bytes; new machine binding must explicitly validate a port and cannot reuse old launch receipts."
+}

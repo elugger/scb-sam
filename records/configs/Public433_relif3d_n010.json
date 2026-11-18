@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "experiment_id": "Public433_relif3d_n010",
+  "dataset": "Public433",
+  "fold": 2,
+  "labeled_cases": 10,
+  "seed": 2027,
+  "split": "splits/public433/fold2_n010.json",
+  "budget": {
+    "kind": "ssl_primary_inputs_per_stream",
+    "cycles": 11,
+    "labeled_inputs": 3740,
+    "unlabeled_inputs": 3740,
+    "reference_inputs_per_stream": 3740,
+    "mandatory_prefix": null,
+    "optimizer_updates": 3740
+  },
+  "recipe": {
+    "labeled_cases": 10,
+    "unlabeled_cases": 336,
+    "ssl_iterations": 3740,
+    "primary_inputs_per_stream": 3740,
+    "optimizer_updates": 3740,
+    "original_clock_iterations": 12240,
+    "primary_pairs_per_cycle": 340,
+    "prefix_updates": 0,
+    "original_larc_start_index": 408,
+    "original_larc_full_weight_index": 816,
+    "overshoot_per_stream": 0
+  },
+  "stage_recipe": {
+    "implementation": "paper-aligned ReLiF-3D repair; not unchanged official execution",
+    "official_code_root": "MACHINE_BINDING_REMOVED_SEE_PRIVATE_PROVENANCE",
+    "original_sam": {
+      "bytes": 1205248025,
+      "sha256": "222a7b931025e5c8730dbb97a8717b221646dace76a5f04b16ef69e353ddbe48",
+      "model_family": "SAM-Med3D_original",
+      "variant": "vit_b_ori",
+      "source_url": "http__RECORDED_LOCAL_PATH__",
+      "provenance": "Human explicitly confirms downloaded from the provided official SAM-Med3D original Baidu share, then uploaded to existing ckpt; CPU strict vit_b_ori load verified"
+    },
+    "preprocessing": {
+      "policy": "BY_PUBLIC_SHARED_ROI128_POSITIVE_ZSCORE_NATIVE_GEOMETRY_V1_20261019",
+      "decision": "prospective_cross_dataset_mapping_20261019",
+      "native_h5_numeric_equivalence": "unknown_not_claimed",
+      "historical_gt_roi_disclosed": true,
+      "patient_alias_identity_unresolved_disclosed": true,
+      "independent_confirmation_claimed": false,
+      "train_order": [
+        "shared_ToCanonical_GT_CropOrPad_128",
+        "shared_positive_mask_ZNormalization",
+        "official_RandomRotFlip_once",
+        "official_RandomCrop_128_once"
+      ],
+      "test_order": [
+        "shared_ToCanonical_GT_CropOrPad_128",
+        "shared_positive_mask_ZNormalization"
+      ],
+      "native_crop_padding_retained": true,
+      "native_patch": [
+        128,
+        128,
+        128
+      ],
+      "native_test_stride": [
+        64,
+        64,
+        64
+      ],
+      "shared_roi_test_windows": 1,
+      "normalization_order_reason": "native loaders receive preprocessed H5 before native geometric transforms",
+      "source_evidence": {
+        "shared_roi": {
+          "bytes": 6065,
+          "sha256": "43b6e2db7f0a167e74125d5a9de5b3377f72a50b4532a05e16f57dedcb421b13"
+        },
+        "shared_normalization": {
+          "bytes": 2906,
+          "sha256": "1157566e0a3cb0ba339c4987327fcf2c61128e46a5321f814a54baeabf33371b"
+        },
+        "native_la_loader": {
+          "bytes": 9114,
+          "sha256": "65cca736f06f184ac3ca054e9b5b57145b1771094739074009308f67f0817ebf"
+        },
+        "native_brats_loader": {
+          "bytes": 9062,
+          "sha256": "21e9e96fce7e6a9841282df929679552c297ffcce7ec86a2f1f9b92a8feb8680"
+        },
+        "native_train": {
+          "bytes": 22317,
+          "sha256": "a4766c745dff94613ccadb66e11606a4aa8cdd293fd07750a7d86abeac03b8bd"
+        },
+        "native_test": {
+          "bytes": 4190,
+          "sha256": "1d57ef5114b78a32279eb3f4eb1b77aac2b6146e37ef2e94b45af2f3a4ef7add"
+        }
+      }
+    },
+    "native_labeled_inputs": 1,
+    "native_unlabeled_inputs": 1,
+    "native_optimizer_updates": 1,
+    "original_reference_iterations": 30000,
+    "reference_clock": "fractional_primary_input_progress",
+    "initialization": "seed2027_random_official_unet_plus_frozen_original_SAM_Med3D",
+    "qualification_probe_policy": "two_engineering_updates_at_native_warmup_and_LARC_start_then_full_restore",
+    "prefix_training_updates": 0,
+    "final_contains": [
+      "student",
+      "projection"
+    ],
+    "checkpoint_bound": 33554432,
+    "exact_resume_supported": false
+  },
+  "source_contract_sha256": "edcb51d30c8e92664083b519f272aac3e03c2ee92a844276fe75044955f20091",
+  "runtime_status": "recorded_recipe_not_yet_portable_training_entrypoint",
+  "selection": "fixed_terminal",
+  "notes": [
+    "Accepted fixed11 primary exposure"
+  ]
+}

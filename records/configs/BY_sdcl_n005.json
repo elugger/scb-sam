@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "experiment_id": "BY_sdcl_n005",
+  "dataset": "BY",
+  "fold": 2,
+  "labeled_cases": 5,
+  "seed": 2027,
+  "split": "splits/by/fold2_n005.json",
+  "budget": {
+    "kind": "ssl_primary_inputs_per_stream",
+    "cycles": 36,
+    "labeled_inputs": 3420,
+    "unlabeled_inputs": 3420,
+    "native_iterations": 855,
+    "original_recorded_optimizer_updates": 1710,
+    "mandatory_prefix": {
+      "pretrain_iterations": 648,
+      "pretrain_labeled_inputs": 2592,
+      "pretrain_successful_optimizer_updates": 1296,
+      "pretrain_test_evaluations": 0,
+      "ssl_iterations": 855,
+      "ssl_labeled_inputs": 3420,
+      "ssl_unlabeled_inputs": 3420,
+      "ssl_successful_optimizer_updates": 1710,
+      "native_inputs_per_stream": 4,
+      "native_optimizers": 2,
+      "prefix_selection": "fixed_terminal_not_test_best",
+      "prefix_extra_budget_disclosed": true
+    }
+  },
+  "recipe": null,
+  "stage_recipe": null,
+  "source_contract_sha256": null,
+  "runtime_status": "recorded_recipe_not_yet_portable_training_entrypoint",
+  "selection": "fixed_terminal",
+  "notes": [
+    "Accepted fixed primary exposure; original BY table retained"
+  ]
+}

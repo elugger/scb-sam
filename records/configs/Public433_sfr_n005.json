@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "experiment_id": "Public433_sfr_n005",
+  "dataset": "Public433",
+  "fold": 2,
+  "labeled_cases": 5,
+  "seed": 2027,
+  "split": "splits/public433/fold2_n005.json",
+  "budget": {
+    "kind": "ssl_primary_inputs_per_stream",
+    "cycles": 11,
+    "labeled_inputs": 3796,
+    "unlabeled_inputs": 3796,
+    "reference_inputs_per_stream": 3795,
+    "mandatory_prefix": {
+      "iterations": 6000,
+      "labeled_inputs": 10000,
+      "successful_optimizer_updates": 6000,
+      "unlabeled_inputs": 0
+    },
+    "optimizer_updates": 1898
+  },
+  "recipe": null,
+  "stage_recipe": {
+    "labeled_cases": 5,
+    "original_clock_inputs": 12420,
+    "original_clock_ssl_iterations": 6210,
+    "prefix_iterations": 6000,
+    "prefix_labeled_inputs": 10000,
+    "prefix_updates": 6000,
+    "primary_inputs": 3796,
+    "reference_inputs": 3795,
+    "rounding_extra_inputs": 1,
+    "ssl_iterations": 1898,
+    "ssl_updates": 1898
+  },
+  "source_contract_sha256": "5d532531e6fc7e66fe63f8a53c2b0933389e277cf0d7028d7da4981ad4937720",
+  "runtime_status": "recorded_recipe_not_yet_portable_training_entrypoint",
+  "selection": "fixed_terminal",
+  "notes": [
+    "Accepted fixed11 primary exposure"
+  ]
+}

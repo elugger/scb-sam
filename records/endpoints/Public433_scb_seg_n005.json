@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE",
+  "metrics": {
+    "dice": 0.706285387061012,
+    "jaccard": 0.5750624831703984,
+    "hd95": 6.576039936636145,
+    "asd": 1.864413970831123
+  },
+  "budget": {
+    "kind": "ssl_primary_inputs_per_stream",
+    "completed_epochs": 36,
+    "selected_epoch_one_based": 36,
+    "successful_updates": 2484,
+    "labeled_inputs": 12420,
+    "unlabeled_inputs": 12420,
+    "selected_updates": 2484,
+    "selected_labeled_inputs": 12420,
+    "selected_unlabeled_inputs": 12420,
+    "supervised_initialization": "separate_from_SSL_exposure",
+    "counts_source": "matching_original_completion_receipt; selected Public10 5100 pairs = 15*340 fixed source recipe"
+  },
+  "selection": "native_student_epoch35_fixed_final",
+  "initializer_sha256": "12a580d460406f52d526b3d73c17b3053d34bb7dc41d814b1daedcfddbe9153f",
+  "checkpoint_sha256": "473431661269c375b7eb583793df32b5397fe619143c7e1a709ae38b49f4db54",
+  "source_result_sha256": "25a6a1029df001c3d358c58704c74564bb247000d3c0a85e0db348fe80f27d68",
+  "source_result_relative_record": "expes/work_dir/semi05_gate/PUBLIC_N005_FINEQ_R3_20261020/fold2/A1B/formal_r1/final_metrics.json",
+  "strict_reload_recorded": true,
+  "new_model_evaluations": 0,
+  "independent_test": false,
+  "gt_roi_used": true
+}

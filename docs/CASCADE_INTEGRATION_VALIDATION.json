@@ -1,0 +1,60 @@
+{
+  "status": "PASS_SOURCE_CLOSURE_AND_STRUCTURE_NOT_END_TO_END_TRAINING",
+  "source_files_verified": 6,
+  "python_files_ast_passed": 608,
+  "entry_unchanged": true,
+  "source_verifier": {
+    "status": "PASS",
+    "normalization": "Only co_filename recursively replaced by <source>; all line tables, constants, instructions and flags retained",
+    "files": [
+      {
+        "file": "ours/research_snapshot/segment_anything/auto_sam_seg.py",
+        "source_sha_matches": true,
+        "complete_code_sha_matches_training_reference": true,
+        "comments": 0
+      },
+      {
+        "file": "baselines/source_snapshots/segment_anything/auto_sam_seg.py",
+        "source_sha_matches": true,
+        "complete_code_sha_matches_training_reference": true,
+        "comments": 0
+      },
+      {
+        "file": "ours/research_snapshot/segment_anything/modeling/sam3D_cascade.py",
+        "source_sha_matches": true,
+        "complete_code_sha_matches_training_reference": true,
+        "comments": 0
+      },
+      {
+        "file": "baselines/source_snapshots/segment_anything/modeling/sam3D_cascade.py",
+        "source_sha_matches": true,
+        "complete_code_sha_matches_training_reference": true,
+        "comments": 0
+      },
+      {
+        "file": "ours/research_snapshot/segment_anything/build_sam3D_cascade.py",
+        "source_sha_matches": true,
+        "complete_code_sha_matches_training_reference": true,
+        "comments": 0
+      },
+      {
+        "file": "baselines/source_snapshots/segment_anything/build_sam3D_cascade.py",
+        "source_sha_matches": true,
+        "complete_code_sha_matches_training_reference": true,
+        "comments": 0
+      }
+    ],
+    "source_execution_performed": false,
+    "training_started": false
+  },
+  "structural_checks_passed": true,
+  "overall_readiness": "NOT_READY_TO_RELEASE",
+  "remaining_blocker_ids": [
+    "portable_preparation_and_runtime",
+    "clean_environment_and_end_to_end_validation",
+    "third_party_release_review"
+  ],
+  "training_started": false,
+  "model_constructed": false,
+  "weight_binaries_bundled": false
+}

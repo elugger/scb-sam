@@ -1,0 +1,479 @@
+{
+  "status": "STATIC_SYNTAX_PASS_RELEASE_NOT_PORTABILITY_VALIDATED",
+  "at": "2026-11-10T11:29:17.356553+00:00",
+  "file_count": 675,
+  "python_ast_pass_count": 601,
+  "python_ast_failures": [],
+  "category_match_counts": {
+    "data_or_environment_path_text_candidate": 42,
+    "private_user_absolute_path": 0,
+    "private_server_ipv4": 0,
+    "patient_case_identifier": 0,
+    "private_key_material": 0,
+    "credential_value_assignment": 0,
+    "known_token_format": 0,
+    "opaque_long_base64_literal": 0
+  },
+  "category_file_counts": {
+    "data_or_environment_path_text_candidate": 29,
+    "private_user_absolute_path": 0,
+    "private_server_ipv4": 0,
+    "patient_case_identifier": 0,
+    "private_key_material": 0,
+    "credential_value_assignment": 0,
+    "known_token_format": 0,
+    "opaque_long_base64_literal": 0
+  },
+  "findings": [
+    {
+      "file": "scripts/baseline_required_directories.json",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        61
+      ]
+    },
+    {
+      "file": "ours/research_snapshot/utils/data_loader.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        184
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/utils/data_loader.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 2,
+      "lines": [
+        294,
+        308
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/SemiSAM-main/code_semisam+/networks/net_factory.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        13
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/test_ACDC.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 2,
+      "lines": [
+        37,
+        81
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/test_LA.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        36
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/dataloaders/dataset.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 5,
+      "lines": [
+        40,
+        42,
+        95,
+        97,
+        99
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/dataloaders/la_heart_processing.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        10
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/pancreas/test_util.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 4,
+      "lines": [
+        295,
+        297,
+        313,
+        315
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/utils/test_3d_patch.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 4,
+      "lines": [
+        24,
+        120,
+        283,
+        285
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_20261019_r4/sfr_runtime_components.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        5
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/public_hpq_epochdiag_20261019/hpq_initialization.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        99
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/public_hpq_fineq_n010_restart4_20261027/hpq_initialization.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        99
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/public_hpq_fineq_r3_20261020/hpq_initialization.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        99
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/test_singleclass.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        11
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/train_finetuning.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        16
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/SFR/code/train_retraining.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        16
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/ReLiF_3D_train_brats.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        43
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/ReLiF_3D_train_la.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        46
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/test_3D_brats.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        13
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/test_3D_la.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        14
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/test_3D_util_brats.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        93
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/test_3D_util_la.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        93
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/val_3D_brats.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        94
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/val_3D_la.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        94
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/dataloaders/brats2019.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        39
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/dataloaders/la.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        39
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/networks/net_factory.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 1,
+      "lines": [
+        13
+      ]
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/utilsm/translate_labels.py",
+      "category": "data_or_environment_path_text_candidate",
+      "count": 2,
+      "lines": [
+        28,
+        29
+      ]
+    }
+  ],
+  "path_contexts": [
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/test_ACDC.py",
+      "line": 37,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [
+        "test_single_volume"
+      ],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/test_ACDC.py",
+      "line": 81,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [
+        "test_single_volume_average"
+      ],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/test_LA.py",
+      "line": 36,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/dataloaders/dataset.py",
+      "line": 40,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [
+        "__getitem__"
+      ],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/dataloaders/dataset.py",
+      "line": 42,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [
+        "__getitem__"
+      ],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/dataloaders/dataset.py",
+      "line": 95,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [
+        "__getitem__"
+      ],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/dataloaders/dataset.py",
+      "line": 97,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [
+        "__getitem__"
+      ],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/dataloaders/dataset.py",
+      "line": 99,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [
+        "__getitem__"
+      ],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/utils/test_3d_patch.py",
+      "line": 283,
+      "category": "absolute_data_literal_in_executable_ast",
+      "enclosing_functions": [
+        "var_all_case_LA_plus"
+      ],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/SDCL-master/code/utils/test_3d_patch.py",
+      "line": 285,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [
+        "var_all_case_LA_plus"
+      ],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/test_3D_util_brats.py",
+      "line": 93,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [
+        "test_all_case"
+      ],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/test_3D_util_la.py",
+      "line": 93,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [
+        "test_all_case"
+      ],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/val_3D_brats.py",
+      "line": 94,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [
+        "test_all_case"
+      ],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/val_3D_la.py",
+      "line": 94,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [
+        "test_all_case"
+      ],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/dataloaders/brats2019.py",
+      "line": 39,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [
+        "__getitem__"
+      ],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/main_table_cpu_candidates_20261019_1822/official/ReLiF_3D/code/dataloaders/la.py",
+      "line": 39,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [
+        "__getitem__"
+      ],
+      "main_guard": false
+    },
+    {
+      "file": "baselines/source_snapshots/expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda/native/dataset.py",
+      "line": 364,
+      "category": "root_concatenation_suffix",
+      "enclosing_functions": [
+        "__init__"
+      ],
+      "main_guard": false
+    }
+  ],
+  "missing_preparation_metadata": [
+    {
+      "file": "ours/research_snapshot/expes/semi05_gate/by5_four_arm_training_20261030/manifest.json",
+      "category": "required_original_preparation_or_manifest_not_in_public_snapshot"
+    },
+    {
+      "file": "ours/research_snapshot/expes/semi05_gate/by5_four_arm_initialization_check_20261030/manifest.json",
+      "category": "required_original_preparation_or_manifest_not_in_public_snapshot"
+    },
+    {
+      "file": "ours/research_snapshot/expes/semi05_gate/by5_four_arm_initialization_check_20261030/ancestry.json",
+      "category": "required_original_preparation_or_manifest_not_in_public_snapshot"
+    },
+    {
+      "file": "ours/research_snapshot/expes/semi05_gate/by5_four_arm_initialization_check_20261030/acceptance.json",
+      "category": "required_original_preparation_or_manifest_not_in_public_snapshot"
+    },
+    {
+      "file": "ours/research_snapshot/expes/semi05_gate/by5_four_arm_rerun_20261030/source_manifest.json",
+      "category": "required_original_preparation_or_manifest_not_in_public_snapshot"
+    },
+    {
+      "file": "ours/research_snapshot/expes/semi05_gate/by5_four_arm_rerun_20261030/dependency_pins.json",
+      "category": "required_original_preparation_or_manifest_not_in_public_snapshot"
+    },
+    {
+      "file": "ours/research_snapshot/expes/semi05_gate/by5_four_arm_rerun_20261030/infrastructure_pins.json",
+      "category": "required_original_preparation_or_manifest_not_in_public_snapshot"
+    },
+    {
+      "file": "ours/research_snapshot/expes/work_dir/semi05_gate/BY5_FOUR_ARM_RERUN_20261030/control/preparation.json",
+      "category": "required_original_preparation_or_manifest_not_in_public_snapshot"
+    }
+  ],
+  "source_map_integrity": {
+    "included_hash_verified": 496,
+    "excluded_count": 7,
+    "unexpected_missing_count": 0,
+    "hash_mismatch_count": 0
+  },
+  "remediation": {
+    "file": "baselines/source_snapshots/SDCL-master/code/dataloaders/acdc_data_processing.py",
+    "replaced_literals": 2,
+    "previous_literals_were_masked_placeholders": true,
+    "record": "docs/STATIC_AUDIT_REMEDIATION.json"
+  },
+  "limitations": [
+    "Pattern scan is not proof of no secrets.",
+    "Path text candidates include relative fragments and examples; they are not all independent portability defects.",
+    "Private datasets and machine-bound manifests were deliberately not copied. New verified preparation is still required for training.",
+    "No network, training, imports of project Python, or weight deserialization performed."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "status": "ASSEMBLED_RESEARCH_PROJECT_NOT_YET_PORTABLE",
+  "ready_to_release": false,
+  "clean_environment_training_verified": false,
+  "new_training_performed": false,
+  "weight_binaries_bundled": false,
+  "blockers": [
+    {
+      "id": "portable_preparation_and_runtime",
+      "description": "Original source/data identity, preparation, initial-state and capacity contracts still require explicit new-host reconstruction and validation. Historical guards must not be deleted merely to make a script start."
+    },
+    {
+      "id": "clean_environment_and_end_to_end_validation",
+      "description": "Method-specific installation and the full prepare/supervised-prefix/train/evaluate pipeline have not been validated on a clean machine."
+    },
+    {
+      "id": "third_party_release_review",
+      "description": "Own-code Apache-2.0 selection does not settle every vendored component or weight's redistribution terms. Track unresolved items in THIRD_PARTY.md."
+    }
+  ],
+  "resolved_items": [
+    {
+      "id": "cascade_source_closure",
+      "status": "ALL_THREE_CASCADE_SOURCE_MODULES_BYTECODE_VERIFIED",
+      "evidence": "docs/CASCADE_SOURCE_VERIFICATION.json",
+      "builder_original_file_found": false,
+      "builder_reconstructed_and_exact_compiled_code_verified": true
+    }
+  ],
+  "publication_scope": "SOURCE_PREVIEW_WITH_DISCLOSED_RUNTIME_GAPS",
+  "source_preview_authorized": true,
+  "source_preview_authorized_date": "2026-11-18"
+}

@@ -1,0 +1,73 @@
+{
+  "files": [
+    {
+      "path": "by/fold2_n005.json",
+      "sha256": "ee00d4b379360d83345f718550a439b990a28f31c68ab6dcc046f7249c79884c",
+      "source": "2026-10-30 release aliases",
+      "verified_against_current_training_split": true,
+      "ordered_membership_equal": true,
+      "native_mapping_published": false,
+      "raw_input_source_sha256": {
+        "train_lab": "829c22473199cff9a938a831357d7217ba3c3cf1979cb642358f2536828b5ab1",
+        "train_unlab": "915cd2a00e6bbecafb1af4fe4a30e983759558f940a43fd8a5129ded8b98a45d",
+        "train_whole": "c7bcb268759f6282b5c2e5d3221483580852d62eaa7584102c2ad613bf959c55",
+        "test": "60ed81fb7520f795f52d62c9e3c83235969671453c810b8f9b22defb02550eda"
+      },
+      "verification_method": "live_server_read_only_original_split_bytes",
+      "training_contract_source": "ours/research_snapshot/expes/semi05_gate/by5_four_arm_rerun_20261030/by_protocol.py",
+      "training_contract_sha256": "d1267be4420e5ff76bdcfd5628cb0fa14eccd959a46fd8392127250f14c09285"
+    },
+    {
+      "path": "by/fold2_n010.json",
+      "sha256": "56c1bb67fa6f087217c3221438648ff4acd2380c9344e9364c777cff2ed5eea6",
+      "source": "2026-10-30 release aliases",
+      "verified_against_current_training_split": true,
+      "ordered_membership_equal": true,
+      "native_mapping_published": false,
+      "raw_input_source_sha256": {
+        "train_lab": "5a63114a06896d1721a8626c660644de63f420ddde55717cebd49d1ddc0c63cb",
+        "train_unlab": "744d833bd4aa31c12ea5bf858ecc8cfbe13bc1ffe7db2d0cf09cd3006e34fde0",
+        "train_whole": "c7bcb268759f6282b5c2e5d3221483580852d62eaa7584102c2ad613bf959c55",
+        "test": "60ed81fb7520f795f52d62c9e3c83235969671453c810b8f9b22defb02550eda"
+      },
+      "verification_method": "live_server_read_only_original_split_bytes",
+      "training_contract_source": "baselines/by10_hpq/by_protocol.py",
+      "training_contract_sha256": "aeb3136f3d2a25467fbd6504b1177ec32c5888aae5c1c1b494b871fe24cd476d"
+    },
+    {
+      "path": "public433/fold2_n005.json",
+      "sha256": "b5c13707517c2568a95361c4567870fab28a8d1c9f411945ded25f9a43b117ca",
+      "source": "2026-10-30 release aliases",
+      "verified_against_current_training_split": true,
+      "ordered_membership_equal": true,
+      "native_mapping_published": false,
+      "raw_input_source_sha256": {
+        "train_lab": "1ac1f18841b6d46134c71e75ddcfe83202b94c175a7f1c24a9aef8087e3eb808",
+        "train_unlab": "027156909bd08ed658480129eee5e6903faa86e32ee872f69e7c2211eef92a25",
+        "train_whole": "9fdf84b9a66f1e73a8c2b791b7d9c81d72a43bab5f42a59613dfce5a0b3be639",
+        "test": "f50e39909a88adf23550d165d4538f832d9b7e012c12af957acf3393c11000a6"
+      },
+      "verification_method": "live_server_read_only_original_split_bytes",
+      "training_contract_source": "baselines/source_snapshots/expes/semi05_gate/public_hpq_fineq_r3_20261020/hpq_inputs.py",
+      "training_contract_sha256": "b343985005ad8298c1a709b7178d9a737b2ecf8d0fc5101260806d0fb334ec62"
+    },
+    {
+      "path": "public433/fold2_n010.json",
+      "sha256": "4d39f4d2c5c622043fe5381f7ec97ab8054fc2dd71222e5b0267c5e8f8191f51",
+      "source": "2026-10-30 release aliases",
+      "verified_against_current_training_split": true,
+      "ordered_membership_equal": true,
+      "native_mapping_published": false,
+      "raw_input_source_sha256": {
+        "train_lab": "0359692a4d81ff32d92a4e00a2bc2a1aa65b6041c82672813c7544aa0b631121",
+        "train_unlab": "ee6322f4e0e910bd2cc7cb8f18ed7844157ce05fc5cea3b00450e6e56eb8b402",
+        "train_whole": "9fdf84b9a66f1e73a8c2b791b7d9c81d72a43bab5f42a59613dfce5a0b3be639",
+        "test": "f50e39909a88adf23550d165d4538f832d9b7e012c12af957acf3393c11000a6"
+      },
+      "verification_method": "local_original_bytes_match_frozen_training_contract",
+      "training_contract_source": "baselines/source_snapshots/expes/semi05_gate/public_hpq_fineq_n010_restart4_20261027/hpq_inputs.py",
+      "training_contract_sha256": "028afebdd509aa331cf7674cb6f0c15c9317137b609ea62a8bf9920618466d72"
+    }
+  ],
+  "native_id_mapping_bundled": false
+}

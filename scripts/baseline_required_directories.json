@@ -1,0 +1,92 @@
+{
+  "scope": "28 main rows and 4 configurations only",
+  "required_source_families": [
+    {
+      "path": "SemiSAM-main",
+      "reason": "native 3D models and prompting support for MT/UA-MT",
+      "available_in_old_source_snapshot": true
+    },
+    {
+      "path": "SDCL-master",
+      "reason": "native dual-network models, losses and supporting code",
+      "available_in_old_source_snapshot": true
+    },
+    {
+      "path": "segment_anything",
+      "reason": "SAM family architecture dependencies; all three former bytecode-only cascade modules now have compiled-equivalent readable source",
+      "available_in_old_source_snapshot": true
+    },
+    {
+      "path": "utils",
+      "reason": "shared normalization, inference and cascade helpers",
+      "available_in_old_source_snapshot": true
+    },
+    {
+      "path": "expes/common",
+      "reason": "data, metrics, and training support",
+      "available_in_old_source_snapshot": true
+    },
+    {
+      "path": "expes/semi05_gate/main_table_20261019_r2",
+      "reason": "historical scientific kernels referenced by later controllers",
+      "available_in_old_source_snapshot": true
+    },
+    {
+      "path": "expes/semi05_gate/main_table_20261019_r3",
+      "reason": "BY MT/UA-MT/SDCL entry and backend",
+      "available_in_old_source_snapshot": true
+    },
+    {
+      "path": "expes/semi05_gate/main_table_20261019_r4",
+      "reason": "BY SFR/ReLiF entry and backend",
+      "available_in_old_source_snapshot": true
+    },
+    {
+      "path": "expes/semi05_gate/dualteacher_fixed_final_20261021_v4_conda",
+      "reason": "BY DualTeacher and native model sources",
+      "available_in_old_source_snapshot": true
+    },
+    {
+      "path": "expes/semi05_gate/main_table_cpu_candidates_20261019_1822",
+      "reason": "pinned official SFR/ReLiF sources",
+      "available_in_old_source_snapshot": true
+    },
+    {
+      "path": "expes/semi05_gate/public_ncase_baselines_20261024",
+      "reason": "Public method-specific fixed11 protocols and controllers",
+      "available_in_old_source_snapshot": true
+    },
+    {
+      "path": "expes/semi05_gate/public_hpq_epochdiag_20261019",
+      "reason": "shared resource/data/helper dependency of baselines and ours",
+      "available_in_old_source_snapshot": true
+    },
+    {
+      "path": "expes/semi05_gate/public_hpq_fineq_r3_20261020",
+      "reason": "Public5 full method fixed36 endpoint",
+      "available_in_old_source_snapshot": true
+    },
+    {
+      "path": "expes/semi05_gate/public_hpq_fineq_n010_restart4_20261027",
+      "reason": "Public10 full method frozen development selection",
+      "available_in_old_source_snapshot": true
+    },
+    {
+      "path": "expes/semi05_gate/public_sup_20261018",
+      "reason": "supervised initializer preparation and resource helper dependency; retain even though supervised rows are out of scope",
+      "available_in_old_source_snapshot": true
+    }
+  ],
+  "additional_project_paths": [
+    "baselines/by10_hpq",
+    "ours/hp_hq_final.py"
+  ],
+  "excluded_experiment_families": [
+    "vnet_supervised_20261029 independent VNet reference experiments",
+    "standalone cascade_supervised main-table rows",
+    "with-SAM seven-row adaptations",
+    "stopped or deleted development replacement experiments"
+  ],
+  "do_not_delete_transitive_dependencies": true,
+  "note": "VNet architecture files used by baseline methods and supervised initializer/helper sources remain required; exclude experiment rows, not their shared scientific dependencies. Exact runtime closure still requires manifest/import validation."
+}

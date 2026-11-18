@@ -1,0 +1,91 @@
+{
+  "schema_version": 2,
+  "weights_bundled": false,
+  "count": 7,
+  "public_downloads_published_by_this_project": false,
+  "supervised_generation_portability_verified": false,
+  "rows": [
+    {
+      "name": "sam_med3d_turbo.pth",
+      "category": "upstream_pretrained",
+      "required_for": "matching_pretrained_method",
+      "original_bytes": 402163626,
+      "expected_original_sha256": "899a46d04d3b70f723282ceb489149373558bf0aaba389a346f5ab57da5cdd3c",
+      "source_page": "https://github.com/uni-medical/SAM-Med3D",
+      "download_url": "https://huggingface.co/blueyo0/SAM-Med3D/resolve/fc482a040ea69cdc9ae576a1d6bd9db02ab1994c/sam_med3d_turbo.pth",
+      "download_url_status": "official_revision_pinned_metadata_sha_matches_historical_asset_transfer_not_tested",
+      "committed_to_source_repository": false,
+      "upstream_revision": "fc482a040ea69cdc9ae576a1d6bd9db02ab1994c",
+      "sha_evidence_url": "https://huggingface.co/blueyo0/SAM-Med3D/blob/main/sam_med3d_turbo.pth"
+    },
+    {
+      "name": "sam_vit_b_01ec64.pth",
+      "category": "upstream_pretrained",
+      "required_for": "matching_pretrained_method",
+      "original_bytes": 375042383,
+      "expected_original_sha256": "ec2df62732614e57411cdcf32a23ffdf28910380d03139ee0f4fcbe91eb8c912",
+      "source_page": "https://github.com/facebookresearch/segment-anything#model-checkpoints",
+      "download_url": "https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth",
+      "download_url_status": "official_readme_link_confirmed_historical_sha_required_transfer_not_verified",
+      "committed_to_source_repository": false
+    },
+    {
+      "name": "by5_common_supervised.pth",
+      "category": "optional_supervised_stage_cache",
+      "required_for": "reuse_exact_historical_supervised_start_without_regeneration",
+      "original_bytes": 811897257,
+      "expected_original_sha256": "b113d1731a8e535ff482bebe7c2ca0d821760d44e5ea02e59b33cae58557c4be",
+      "source_page": null,
+      "download_url": null,
+      "download_url_status": "not_published_optional_if_generation_stage_is_supplied",
+      "committed_to_source_repository": false
+    },
+    {
+      "name": "by10_common_supervised.pth",
+      "category": "optional_supervised_stage_cache",
+      "required_for": "reuse_exact_historical_supervised_start_without_regeneration",
+      "original_bytes": 811899497,
+      "expected_original_sha256": "c212028a044773ff7535e284929fafc2e51a76f354ee82067792aa7feb08e0da",
+      "source_page": null,
+      "download_url": null,
+      "download_url_status": "not_published_optional_if_generation_stage_is_supplied",
+      "committed_to_source_repository": false
+    },
+    {
+      "name": "public5_supervised.pth",
+      "category": "optional_supervised_stage_cache",
+      "required_for": "reuse_exact_historical_supervised_start_without_regeneration",
+      "original_bytes": 811884393,
+      "expected_original_sha256": "12a580d460406f52d526b3d73c17b3053d34bb7dc41d814b1daedcfddbe9153f",
+      "source_page": null,
+      "download_url": null,
+      "download_url_status": "not_published_optional_if_generation_stage_is_supplied",
+      "committed_to_source_repository": false
+    },
+    {
+      "name": "public10_supervised.pth",
+      "category": "optional_supervised_stage_cache",
+      "required_for": "reuse_exact_historical_supervised_start_without_regeneration",
+      "original_bytes": 811899945,
+      "expected_original_sha256": "e0b0054027306e50905d1092cd4175bec9d8a37983e686071becbe0e3f1a8db2",
+      "source_page": null,
+      "download_url": null,
+      "download_url_status": "not_published_optional_if_generation_stage_is_supplied",
+      "committed_to_source_repository": false
+    },
+    {
+      "name": "sam_med3d.pth",
+      "category": "upstream_pretrained",
+      "required_for": "matching_pretrained_method",
+      "original_bytes": 1205248025,
+      "expected_original_sha256": "222a7b931025e5c8730dbb97a8717b221646dace76a5f04b16ef69e353ddbe48",
+      "source_page": "https://github.com/uni-medical/SAM-Med3D",
+      "download_url": null,
+      "download_url_status": "pin_exact_upstream_artifact_before_release",
+      "committed_to_source_repository": false,
+      "legacy_source_page": "https://github.com/openmedlab/SAM-Med3D#-checkpoint",
+      "legacy_manual_download_url": "https://drive.google.com/file/d/1PFeUjlFMAppllS9x1kAWyCYUJM9re2Ub/view",
+      "legacy_url_audit": "Official legacy README links this asset; browsing returned HTTP404 on 2026-11-12. Exact bytes and working original download not verified. Turbo is not a replacement."
+    }
+  ]
+}
